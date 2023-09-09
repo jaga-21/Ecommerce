@@ -1,0 +1,2103 @@
+[ns_server:info,2023-08-29T18:14:48.975Z,nonode@nohost:<0.146.0>:ns_server:init_logging:120]Started & configured logging
+[ns_server:info,2023-08-29T18:14:48.987Z,nonode@nohost:<0.146.0>:ns_server:log_pending:29]Static config terms:
+[{error_logger_mf_dir,"/opt/couchbase/var/lib/couchbase/logs"},
+ {path_config_bindir,"/opt/couchbase/bin"},
+ {path_config_etcdir,"/opt/couchbase/etc/couchbase"},
+ {path_config_libdir,"/opt/couchbase/lib"},
+ {path_config_datadir,"/opt/couchbase/var/lib/couchbase"},
+ {path_config_tmpdir,"/opt/couchbase/var/lib/couchbase/tmp"},
+ {path_config_secdir,"/opt/couchbase/etc/security"},
+ {nodefile,"/opt/couchbase/var/lib/couchbase/couchbase-server.node"},
+ {loglevel_default,debug},
+ {loglevel_couchdb,info},
+ {loglevel_ns_server,debug},
+ {loglevel_error_logger,debug},
+ {loglevel_user,debug},
+ {loglevel_menelaus,debug},
+ {loglevel_ns_doctor,debug},
+ {loglevel_stats,debug},
+ {loglevel_rebalance,debug},
+ {loglevel_cluster,debug},
+ {loglevel_views,debug},
+ {loglevel_mapreduce_errors,debug},
+ {loglevel_xdcr,debug},
+ {loglevel_access,info},
+ {loglevel_cbas,debug},
+ {disk_sink_opts,[{rotation,[{compress,true},
+                             {size,41943040},
+                             {num_files,10},
+                             {buffer_size_max,52428800}]}]},
+ {disk_sink_opts_json_rpc,[{rotation,[{compress,true},
+                                      {size,41943040},
+                                      {num_files,2},
+                                      {buffer_size_max,52428800}]}]},
+ {net_kernel_verbosity,10}]
+[ns_server:warn,2023-08-29T18:14:48.987Z,nonode@nohost:<0.146.0>:ns_server:log_pending:29]not overriding parameter error_logger_mf_dir, which is given from command line
+[ns_server:warn,2023-08-29T18:14:48.988Z,nonode@nohost:<0.146.0>:ns_server:log_pending:29]not overriding parameter path_config_bindir, which is given from command line
+[ns_server:warn,2023-08-29T18:14:48.988Z,nonode@nohost:<0.146.0>:ns_server:log_pending:29]not overriding parameter path_config_etcdir, which is given from command line
+[ns_server:warn,2023-08-29T18:14:48.988Z,nonode@nohost:<0.146.0>:ns_server:log_pending:29]not overriding parameter path_config_libdir, which is given from command line
+[ns_server:warn,2023-08-29T18:14:48.988Z,nonode@nohost:<0.146.0>:ns_server:log_pending:29]not overriding parameter path_config_datadir, which is given from command line
+[ns_server:warn,2023-08-29T18:14:48.988Z,nonode@nohost:<0.146.0>:ns_server:log_pending:29]not overriding parameter path_config_tmpdir, which is given from command line
+[ns_server:warn,2023-08-29T18:14:48.988Z,nonode@nohost:<0.146.0>:ns_server:log_pending:29]not overriding parameter path_config_secdir, which is given from command line
+[ns_server:warn,2023-08-29T18:14:48.988Z,nonode@nohost:<0.146.0>:ns_server:log_pending:29]not overriding parameter nodefile, which is given from command line
+[ns_server:warn,2023-08-29T18:14:48.988Z,nonode@nohost:<0.146.0>:ns_server:log_pending:29]not overriding parameter loglevel_default, which is given from command line
+[ns_server:warn,2023-08-29T18:14:48.988Z,nonode@nohost:<0.146.0>:ns_server:log_pending:29]not overriding parameter loglevel_couchdb, which is given from command line
+[ns_server:warn,2023-08-29T18:14:48.989Z,nonode@nohost:<0.146.0>:ns_server:log_pending:29]not overriding parameter loglevel_ns_server, which is given from command line
+[ns_server:warn,2023-08-29T18:14:48.989Z,nonode@nohost:<0.146.0>:ns_server:log_pending:29]not overriding parameter loglevel_error_logger, which is given from command line
+[ns_server:warn,2023-08-29T18:14:48.989Z,nonode@nohost:<0.146.0>:ns_server:log_pending:29]not overriding parameter loglevel_user, which is given from command line
+[ns_server:warn,2023-08-29T18:14:48.989Z,nonode@nohost:<0.146.0>:ns_server:log_pending:29]not overriding parameter loglevel_menelaus, which is given from command line
+[ns_server:warn,2023-08-29T18:14:48.989Z,nonode@nohost:<0.146.0>:ns_server:log_pending:29]not overriding parameter loglevel_ns_doctor, which is given from command line
+[ns_server:warn,2023-08-29T18:14:48.989Z,nonode@nohost:<0.146.0>:ns_server:log_pending:29]not overriding parameter loglevel_stats, which is given from command line
+[ns_server:warn,2023-08-29T18:14:48.989Z,nonode@nohost:<0.146.0>:ns_server:log_pending:29]not overriding parameter loglevel_rebalance, which is given from command line
+[ns_server:warn,2023-08-29T18:14:48.989Z,nonode@nohost:<0.146.0>:ns_server:log_pending:29]not overriding parameter loglevel_cluster, which is given from command line
+[ns_server:warn,2023-08-29T18:14:48.989Z,nonode@nohost:<0.146.0>:ns_server:log_pending:29]not overriding parameter loglevel_views, which is given from command line
+[ns_server:warn,2023-08-29T18:14:48.989Z,nonode@nohost:<0.146.0>:ns_server:log_pending:29]not overriding parameter loglevel_mapreduce_errors, which is given from command line
+[ns_server:warn,2023-08-29T18:14:48.989Z,nonode@nohost:<0.146.0>:ns_server:log_pending:29]not overriding parameter loglevel_xdcr, which is given from command line
+[ns_server:warn,2023-08-29T18:14:48.990Z,nonode@nohost:<0.146.0>:ns_server:log_pending:29]not overriding parameter loglevel_access, which is given from command line
+[ns_server:warn,2023-08-29T18:14:48.990Z,nonode@nohost:<0.146.0>:ns_server:log_pending:29]not overriding parameter loglevel_cbas, which is given from command line
+[ns_server:warn,2023-08-29T18:14:48.990Z,nonode@nohost:<0.146.0>:ns_server:log_pending:29]not overriding parameter disk_sink_opts, which is given from command line
+[ns_server:warn,2023-08-29T18:14:48.990Z,nonode@nohost:<0.146.0>:ns_server:log_pending:29]not overriding parameter disk_sink_opts_json_rpc, which is given from command line
+[ns_server:warn,2023-08-29T18:14:48.990Z,nonode@nohost:<0.146.0>:ns_server:log_pending:29]not overriding parameter net_kernel_verbosity, which is given from command line
+[ns_server:info,2023-08-29T18:14:49.012Z,nonode@nohost:dist_manager<0.197.0>:dist_manager:read_address_config_from_path:83]Reading ip config from "/opt/couchbase/var/lib/couchbase/ip_start"
+[ns_server:info,2023-08-29T18:14:49.013Z,nonode@nohost:dist_manager<0.197.0>:dist_manager:read_address_config_from_path:83]Reading ip config from "/opt/couchbase/var/lib/couchbase/ip"
+[ns_server:info,2023-08-29T18:14:49.014Z,nonode@nohost:dist_manager<0.197.0>:dist_manager:init:179]ip config not found. Looks like we're brand new node
+[ns_server:info,2023-08-29T18:14:49.023Z,nonode@nohost:dist_manager<0.197.0>:dist_manager:bringup:245]Attempting to bring up net_kernel with name 'ns_1@cb.local'
+[ns_server:info,2023-08-29T18:14:49.158Z,ns_1@cb.local:dist_manager<0.197.0>:dist_manager:save_node:159]saving node name '"ns_1@cb.local"' to "/opt/couchbase/var/lib/couchbase/couchbase-server.node"
+[ns_server:info,2023-08-29T18:14:49.269Z,ns_1@cb.local:dist_manager<0.197.0>:dist_manager:save_address_config:146]Deleting irrelevant ip file "/opt/couchbase/var/lib/couchbase/ip_start": {error,
+                                                                          enoent}
+[ns_server:info,2023-08-29T18:14:49.269Z,ns_1@cb.local:dist_manager<0.197.0>:dist_manager:save_address_config:147]saving ip config to "/opt/couchbase/var/lib/couchbase/ip"
+[ns_server:info,2023-08-29T18:14:49.308Z,ns_1@cb.local:dist_manager<0.197.0>:dist_manager:save_address_config:150]Persisted the address successfully
+[ns_server:info,2023-08-29T18:14:49.337Z,ns_1@cb.local:ns_server_cluster_sup<0.218.0>:log_os_info:start_link:19]OS type: {unix,linux} Version: {5,15,90}
+Runtime info: [{otp_release,"24"},
+               {erl_version,"12.3.2.4"},
+               {erl_version_long,
+                   "Erlang/OTP 24 [erts-12.3.2.4] [source-c057945] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads:16] [jit]\n"},
+               {system_arch_raw,"x86_64-pc-linux-gnu"},
+               {system_arch,"x86_64-pc-linux-gnu"},
+               {localtime,{{2023,8,29},{18,14,49}}},
+               {memory,
+                   [{total,43374632},
+                    {processes,9662896},
+                    {processes_used,9653656},
+                    {system,33711736},
+                    {atom,532681},
+                    {atom_used,500010},
+                    {binary,183928},
+                    {code,10396566},
+                    {ets,2618896}]},
+               {loaded,
+                   [ns_info,log_os_info,local_tasks,restartable,
+                    ns_server_cluster_sup,ns_cluster,dist_util,ns_node_disco,
+                    crypto,re,auth,tls_dist_server_sup,tls_dist_sup,
+                    ale_error_logger_handler,ssl_dist_admin_sup,ssl_dist_sup,
+                    inet_tls_dist,inet_tcp_dist,inet_tcp,gen_tcp,erl_epmd,
+                    cb_epmd,gen_udp,inet_hosts,dist_manager,root_sup,
+                    path_config,cb_dist,ns_server_stats,calendar,
+                    ale_default_formatter,'ale_logger-metakv',
+                    'ale_logger-rebalance','ale_logger-chronicle',
+                    'ale_logger-menelaus','ale_logger-stats',
+                    'ale_logger-json_rpc','ale_logger-access',
+                    'ale_logger-ns_server','ale_logger-user',
+                    'ale_logger-ns_doctor','ale_logger-cluster',
+                    'ale_logger-xdcr',erl_bits,otp_internal,
+                    cb_log_counter_sink,ns_log_sink,ale_disk_sink,misc,
+                    couch_util,ns_server,timer,cpu_sup,filelib,memsup,disksup,
+                    os_mon,unicode_util,string,io,release_handler,
+                    alarm_handler,sasl,httpd_sup,httpc_handler_sup,
+                    httpc_cookie,inets_trace,httpc_manager,httpc,
+                    httpc_profile_sup,httpc_sup,inets_sup,inets_app,ssl,
+                    lhttpc_manager,lhttpc_sup,lhttpc,
+                    dtls_server_session_cache_sup,dtls_listener_sup,
+                    dtls_server_sup,dtls_connection_sup,dtls_sup,
+                    ssl_upgrade_server_session_cache_sup,
+                    ssl_server_session_cache_sup,
+                    tls_server_session_ticket_sup,ssl_listen_tracker_sup,
+                    tls_server_sup,tls_connection_sup,tls_sup,
+                    ssl_connection_sup,tls_client_ticket_store,
+                    ssl_client_session_cache_db,ssl_config,ssl_manager,
+                    ssl_pkix_db,ssl_pem_cache,ssl_admin_sup,ssl_sup,
+                    logger_h_common,logger_std_h,ssl_logger,ssl_app,
+                    'ale_logger-ale_logger','ale_logger-error_logger',
+                    beam_opcodes,beam_dict,beam_asm,beam_z,beam_flatten,
+                    beam_trim,beam_clean,beam_peep,beam_block,beam_utils,
+                    beam_jump,beam_a,beam_validator,beam_ssa_codegen,
+                    beam_ssa_pre_codegen,beam_ssa_throw,beam_ssa_dead,
+                    beam_call_types,beam_types,beam_ssa_type,beam_ssa_bc_size,
+                    beam_ssa_opt,beam_ssa_funs,beam_ssa_bsm,beam_ssa_recv,
+                    beam_ssa_share,beam_ssa_bool,beam_ssa,beam_kernel_to_ssa,
+                    v3_kernel,sys_core_bsm,sys_core_alias,erl_bifs,
+                    cerl_clauses,sets,sys_core_fold,sys_core_inline,
+                    cerl_trees,core_lib,cerl,v3_core,erl_expand_records,sofs,
+                    erl_internal,ordsets,compile,dynamic_compile,ale_utils,
+                    io_lib_pretty,io_lib_format,io_lib,ale_codegen,dict,ale,
+                    ale_dynamic_sup,ale_sup,ale_app,ns_bootstrap,child_erlang,
+                    raw_file_io,orddict,c,erl_signal_handler,
+                    logger_handler_watcher,logger_sup,kernel_refc,
+                    kernel_config,user_io,user_sup,supervisor_bridge,
+                    standard_error,global_group,erl_distribution,maps,rand,
+                    net_kernel,global,rpc,epp,inet_gethost_native,inet_parse,
+                    inet,inet_udp,inet_config,inet_db,unicode,os,gb_trees,
+                    gb_sets,binary,erl_anno,proplists,erl_scan,queue,
+                    logger_olp,logger_proxy,error_handler,application,
+                    logger_filters,kernel,application_master,code,
+                    logger_server,heart,error_logger,file_server,code_server,
+                    erl_eval,logger_backend,file,application_controller,
+                    logger_config,file_io_server,gen_server,ets,
+                    logger_simple_h,filename,logger,proc_lib,gen,lists,
+                    gen_event,supervisor,erl_lint,erl_parse,persistent_term,
+                    counters,atomics,erts_dirty_process_signal_handler,
+                    erts_literal_area_collector,erl_tracer,erts_internal,
+                    erlang,erl_prim_loader,prim_zip,prim_net,prim_socket,
+                    socket_registry,zlib,prim_file,prim_inet,prim_eval,
+                    prim_buffer,init,erl_init,erts_code_purger]},
+               {applications,
+                   [{asn1,"The Erlang ASN1 compiler version 5.0.18","5.0.18"},
+                    {crypto,"CRYPTO","5.0.6.3"},
+                    {public_key,"Public key infrastructure","1.12.0.1"},
+                    {os_mon,"CPO  CXC 138 46","2.7.1"},
+                    {inets,"INETS  CXC 138 49","7.5.3.1"},
+                    {kernel,"ERTS  CXC 138 10","8.3.2.1"},
+                    {stdlib,"ERTS  CXC 138 10","3.17.2"},
+                    {ale,"Another Logger for Erlang","0.0.0"},
+                    {sasl,"SASL  CXC 138 11","4.1.2"},
+                    {lhttpc,"Lightweight HTTP Client","1.3.0"},
+                    {ssl,"Erlang/OTP SSL application","10.7.3.3"},
+                    {ns_server,"Couchbase server","7.2.0-5325-enterprise"}]},
+               {pre_loaded,
+                   [persistent_term,counters,atomics,
+                    erts_dirty_process_signal_handler,
+                    erts_literal_area_collector,erl_tracer,erts_internal,
+                    erlang,erl_prim_loader,prim_zip,prim_net,prim_socket,
+                    socket_registry,zlib,prim_file,prim_inet,prim_eval,
+                    prim_buffer,init,erl_init,erts_code_purger]},
+               {process_count,150},
+               {node,'ns_1@cb.local'},
+               {nodes,[]},
+               {registered,
+                   [tls_server_session_ticket_sup_dist,tls_connection_sup,
+                    kernel_safe_sup,logger_proxy,sasl_sup,memsup,
+                    'sink-disk_error',ssl_pem_cache_dist,ale_dynamic_sup,
+                    'sink-disk_reports',erl_prim_loader,
+                    application_controller,tls_server_sup,ssl_admin_sup,
+                    net_kernel,inet_db,'sink-disk_json_rpc',
+                    ssl_server_session_cache_sup,httpc_profile_sup,
+                    sasl_safe_sup,ssl_listen_tracker_sup_dist,dtls_server_sup,
+                    rex,logger_handler_watcher,tls_dist_server_sup,tls_sup,
+                    'sink-disk_default',root_sup,erl_epmd,kernel_refc,
+                    httpc_sup,ssl_pem_cache,dtls_connection_sup,
+                    'sink-disk_stats',ssl_manager_dist,'sink-disk_metakv',
+                    lhttpc_manager,auth,httpc_handler_sup,erts_code_purger,
+                    cpu_sup,logger_std_h_ssl_handler,dtls_listener_sup,ale,
+                    kernel_sup,erl_signal_server,ssl_dist_admin_sup,
+                    tls_server_session_ticket_sup,ssl_connection_sup,
+                    lhttpc_sup,user,ssl_upgrade_server_session_cache_sup,
+                    'sink-disk_xdcr',tls_client_ticket_store,ale_sup,
+                    dtls_server_session_cache_sup,os_mon_sup,
+                    'sink-disk_access_int',httpd_sup,disksup,init,cb_dist,
+                    global_group,standard_error_sup,file_server_2,
+                    'sink-cb_log_counter',ssl_dist_sup,
+                    ssl_upgrade_server_session_cache_sup_dist,inets_sup,
+                    global_name_server,ssl_sup,ns_server_cluster_sup,
+                    standard_error,httpc_manager,logger_sup,'sink-disk_debug',
+                    ssl_listen_tracker_sup,socket_registry,logger,
+                    release_handler,'sink-ns_log',dtls_sup,'sink-disk_access',
+                    code_server,ale_stats_events,local_tasks,net_sup,
+                    tls_dist_sup,timer_server,tls_dist_connection_sup,
+                    alarm_handler,dist_manager,ssl_manager]},
+               {cookie,nocookie},
+               {wordsize,8},
+               {wall_clock,5}]
+[ns_server:info,2023-08-29T18:14:49.358Z,ns_1@cb.local:ns_server_cluster_sup<0.218.0>:log_os_info:start_link:21]Manifest:
+["<manifest>",
+ "  <remote name=\"blevesearch\" fetch=\"https://github.com/blevesearch/\" />",
+ "  <remote name=\"couchbase\" fetch=\"https://github.com/couchbase/\" review=\"review.couchbase.org\" />",
+ "  <remote name=\"couchbase-priv\" fetch=\"ssh://git@github.com/couchbase/\" review=\"review.couchbase.org\" />",
+ "  <remote name=\"couchbasedeps\" fetch=\"https://github.com/couchbasedeps/\" review=\"review.couchbase.org\" />",
+ "  <remote name=\"couchbaselabs\" fetch=\"https://github.com/couchbaselabs/\" review=\"review.couchbase.org\" />",
+ "  ","  <default remote=\"couchbase\" revision=\"master\" />","  ",
+ "  <project name=\"HdrHistogram_c\" path=\"third_party/HdrHistogram_c\" remote=\"couchbasedeps\" revision=\"caed837aa163421a637222157b3f6353b4ca831a\" groups=\"kv\" />",
+ "  <project name=\"analytics-dcp-client\" path=\"analytics/java-dcp-client\" revision=\"d4bb7bf6444805681da7f564ee9f1ea71895c113\" upstream=\"neo\" dest-branch=\"neo\" groups=\"notdefault,enterprise,analytics\" />",
+ "  <project name=\"asterixdb\" path=\"analytics/asterixdb\" revision=\"e42e1b99e7f9a5a7437234be89438f37a18a06d2\" groups=\"notdefault,enterprise,analytics\" />",
+ "  <project name=\"backup\" remote=\"couchbase-priv\" revision=\"b5572a18a617c7445eff15bd9d07447ba8430378\" groups=\"backup,notdefault,enterprise\" />",
+ "  <project name=\"bbolt\" path=\"godeps/src/go.etcd.io/bbolt\" remote=\"couchbasedeps\" revision=\"68cc10a767ea1c6b9e8dcb9847317ff192d6d974\" />",
+ "  <project name=\"bitset\" path=\"godeps/src/github.com/willf/bitset\" remote=\"couchbasedeps\" revision=\"28a4168144bb8ac95454e1f51c84da1933681ad4\" />",
+ "  <project name=\"blance\" path=\"godeps/src/github.com/couchbase/blance\" revision=\"b2ec44a33677b3c64c516ed9e9c49721e266a58a\" />",
+ "  <project name=\"bolt\" path=\"godeps/src/github.com/boltdb/bolt\" remote=\"couchbasedeps\" revision=\"51f99c862475898df9773747d3accd05a7ca33c1\" />",
+ "  <project name=\"build\" path=\"cbbuild\" revision=\"9b1df055e536d63896a595e6e38f320e45c5a21d\" groups=\"notdefault,build\">",
+ "    <annotation name=\"RELEASE\" value=\"neo\" />",
+ "    <annotation name=\"PRODUCT\" value=\"couchbase-server\" />",
+ "    <annotation name=\"BLD_NUM\" value=\"5325\" />",
+ "    <annotation name=\"VERSION\" value=\"7.2.0\" />",
+ "    <annotation name=\"BSL_PRODUCT\" value=\"Couchbase Server\" />",
+ "    <annotation name=\"BSL_VERSION\" value=\"7.2\" />",
+ "    <annotation name=\"BSL_CHANGE_DATE\" value=\"April 1, 2026\" />",
+ "  </project>",
+ "  <project name=\"cbas\" path=\"goproj/src/github.com/couchbase/cbas\" remote=\"couchbase-priv\" revision=\"f7ea66f5afc13368e6b538c6b72e7472eaaabafe\" upstream=\"neo\" dest-branch=\"neo\" groups=\"notdefault,enterprise,analytics\" />",
+ "  <project name=\"cbas-core\" path=\"analytics\" remote=\"couchbase-priv\" revision=\"19c0e48f50ce6d57dda421cee1d7c2bceec13c59\" upstream=\"7.2.0\" dest-branch=\"7.2.0\" groups=\"notdefault,enterprise,analytics\" />",
+ "  <project name=\"cbas-ui\" revision=\"bca24852854206cbdc70095ddb15c9f07fa29196\" groups=\"notdefault,enterprise,analytics\" />",
+ "  <project name=\"cbauth\" path=\"goproj/src/github.com/couchbase/cbauth\" revision=\"efcd43440ed31b277503e76fdb3c7efc11154f59\" groups=\"backup\" />",
+ "  <project name=\"cbbs\" remote=\"couchbase-priv\" revision=\"313647360e0468dfa2f870a4656d7a82bf83df0b\" groups=\"backup,notdefault,enterprise\" />",
+ "  <project name=\"cbft\" revision=\"02a030d5ccd77934f8713329395ca7ccad9d6115\" />",
+ "  <project name=\"cbftx\" remote=\"couchbase-priv\" revision=\"31cb03c796e9555bd5d323a704680625bab79a2f\" groups=\"notdefault,enterprise\" />",
+ "  <project name=\"cbgt\" revision=\"d685dcd6c513b149c7e1aeeb0b09a8349a79b76f\" />",
+ "  <project name=\"cbsummary\" path=\"goproj/src/github.com/couchbase/cbsummary\" revision=\"ae0e924e54669e2c590dd70c6bdf742e8976e2d0\" />",
+ "  <project name=\"chronicle\" path=\"ns_server/deps/chronicle\" revision=\"67d2c3a847d8feeedd2c76ab383b508f1c29549c\" />",
+ "  <project name=\"clog\" path=\"godeps/src/github.com/couchbase/clog\" revision=\"f935d1fdfc36541b505cf86fea4822e4067f9c39\" />",
+ "  <project name=\"cobra\" path=\"godeps/src/github.com/spf13/cobra\" remote=\"couchbasedeps\" revision=\"0f056af21f5f368e5b0646079d0094a2c64150f7\" />",
+ "  <project name=\"context\" path=\"godeps/src/github.com/gorilla/context\" remote=\"couchbasedeps\" revision=\"215affda49addc4c8ef7e2534915df2c8c35c6cd\" />",
+ "  <project name=\"couchbase-cli\" revision=\"73715f3cb60a054b985dd8a93a34323ef1f737c4\" groups=\"kv\" />",
+ "  <project name=\"couchbase-jvm-core\" path=\"analytics/couchbase-jvm-core\" revision=\"b712718b5a9a3ea4699e537871644446494fe9e3\" upstream=\"refs/tags/1.7.24\" dest-branch=\"refs/tags/1.7.24\" groups=\"notdefault,enterprise,analytics\" />",
+ "  <project name=\"couchdb\" revision=\"24833e246a9d94ddd1b82a34bfd94d47c51a6ea9\" />",
+ "  <project name=\"couchdbx-app\" revision=\"64bdc899ba72d021a3c1dde1a1aa5b698f42ee06\" groups=\"notdefault,packaging\" />",
+ "  <project name=\"couchstore\" revision=\"42e62095c614f704d004d10fe50d324ff4a0dc1f\" groups=\"kv\" />",
+ "  <project name=\"crypto\" path=\"godeps/src/golang.org/x/crypto\" remote=\"couchbasedeps\" revision=\"630584e8d5aaa1472863b49679b2d5548d80dcba\" />",
+ "  <project name=\"cuckoofilter\" path=\"godeps/src/github.com/seiflotfy/cuckoofilter\" remote=\"couchbasedeps\" revision=\"d04838794ab86926d32b124345777e55e6f43974\" />",
+ "  <project name=\"docloader\" path=\"goproj/src/github.com/couchbase/docloader\" revision=\"2e6af0c097c8bb98a596cbc81cdf6e169ae5b3cc\" />",
+ "  <project name=\"errors\" path=\"godeps/src/github.com/pkg/errors\" remote=\"couchbasedeps\" revision=\"30136e27e2ac8d167177e8a583aa4c3fea5be833\" />",
+ "  <project name=\"eventing\" path=\"goproj/src/github.com/couchbase/eventing\" revision=\"96fb41ba9fb6e3d20954244b636343d43cb70333\" groups=\"notdefault,enterprise\" />",
+ "  <project name=\"eventing-ee\" path=\"goproj/src/github.com/couchbase/eventing-ee\" remote=\"couchbase-priv\" revision=\"6b4b1f0e33ab3445c2d782b787af83bececf1bf6\" groups=\"notdefault,enterprise\" />",
+ "  <project name=\"flatbuffers\" path=\"godeps/src/github.com/google/flatbuffers\" remote=\"couchbasedeps\" revision=\"1a8968225130caeddd16e227678e6f8af1926303\" />",
+ "  <project name=\"forestdb\" revision=\"48c31dcb979ca7e152c2db570af49149c6d3e2a7\" groups=\"backup\" />",
+ "  <project name=\"fwd\" path=\"godeps/src/github.com/philhofer/fwd\" remote=\"couchbasedeps\" revision=\"bb6d471dc95d4fe11e432687f8b70ff496cf3136\" />",
+ "  <project name=\"geocouch\" revision=\"68f3b9d36630682d17ca5232770f1693b9b8fa18\" />",
+ "  <project name=\"ghistogram\" path=\"godeps/src/github.com/couchbase/ghistogram\" revision=\"4ae3f06d0ac7b02081e33c1ec309daa22838d207\" />",
+ "  <project name=\"go-bindata-assetfs\" path=\"godeps/src/github.com/elazarl/go-bindata-assetfs\" remote=\"couchbasedeps\" revision=\"57eb5e1fc594ad4b0b1dbea7b286d299e0cb43c2\" />",
+ "  <project name=\"go-couchbase\" path=\"goproj/src/github.com/couchbase/go-couchbase\" revision=\"959eaf944140a6c660990f38b1db310ddd6d8e42\" groups=\"backup\" />",
+ "  <project name=\"go-curl\" path=\"godeps/src/github.com/andelf/go-curl\" remote=\"couchbasedeps\" revision=\"f0b2afc926ec79be5d7f30393b3485352781a705\" />",
+ "  <project name=\"go-curl\" path=\"godeps/src/github.com/couchbasedeps/go-curl\" remote=\"couchbasedeps\" revision=\"f0b2afc926ec79be5d7f30393b3485352781a705\" />",
+ "  <project name=\"go-genproto\" path=\"godeps/src/google.golang.org/genproto\" remote=\"couchbasedeps\" revision=\"2b5a72b8730b0b16380010cfe5286c42108d88e7\" />",
+ "  <project name=\"go-jsonpointer\" path=\"godeps/src/github.com/dustin/go-jsonpointer\" remote=\"couchbasedeps\" revision=\"75939f54b39e7dafae879e61f65438dadc5f288c\" />",
+ "  <project name=\"go-metrics\" path=\"godeps/src/github.com/rcrowley/go-metrics\" remote=\"couchbasedeps\" revision=\"dee209f2455f101a5e4e593dea94872d2c62d85d\" />",
+ "  <project name=\"go-runewidth\" path=\"godeps/src/github.com/mattn/go-runewidth\" remote=\"couchbasedeps\" revision=\"703b5e6b11ae25aeb2af9ebb5d5fdf8fa2575211\" />",
+ "  <project name=\"go-slab\" path=\"godeps/src/github.com/couchbase/go-slab\" revision=\"e47646b420b3c9eb344cef022236a54e2554d40b\" groups=\"bsl\" />",
+ "  <project name=\"go-unsnap-stream\" path=\"godeps/src/github.com/glycerine/go-unsnap-stream\" remote=\"couchbasedeps\" revision=\"62a9a9eb44fd8932157b1a8ace2149eff5971af6\" />",
+ "  <project name=\"go-zookeeper\" path=\"godeps/src/github.com/samuel/go-zookeeper\" remote=\"couchbasedeps\" revision=\"fa6674abf3f4580b946a01bf7a1ce4ba8766205b\" />",
+ "  <project name=\"go_json\" path=\"goproj/src/github.com/couchbase/go_json\" revision=\"2936e21ca64c6efb687dd891dee1f8112e11618c\" />",
+ "  <project name=\"go_n1ql\" path=\"godeps/src/github.com/couchbase/go_n1ql\" revision=\"0ed4bf93e31de2371f9180e424942bd3d5235397\" groups=\"bsl\" />",
+ "  <project name=\"gocb\" path=\"godeps/src/github.com/couchbase/gocb/v2\" revision=\"40020eef484873e507745107edbf99c421927a93\" upstream=\"refs/tags/v2.2.5\" dest-branch=\"refs/tags/v2.2.5\" />",
+ "  <project name=\"gocb\" path=\"godeps/src/gopkg.in/couchbase/gocb.v1\" revision=\"01c846cb025ddd50a2ef4c82a27992b40c230dbb\" upstream=\"refs/tags/v1.4.2\" dest-branch=\"refs/tags/v1.4.2\" />",
+ "  <project name=\"gocbconnstr\" path=\"godeps/src/gopkg.in/couchbaselabs/gocbconnstr.v1\" remote=\"couchbaselabs\" revision=\"8f9a894d174b836c6362de9af75545cf585fc278\" />",
+ "  <project name=\"gocbcore\" path=\"godeps/src/gopkg.in/couchbase/gocbcore.v7\" revision=\"441cb91f01ce26932514ec10d9e59e568ee27722\" upstream=\"refs/tags/v7.1.14\" dest-branch=\"refs/tags/v7.1.14\" />",
+ "  <project name=\"gocbcore\" path=\"godeps/src/github.com/couchbase/gocbcore/v9\" revision=\"0ece206041d8cf5f5fcd919767446603691bdb69\" upstream=\"refs/tags/v9.1.6\" dest-branch=\"refs/tags/v9.1.6\" />",
+ "  <project name=\"godbc\" path=\"goproj/src/github.com/couchbase/godbc\" revision=\"c4f5a4b362d1213ab5fd8f19c631b824c1c8b46f\" />",
+ "  <project name=\"gofarmhash\" path=\"godeps/src/github.com/leemcloughlin/gofarmhash\" remote=\"couchbasedeps\" revision=\"0a055c5b87a8c55ce83459cbf2776b563822a942\" />",
+ "  <project name=\"goforestdb\" path=\"godeps/src/github.com/couchbase/goforestdb\" revision=\"0b501227de0e8c55d99ed14e900eea1a1dbaf899\" />",
+ "  <project name=\"gojson\" path=\"godeps/src/github.com/dustin/gojson\" remote=\"couchbasedeps\" revision=\"af16e0e771e2ed110f2785564ae33931de8829e4\" />",
+ "  <project name=\"gojsonsm\" path=\"godeps/src/github.com/couchbaselabs/gojsonsm\" remote=\"couchbaselabs\" revision=\"eec4953dcb855282c483b8cd4fe03a8074e2f7a1\" />",
+ "  <project name=\"golang\" remote=\"couchbaselabs\" revision=\"fba78230720763fadaa3379988d1c28f1c1fef3d\" />",
+ "  <project name=\"golang-pkg-pcre\" path=\"godeps/src/github.com/glenn-brown/golang-pkg-pcre\" remote=\"couchbasedeps\" revision=\"48bb82a8b8ceea98f4e97825b43870f6ba1970d6\" />",
+ "  <project name=\"golang-snappy\" path=\"godeps/src/github.com/golang/snappy\" remote=\"couchbasedeps\" revision=\"723cc1e459b8eea2dea4583200fd60757d40097a\" />",
+ "  <project name=\"golang-tools\" path=\"godeps/src/golang.org/x/tools\" remote=\"couchbasedeps\" revision=\"a28dfb48e06b2296b66678872c2cb638f0304f20\" />",
+ "  <project name=\"goleveldb\" path=\"godeps/src/github.com/syndtr/goleveldb\" remote=\"couchbasedeps\" revision=\"fa5b5c78794bc5c18f330361059f871ae8c2b9d6\" />",
+ "  <project name=\"gomemcached\" path=\"goproj/src/github.com/couchbase/gomemcached\" revision=\"a6b8a5bb473dea57823464bc35939733de64656a\" groups=\"backup\" />",
+ "  <project name=\"gometa\" path=\"goproj/src/github.com/couchbase/gometa\" revision=\"973d61970b54b3444fca2e9562eabd91e2259b7f\" />",
+ "  <project name=\"goskiplist\" path=\"godeps/src/github.com/ryszard/goskiplist\" remote=\"couchbasedeps\" revision=\"2dfbae5fcf46374f166f8969cb07e167f1be6273\" />",
+ "  <project name=\"gosnappy\" path=\"godeps/src/github.com/syndtr/gosnappy\" remote=\"couchbasedeps\" revision=\"156a073208e131d7d2e212cb749feae7c339e846\" />",
+ "  <project name=\"goutils\" path=\"goproj/src/github.com/couchbase/goutils\" revision=\"73dda2bf44424b5c588579948399e86e5de4be6c\" groups=\"bsl\" />",
+ "  <project name=\"goxdcr\" path=\"goproj/src/github.com/couchbase/goxdcr\" revision=\"6d79cea3c1ac9a788f3af5266c4b010801c39e8d\" groups=\"bsl\" />",
+ "  <project name=\"grpc-go\" path=\"godeps/src/google.golang.org/grpc\" remote=\"couchbasedeps\" revision=\"df014850f6dee74ba2fc94874043a9f3f75fbfd8\" upstream=\"refs/tags/v1.17.0\" dest-branch=\"refs/tags/v1.17.0\" />",
+ "  <project name=\"gsl-lite\" path=\"third_party/gsl-lite\" remote=\"couchbasedeps\" revision=\"e1c381746c2625a76227255f999ae9f14a062208\" upstream=\"refs/tags/v0.38.1\" dest-branch=\"refs/tags/v0.38.1\" groups=\"kv\" />",
+ "  <project name=\"gtreap\" path=\"godeps/src/github.com/steveyen/gtreap\" remote=\"couchbasedeps\" revision=\"0abe01ef9be25c4aedc174758ec2d917314d6d70\" />",
+ "  <project name=\"hebrew\" remote=\"couchbase-priv\" revision=\"fd6a0a1013434e4ba8cae73f6c80d2433d72ed0b\" groups=\"notdefault,enterprise\" />",
+ "  <project name=\"httprouter\" path=\"godeps/src/github.com/julienschmidt/httprouter\" remote=\"couchbasedeps\" revision=\"975b5c4c7c21c0e3d2764200bf2aa8e34657ae6e\" />",
+ "  <project name=\"indexing\" path=\"goproj/src/github.com/couchbase/indexing\" revision=\"58e9984dda715a2e8916ce22d9890e0c792b72ff\" upstream=\"neo\" dest-branch=\"neo\" groups=\"bsl\" />",
+ "  <project name=\"json-iterator-go\" path=\"godeps/src/github.com/json-iterator/go\" remote=\"couchbasedeps\" revision=\"f7279a603edee96fe7764d3de9c6ff8cf9970994\" />",
+ "  <project name=\"jsonparser\" path=\"godeps/src/github.com/buger/jsonparser\" remote=\"couchbasedeps\" revision=\"df3ea76ece10095374fd1c9a22a4fb85a44efc42\" />",
+ "  <project name=\"jsonschema\" path=\"godeps/src/github.com/santhosh-tekuri/jsonschema\" remote=\"couchbasedeps\" revision=\"137f44a49015e5060a447c331aa37de6e0f50267\" />",
+ "  <project name=\"jsonx\" path=\"godeps/src/gopkg.in/couchbaselabs/jsonx.v1\" remote=\"couchbaselabs\" revision=\"03f375ceefb769799cfa0d64352fdcc9f1192368\" />",
+ "  <project name=\"kv_engine\" revision=\"840f209f829d1dd3d29829aff42d57b43492c729\" upstream=\"neo\" dest-branch=\"neo\" groups=\"kv,bsl\" />",
+ "  <project name=\"libcouchbase\" revision=\"02e19c2144f1284846f7ce6d36b707891b8d2624\" upstream=\"refs/tags/3.3.5\" dest-branch=\"refs/tags/3.3.5\" />",
+ "  <project name=\"liner\" path=\"godeps/src/github.com/peterh/liner\" remote=\"couchbasedeps\" revision=\"6f820f8f90ce9482ffbd40bb15f9ea9932f4942d\" />",
+ "  <project name=\"liner\" path=\"godeps/src/github.com/sbinet/liner\" remote=\"couchbasedeps\" revision=\"d9335eee40a45a4f5d74524c90040d6fe6013d50\" />",
+ "  <project name=\"logstats\" path=\"godeps/src/github.com/couchbase/logstats\" revision=\"24ba9753289f155ab6d43a9a2585b9248da79791\" groups=\"bsl\" />",
+ "  <project name=\"magma\" remote=\"couchbase-priv\" revision=\"6a3cf88fe676c9c49721fddaa07a929664ec5670\" upstream=\"neo\" dest-branch=\"neo\" groups=\"notdefault,enterprise,kv_ee\" />",
+ "  <project name=\"mmap-go\" path=\"godeps/src/github.com/blevesearch/mmap-go\" remote=\"blevesearch\" revision=\"99940f54c59671cf69e10b2e4041fabce88eb9b2\" />",
+ "  <project name=\"mmap-go\" path=\"godeps/src/github.com/edsrzf/mmap-go\" remote=\"couchbasedeps\" revision=\"935e0e8a636ca4ba70b713f3e38a19e1b77739e8\" />",
+ "  <project name=\"moss\" path=\"godeps/src/github.com/couchbase/moss\" revision=\"4fae7b31078a3e2bd5848a7029754885cdc495e0\" groups=\"bsl\" />",
+ "  <project name=\"mossScope\" path=\"godeps/src/github.com/couchbase/mossScope\" revision=\"9e34f3688e0abd1b057ea2196f02e45f830506f8\" groups=\"bsl\" />",
+ "  <project name=\"mousetrap\" path=\"godeps/src/github.com/inconshreveable/mousetrap\" remote=\"couchbasedeps\" revision=\"76626ae9c91c4f2a10f34cad8ce83ea42c93bb75\" />",
+ "  <project name=\"msgp\" path=\"godeps/src/github.com/tinylib/msgp\" remote=\"couchbasedeps\" revision=\"5bb5e1aed7ba5bcc93307153b020e7ffe79b0509\" />",
+ "  <project name=\"mux\" path=\"godeps/src/github.com/gorilla/mux\" remote=\"couchbasedeps\" revision=\"043ee6597c29786140136a5747b6a886364f5282\" />",
+ "  <project name=\"n1fty\" path=\"goproj/src/github.com/couchbase/n1fty\" revision=\"374be069692d011f6e075448a43c3c9ac11288b9\" groups=\"bsl\" />",
+ "  <project name=\"net\" path=\"godeps/src/golang.org/x/net\" remote=\"couchbasedeps\" revision=\"44b7c21cbf19450f38b337eb6b6fe4f6496fb5b3\" />",
+ "  <project name=\"nitro\" path=\"goproj/src/github.com/couchbase/nitro\" revision=\"2575ec52bf5cf4c7ccc2cbc161eb38e46ce7b4a8\" groups=\"bsl\" />",
+ "  <project name=\"npipe\" path=\"godeps/src/github.com/natefinch/npipe\" remote=\"couchbasedeps\" revision=\"272c8150302e83f23d32a355364578c9c13ab20f\" />",
+ "  <project name=\"ns_server\" revision=\"0874c45314b51b010a16c80872e78eff39a1eff9\" groups=\"bsl\" />",
+ "  <project name=\"opentracing-go\" path=\"godeps/src/github.com/opentracing/opentracing-go\" remote=\"couchbasedeps\" revision=\"1949ddbfd147afd4d964a9f00b24eb291e0e7c38\" />",
+ "  <project name=\"participle\" path=\"godeps/src/github.com/alecthomas/participle\" remote=\"couchbasedeps\" revision=\"d638c6e1953ed899e05a34da3935146790c60e46\" />",
+ "  <project name=\"pflag\" path=\"godeps/src/github.com/spf13/pflag\" remote=\"couchbasedeps\" revision=\"a232f6d9f87afaaa08bafaff5da685f974b83313\" />",
+ "  <project name=\"phosphor\" revision=\"2eb6c244d6910baf2834513ece579ba88e4f9b9d\" groups=\"bsl,kv\" />",
+ "  <project name=\"pierrec-lz4\" path=\"godeps/src/github.com/pierrec/lz4\" remote=\"couchbasedeps\" revision=\"ed8d4cc3b461464e69798080a0092bd028910298\" />",
+ "  <project name=\"pierrec-xxHash\" path=\"godeps/src/github.com/pierrec/xxHash\" remote=\"couchbasedeps\" revision=\"a0006b13c722f7f12368c00a3d3c2ae8a999a0c6\" />",
+ "  <project name=\"pkcs8\" path=\"godeps/src/github.com/youmark/pkcs8\" remote=\"couchbasedeps\" revision=\"1be2e3e5546da8a58903ff4adcfab015022538ea\" upstream=\"refs/tags/v1.1\" dest-branch=\"refs/tags/v1.1\" />",
+ "  <project name=\"plasma\" path=\"goproj/src/github.com/couchbase/plasma\" remote=\"couchbase-priv\" revision=\"bbf0fa45d2b5a9c80265d7061d1e3f15f1a76d3a\" groups=\"notdefault,enterprise\" />",
+ "  <project name=\"platform\" revision=\"d9c07467aacee7c5255b54591bec6549f0927427\" groups=\"bsl,kv\" />",
+ "  <project name=\"product-metadata\" revision=\"ff7c24047435e393698847ec5147716017048636\" groups=\"notdefault,packaging\" />",
+ "  <project name=\"product-texts\" revision=\"ec09296ae7979a7bf5ca80c25842afca45e0ec99\" upstream=\"master\" dest-branch=\"master\" />",
+ "  <project name=\"protobuf\" path=\"godeps/src/github.com/golang/protobuf\" remote=\"couchbasedeps\" revision=\"ddf22928ea3c56eb4292a0adbbf5001b1e8e7d0d\" />",
+ "  <project name=\"query\" path=\"goproj/src/github.com/couchbase/query\" revision=\"b23f87ebee1a1872e632bd88d6d50b38e01a0ff4\" groups=\"bsl\" />",
+ "  <project name=\"query-ee\" path=\"goproj/src/github.com/couchbase/query-ee\" remote=\"couchbase-priv\" revision=\"5bdc90a7eeb901ced3119b826532238d84f5d214\" groups=\"notdefault,enterprise\" />",
+ "  <project name=\"query-ui\" revision=\"2d022ec7cd7d634ef287720f0f9a65e75fd6ffe3\" groups=\"bsl\" />",
+ "  <project name=\"retriever\" path=\"godeps/src/github.com/couchbase/retriever\" revision=\"295b11134f91d9451c3ae21895f5615fc7a61e31\" groups=\"bsl\" />",
+ "  <project name=\"roaring\" path=\"godeps/src/github.com/RoaringBitmap/roaring\" remote=\"couchbasedeps\" revision=\"4208ad825dda03a6a3d2197df8ec57948aebcc12\" />",
+ "  <project name=\"sigar\" revision=\"a6fa08d5344f6f901e0e44b9a0f2f2f7ee7d0bf3\" groups=\"kv\" />",
+ "  <project name=\"subjson\" revision=\"0820f83427d69c6eb737876eb2f2cf6aefa45802\" groups=\"bsl,kv\" />",
+ "  <project name=\"sys\" path=\"godeps/src/golang.org/x/sys\" remote=\"couchbasedeps\" revision=\"d36c6a25d886e7c9975d5bf247ac24887ba6da37\" />",
+ "  <project name=\"testrunner\" revision=\"a5aa11295cdaebc1888e63005458fb58197e8fb6\" upstream=\"neo\" dest-branch=\"neo\" />",
+ "  <project name=\"text\" path=\"godeps/src/golang.org/x/text\" remote=\"couchbasedeps\" revision=\"383b2e75a7a4198c42f8f87833eefb772868a56f\" upstream=\"refs/tags/v0.3.7\" dest-branch=\"refs/tags/v0.3.7\" />",
+ "  <project name=\"tlm\" revision=\"5bee122098c58e20a51f71aa8b95e68638945090\" groups=\"bsl,kv\">",
+ "    <copyfile src=\"GNUmakefile\" dest=\"GNUmakefile\" />",
+ "    <copyfile src=\"Makefile\" dest=\"Makefile\" />",
+ "    <copyfile src=\"CMakeLists.txt\" dest=\"CMakeLists.txt\" />",
+ "    <copyfile src=\"dot-clang-format\" dest=\".clang-format\" />",
+ "    <copyfile src=\"dot-clang-tidy\" dest=\".clang-tidy\" />",
+ "    <copyfile src=\"third-party-CMakeLists.txt\" dest=\"third_party/CMakeLists.txt\" />",
+ "  </project>",
+ "  <project name=\"udf-api\" path=\"goproj/src/github.com/couchbase/udf-api\" revision=\"b2788ae3d412356a330b36d7f38ad2c66edb5879\" />",
+ "  <project name=\"uuid\" path=\"godeps/src/github.com/google/uuid\" remote=\"couchbasedeps\" revision=\"dec09d789f3dba190787f8b4454c7d3c936fed9e\" />",
+ "  <project name=\"vbmap\" revision=\"76ac2b92a3edbec1602d7e060d4d7d86dcb47887\" />",
+ "  <project name=\"voltron\" remote=\"couchbase-priv\" revision=\"be2e144bead253e66c80e5c03e8074f9499e544a\" groups=\"notdefault,packaging\" />",
+ "  <project name=\"zstd\" path=\"godeps/src/github.com/DataDog/zstd\" remote=\"couchbasedeps\" revision=\"aebefd9fcb99f22cd691ef778a12ed68f0e6a1ab\" />",
+ "</manifest>"]
+
+[chronicle:info,2023-08-29T18:14:49.619Z,ns_1@cb.local:chronicle_agent<0.235.0>:chronicle_storage:open_current_log:220]Error while opening log file "/opt/couchbase/var/lib/couchbase/config/chronicle/logs/0.log": no_header
+[chronicle:info,2023-08-29T18:14:49.619Z,ns_1@cb.local:chronicle_agent<0.235.0>:chronicle_storage:create_log:268]Creating log file /opt/couchbase/var/lib/couchbase/config/chronicle/logs/0.log (high seqno = 0)
+[chronicle:info,2023-08-29T18:14:49.652Z,ns_1@cb.local:chronicle_agent<0.235.0>:chronicle_agent:maybe_seed_storage:2444]Found empty storage. Seeding it with default metadata:
+#{committed_seqno => 0,history_id => <<"no-history">>,peer => nonode@nohost,
+  peer_id => <<>>,pending_branch => undefined,state => not_provisioned,
+  term => {0,nonode@nohost}}
+[chronicle:info,2023-08-29T18:14:49.737Z,ns_1@cb.local:chronicle_config_rsm<0.247.0>:chronicle_rsm:get_incarnation:1592]No incarnation file found at '/opt/couchbase/var/lib/couchbase/config/chronicle/rsms/chronicle_config_rsm/incarnation'
+[chronicle:info,2023-08-29T18:14:49.798Z,ns_1@cb.local:kv<0.251.0>:chronicle_rsm:get_incarnation:1592]No incarnation file found at '/opt/couchbase/var/lib/couchbase/config/chronicle/rsms/kv/incarnation'
+[ns_server:info,2023-08-29T18:14:49.844Z,ns_1@cb.local:ns_cluster<0.253.0>:ns_cluster:handle_info:523]Chronicle state is: provisioned
+[ns_server:info,2023-08-29T18:14:49.848Z,ns_1@cb.local:sigar<0.255.0>:sigar:spawn_sigar:135]Spawing sigar process 'portsigar for ns_1@cb.local'("/opt/couchbase/bin/sigar_port") with babysitter pid: 42
+[ns_server:info,2023-08-29T18:14:49.852Z,ns_1@cb.local:ns_config_sup<0.256.0>:ns_config_sup:init:26]loading static ns_config from "/opt/couchbase/etc/couchbase/config"
+[ns_server:info,2023-08-29T18:14:50.003Z,ns_1@cb.local:ns_config<0.260.0>:ns_config:load_config:1108]Loading static config from "/opt/couchbase/etc/couchbase/config"
+[ns_server:info,2023-08-29T18:14:50.006Z,ns_1@cb.local:ns_config<0.260.0>:ns_config:load_config:1122]Loading dynamic config from "/opt/couchbase/var/lib/couchbase/config/config.dat"
+[ns_server:info,2023-08-29T18:14:50.007Z,ns_1@cb.local:ns_config<0.260.0>:ns_config:load_config:1127]No dynamic config file found. Assuming we're brand new node
+[ns_server:info,2023-08-29T18:14:50.026Z,ns_1@cb.local:ns_config<0.260.0>:ns_config:load_config:1152]Here's full dynamic config we loaded + static & default config:
+[{{node,'ns_1@cb.local',index_dir},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]},
+   47,111,112,116,47,99,111,117,99,104,98,97,115,101,47,118,97,114,47,108,105,
+   98,47,99,111,117,99,104,98,97,115,101,47,100,97,116,97]},
+ {{node,'ns_1@cb.local',database_dir},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]},
+   47,111,112,116,47,99,111,117,99,104,98,97,115,101,47,118,97,114,47,108,105,
+   98,47,99,111,117,99,104,98,97,115,101,47,100,97,116,97]},
+ {auto_failover_cfg,
+  [{enabled,true},
+   {timeout,120},
+   {count,0},
+   {failover_on_data_disk_issues,[{enabled,false},{timePeriod,120}]},
+   {failover_server_group,false},
+   {max_count,1},
+   {failed_over_server_groups,[]},
+   {can_abort_rebalance,true}]},
+ {retry_rebalance,[{enabled,false},{after_time_period,300},{max_attempts,1}]},
+ {{node,'ns_1@cb.local',{project_intact,is_vulnerable}},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   false]},
+ {{node,'ns_1@cb.local',backup_grpc_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   9124]},
+ {{node,'ns_1@cb.local',backup_https_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   18097]},
+ {{node,'ns_1@cb.local',backup_http_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   8097]},
+ {{node,'ns_1@cb.local',prometheus_http_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   9123]},
+ {{node,'ns_1@cb.local',cbas_debug_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|-1]},
+ {{node,'ns_1@cb.local',cbas_parent_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   9122]},
+ {{node,'ns_1@cb.local',cbas_metadata_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   9121]},
+ {{node,'ns_1@cb.local',cbas_replication_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   9120]},
+ {{node,'ns_1@cb.local',cbas_metadata_callback_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   9119]},
+ {{node,'ns_1@cb.local',cbas_messaging_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   9118]},
+ {{node,'ns_1@cb.local',cbas_result_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   9117]},
+ {{node,'ns_1@cb.local',cbas_data_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   9116]},
+ {{node,'ns_1@cb.local',cbas_cluster_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   9115]},
+ {{node,'ns_1@cb.local',cbas_console_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   9114]},
+ {{node,'ns_1@cb.local',cbas_cc_client_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   9113]},
+ {{node,'ns_1@cb.local',cbas_cc_cluster_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   9112]},
+ {{node,'ns_1@cb.local',cbas_cc_http_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   9111]},
+ {{node,'ns_1@cb.local',cbas_admin_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   9110]},
+ {{node,'ns_1@cb.local',cbas_ssl_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   18095]},
+ {{node,'ns_1@cb.local',cbas_http_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   8095]},
+ {{node,'ns_1@cb.local',eventing_https_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   18096]},
+ {{node,'ns_1@cb.local',eventing_debug_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   9140]},
+ {{node,'ns_1@cb.local',eventing_http_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   8096]},
+ {{node,'ns_1@cb.local',fts_grpc_ssl_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   19130]},
+ {{node,'ns_1@cb.local',fts_grpc_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   9130]},
+ {{node,'ns_1@cb.local',fts_ssl_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   18094]},
+ {{node,'ns_1@cb.local',fts_http_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   8094]},
+ {{node,'ns_1@cb.local',indexer_https_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   19102]},
+ {{node,'ns_1@cb.local',indexer_stmaint_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   9105]},
+ {{node,'ns_1@cb.local',indexer_stcatchup_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   9104]},
+ {{node,'ns_1@cb.local',indexer_stinit_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   9103]},
+ {{node,'ns_1@cb.local',indexer_http_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   9102]},
+ {{node,'ns_1@cb.local',indexer_scan_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   9101]},
+ {{node,'ns_1@cb.local',indexer_admin_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   9100]},
+ {{node,'ns_1@cb.local',ssl_query_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   18093]},
+ {{node,'ns_1@cb.local',query_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   8093]},
+ {{node,'ns_1@cb.local',projector_ssl_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   9999]},
+ {{node,'ns_1@cb.local',projector_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   9999]},
+ {{node,'ns_1@cb.local',ssl_capi_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   18092]},
+ {{node,'ns_1@cb.local',capi_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   8092]},
+ {{node,'ns_1@cb.local',memcached_prometheus},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   11280]},
+ {{node,'ns_1@cb.local',memcached_dedicated_ssl_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   11206]},
+ {{node,'ns_1@cb.local',xdcr_rest_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   9998]},
+ {{node,'ns_1@cb.local',ssl_rest_port},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   18091]},
+ {{node,'ns_1@cb.local',rest},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]},
+   {port,8091},
+   {port_meta,global}]},
+ {rest,[{port,8091}]},
+ {password_policy,[{min_length,6},{must_present,[]}]},
+ {auto_reprovision_cfg,[{enabled,true},{max_nodes,1},{count,0}]},
+ {log_redaction_default_cfg,[{redact_level,none}]},
+ {replication,[{enabled,true}]},
+ {alert_limits,
+  [{max_overhead_perc,50},{max_disk_used,90},{max_indexer_ram,75}]},
+ {email_alerts,
+  [{recipients,["root@localhost"]},
+   {sender,"couchbase@localhost"},
+   {enabled,false},
+   {email_server,
+    [{user,[]},{pass,"*****"},{host,"localhost"},{port,25},{encrypt,false}]},
+   {alerts,
+    [auto_failover_node,auto_failover_maximum_reached,
+     auto_failover_other_nodes_down,auto_failover_cluster_too_small,
+     auto_failover_disabled,ip,disk,overhead,ep_oom_errors,
+     ep_item_commit_failed,audit_dropped_events,indexer_ram_max_usage,
+     indexer_low_resident_percentage,ep_clock_cas_drift_threshold_exceeded,
+     communication_issue,time_out_of_sync,disk_usage_analyzer_stuck,
+     history_size_warning]},
+   {pop_up_alerts,
+    [auto_failover_node,auto_failover_maximum_reached,
+     auto_failover_other_nodes_down,auto_failover_cluster_too_small,
+     auto_failover_disabled,ip,disk,overhead,ep_oom_errors,
+     ep_item_commit_failed,audit_dropped_events,indexer_ram_max_usage,
+     indexer_low_resident_percentage,ep_clock_cas_drift_threshold_exceeded,
+     communication_issue,time_out_of_sync,disk_usage_analyzer_stuck,
+     history_size_warning]}]},
+ {{node,'ns_1@cb.local',event_log},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]},
+   {filename,"/opt/couchbase/var/lib/couchbase/event_log"}]},
+ {{node,'ns_1@cb.local',ns_log},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]},
+   {filename,"/opt/couchbase/var/lib/couchbase/ns_log"}]},
+ {{node,'ns_1@cb.local',port_servers},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}]},
+ {secure_headers,[]},
+ {buckets,[{configs,[]}]},
+ {cbas_memory_quota,1024},
+ {fts_memory_quota,256},
+ {memory_quota,999},
+ {{node,'ns_1@cb.local',memcached_config},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   {[{interfaces,{memcached_config_mgr,get_interfaces,[]}},
+     {client_cert_auth,{memcached_config_mgr,client_cert_auth,[]}},
+     {connection_idle_time,connection_idle_time},
+     {privilege_debug,privilege_debug},
+     {breakpad,
+      {[{enabled,breakpad_enabled},
+        {minidump_dir,{memcached_config_mgr,get_minidump_dir,[]}}]}},
+     {admin,{"~s",[admin_user]}},
+     {verbosity,verbosity},
+     {audit_file,{"~s",[audit_file]}},
+     {rbac_file,{"~s",[rbac_file]}},
+     {dedupe_nmvb_maps,dedupe_nmvb_maps},
+     {tracing_enabled,tracing_enabled},
+     {datatype_snappy,{memcached_config_mgr,is_snappy_enabled,[]}},
+     {xattr_enabled,true},
+     {scramsha_fallback_salt,{memcached_config_mgr,get_fallback_salt,[]}},
+     {collections_enabled,{memcached_config_mgr,collections_enabled,[]}},
+     {enforce_tenant_limits_enabled,
+      {memcached_config_mgr,should_enforce_limits,[]}},
+     {max_connections,max_connections},
+     {system_connections,system_connections},
+     {num_reader_threads,num_reader_threads},
+     {num_writer_threads,num_writer_threads},
+     {num_auxio_threads,num_auxio_threads},
+     {num_nonio_threads,num_nonio_threads},
+     {num_storage_threads,num_storage_threads},
+     {logger,
+      {[{filename,{"~s/~s",[log_path,log_prefix]}},
+        {cyclesize,log_cyclesize}]}},
+     {external_auth_service,
+      {memcached_config_mgr,get_external_auth_service,[]}},
+     {active_external_users_push_interval,
+      {memcached_config_mgr,get_external_users_push_interval,[]}},
+     {prometheus,{memcached_config_mgr,prometheus_cfg,[]}},
+     {connection_limit_mode,connection_limit_mode},
+     {free_connection_pool_size,free_connection_pool_size},
+     {tcp_keepalive_idle,tcp_keepalive_idle},
+     {tcp_keepalive_interval,tcp_keepalive_interval},
+     {tcp_keepalive_probes,tcp_keepalive_probes},
+     {max_client_connection_details,max_client_connection_details}]}]},
+ {{node,'ns_1@cb.local',memcached},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]},
+   {port,11210},
+   {dedicated_port,11209},
+   {dedicated_ssl_port,11206},
+   {ssl_port,11207},
+   {admin_user,"@ns_server"},
+   {other_users,
+    ["@cbq-engine","@projector","@goxdcr","@index","@fts","@eventing","@cbas",
+     "@backup"]},
+   {admin_pass,"*****"},
+   {engines,
+    [{membase,
+      [{engine,"/opt/couchbase/lib/memcached/ep.so"},
+       {static_config_string,"failpartialwarmup=false"}]},
+     {memcached,
+      [{engine,"/opt/couchbase/lib/memcached/default_engine.so"},
+       {static_config_string,"vb0=true"}]}]},
+   {config_path,"/opt/couchbase/var/lib/couchbase/config/memcached.json"},
+   {audit_file,"/opt/couchbase/var/lib/couchbase/config/audit.json"},
+   {rbac_file,"/opt/couchbase/var/lib/couchbase/config/memcached.rbac"},
+   {log_path,"/opt/couchbase/var/lib/couchbase/logs"},
+   {log_prefix,"memcached.log"},
+   {log_generations,20},
+   {log_cyclesize,10485760},
+   {log_rotation_period,39003}]},
+ {{node,'ns_1@cb.local',memcached_defaults},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]},
+   {max_connections,65000},
+   {system_connections,5000},
+   {connection_idle_time,0},
+   {verbosity,0},
+   {privilege_debug,false},
+   {breakpad_enabled,true},
+   {breakpad_minidump_dir_path,"/opt/couchbase/var/lib/couchbase/crash"},
+   {dedupe_nmvb_maps,false},
+   {je_malloc_conf,undefined},
+   {tracing_enabled,true},
+   {datatype_snappy,true},
+   {num_reader_threads,<<"default">>},
+   {num_writer_threads,<<"default">>},
+   {num_auxio_threads,<<"default">>},
+   {num_nonio_threads,<<"default">>},
+   {num_storage_threads,<<"default">>},
+   {connection_limit_mode,<<"disconnect">>},
+   {free_connection_pool_size,0},
+   {tcp_keepalive_idle,360},
+   {tcp_keepalive_interval,10},
+   {tcp_keepalive_probes,3},
+   {max_client_connection_details,0}]},
+ {memcached,[]},
+ {{node,'ns_1@cb.local',audit},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}]},
+ {audit,
+  [{auditd_enabled,false},
+   {rotate_interval,86400},
+   {rotate_size,20971520},
+   {disabled,[]},
+   {enabled,[]},
+   {disabled_users,[]},
+   {sync,[]},
+   {log_path,"/opt/couchbase/var/lib/couchbase/logs"}]},
+ {{node,'ns_1@cb.local',isasl},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]},
+   {path,"/opt/couchbase/var/lib/couchbase/isasl.pw"}]},
+ {remote_clusters,[]},
+ {scramsha_fallback_salt,<<"LÂút?ê;kg+¬V">>},
+ {client_cert_auth,[{state,"disable"},{prefixes,[]}]},
+ {rest_creds,null},
+ {{metakv,<<"/analytics/settings/config">>},
+  <<"{\"analytics.settings.num_replicas\":0}">>},
+ {{metakv,<<"/query/settings/config">>},
+  <<"{\"timeout\":0,\"n1ql-feat-ctrl\":12,\"query.settings.curl_whitelist\":{\"all_access\":false,\"allowed_urls\":[],\"disallowed_urls\":[]},\"max-parallelism\":1,\"query.settings.tmp_space_dir\":\"/opt/couchbase/var/lib/couchbase/tmp\",\"completed-limit\":4000,\"prepared-limit\":16384,\"pipeline-batch\":16,\"pipeline-cap\":512,\"scan-cap\":512,\"loglevel\":\"info\",\"completed-threshold\":1000,\"query.settings.tmp_space_size\":5120}">>},
+ {{metakv,<<"/eventing/settings/config">>},<<"{\"ram_quota\":256}">>},
+ {{metakv,<<"/indexing/settings/config">>},
+  <<"{\"indexer.settings.compaction.days_of_week\":\"Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday\",\"indexer.settings.rebalance.redistribute_indexes\":false,\"indexer.settings.compaction.interval\":\"00:00,00:00\",\"indexer.settings.compaction.compaction_mode\":\"circular\",\"indexer.settings.log_level\":\"info\",\"indexer.settings.persisted_snapshot.interval\":5000,\"indexer.settings.compaction.min_frag\":30,\"indexer.settings.inmemory_snapshot.interval\":200,\"indexer.settings.enable_page_bloom_filter\":false,\"indexer.settings.max_cpu_percent\":0,\"indexer.settings.storage_mode\":\"\",\"indexer.settings.recovery.max_rollbacks\":2,\"indexer.settings.num_replica\":0,\"indexer.settings.memory_quota\":536870912,\"indexer.settings.compaction.abort_exceed_interval\":false}">>},
+ {{couchdb,max_parallel_replica_indexers},2},
+ {{couchdb,max_parallel_indexers},4},
+ {{node,'ns_1@cb.local',membership},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   active]},
+ {server_groups,
+  [[{uuid,<<"0">>},{name,<<"Group 1">>},{nodes,['ns_1@cb.local']}]]},
+ {quorum_nodes,['ns_1@cb.local']},
+ {nodes_wanted,['ns_1@cb.local']},
+ {{node,'ns_1@cb.local',compaction_daemon},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]},
+   {check_interval,30},
+   {min_db_file_size,131072},
+   {min_view_file_size,20971520}]},
+ {set_view_update_daemon,
+  [{update_interval,5000},
+   {update_min_changes,5000},
+   {replica_update_min_changes,5000}]},
+ {autocompaction,
+  [{database_fragmentation_threshold,{30,undefined}},
+   {view_fragmentation_threshold,{30,undefined}}]},
+ {max_bucket_count,30},
+ {index_aware_rebalance_disabled,false},
+ {{node,'ns_1@cb.local',saslauthd_enabled},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   true]},
+ {{node,'ns_1@cb.local',is_enterprise},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   true]},
+ {{node,'ns_1@cb.local',config_version},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   {7,2}]},
+ {{node,'ns_1@cb.local',uuid},
+  [{'_vclock',[{<<"a2acfe035c01f55c0d78fce935ad3d90">>,{1,63860552090}}]}|
+   <<"a2acfe035c01f55c0d78fce935ad3d90">>]}]
+[chronicle:info,2023-08-29T18:14:50.088Z,ns_1@cb.local:<0.280.0>:chronicle_leader:do_election_worker:892]Starting election.
+History ID: <<"918babd26e22549c990a18e4926f0ef9">>
+Log position: {{1,'ns_1@cb.local'},1}
+Peers: ['ns_1@cb.local']
+Required quorum: {majority,{set,1,16,16,8,80,48,
+                                {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                 []},
+                                {{[],[],[],[],[],[],[],[],[],[],[],[],
+                                  ['ns_1@cb.local'],
+                                  [],[],[]}}}}
+[chronicle:info,2023-08-29T18:14:50.088Z,ns_1@cb.local:<0.280.0>:chronicle_leader:do_election_worker:901]I'm the only peer, so I'm the leader.
+[chronicle:info,2023-08-29T18:14:50.088Z,ns_1@cb.local:chronicle_leader<0.239.0>:chronicle_leader:handle_election_result:691]Going to become a leader in term {2,'ns_1@cb.local'} (history id <<"918babd26e22549c990a18e4926f0ef9">>)
+[chronicle:info,2023-08-29T18:14:50.120Z,ns_1@cb.local:chronicle_leader<0.239.0>:chronicle_leader:handle_note_term_status:596]Term {2,'ns_1@cb.local'} established.
+[ns_server:info,2023-08-29T18:14:50.312Z,ns_1@cb.local:<0.292.0>:goport:handle_process_exit:566]Port exited with status 0.
+[ns_server:info,2023-08-29T18:14:50.559Z,ns_1@cb.local:ns_ssl_services_setup<0.288.0>:ns_ssl_services_setup:maybe_store_ca_certs:744]CA file updated: 1 cert(s) written
+[ns_server:info,2023-08-29T18:14:50.563Z,ns_1@cb.local:ns_ssl_services_setup<0.288.0>:ns_ssl_services_setup:maybe_generate_node_certs:791]Regenerating certs because there are no certs on this node
+[ns_server:info,2023-08-29T18:14:51.003Z,ns_1@cb.local:<0.298.0>:goport:handle_process_exit:566]Port exited with status 0.
+[ns_server:info,2023-08-29T18:14:51.058Z,ns_1@cb.local:ns_ssl_services_setup<0.288.0>:ns_ssl_services_setup:save_node_certs:851]New node cert and pkey are written to tmp file
+[ns_server:info,2023-08-29T18:14:51.191Z,ns_1@cb.local:ns_ssl_services_setup<0.288.0>:ns_ssl_services_setup:save_node_certs_phase2:874]Node cert and pkey files updated
+[ns_server:info,2023-08-29T18:14:51.286Z,ns_1@cb.local:ns_ssl_services_setup<0.288.0>:ns_ssl_services_setup:handle_info:656]cert_and_pkey changed
+[ns_server:info,2023-08-29T18:14:51.337Z,ns_1@cb.local:ns_ssl_services_setup<0.288.0>:ns_ssl_services_setup:validate_pkey:910]Private key passphrase validation suceeded
+[ns_server:info,2023-08-29T18:14:51.338Z,ns_1@cb.local:<0.313.0>:ns_ssl_services_setup:notify_service:1053]Successfully notified service event
+[ns_server:info,2023-08-29T18:14:51.345Z,ns_1@cb.local:<0.310.0>:ns_ssl_services_setup:notify_service:1053]Successfully notified service cb_dist_tls
+[ns_server:info,2023-08-29T18:14:51.348Z,ns_1@cb.local:<0.303.0>:menelaus_pluggable_ui:read_and_validate_plugin_spec:129]Loaded pluggable UI specification for backup from "/opt/couchbase/etc/couchbase/pluggable-ui-backup.json"
+[ns_server:info,2023-08-29T18:14:51.349Z,ns_1@cb.local:<0.303.0>:menelaus_pluggable_ui:read_and_validate_plugin_spec:129]Loaded pluggable UI specification for cbas from "/opt/couchbase/etc/couchbase/pluggable-ui-cbas.json"
+[ns_server:info,2023-08-29T18:14:51.349Z,ns_1@cb.local:<0.303.0>:menelaus_pluggable_ui:read_and_validate_plugin_spec:129]Loaded pluggable UI specification for eventing from "/opt/couchbase/etc/couchbase/pluggable-ui-eventing.json"
+[ns_server:info,2023-08-29T18:14:51.350Z,ns_1@cb.local:<0.303.0>:menelaus_pluggable_ui:read_and_validate_plugin_spec:129]Loaded pluggable UI specification for fts from "/opt/couchbase/etc/couchbase/pluggable-ui-fts.json"
+[ns_server:info,2023-08-29T18:14:51.350Z,ns_1@cb.local:<0.303.0>:menelaus_pluggable_ui:read_and_validate_plugin_spec:129]Loaded pluggable UI specification for n1ql from "/opt/couchbase/etc/couchbase/pluggable-ui-query.json"
+[ns_server:warn,2023-08-29T18:14:51.368Z,ns_1@cb.local:<0.312.0>:ns_ssl_services_setup:notify_service:1055]Failed to notify service memcached: {error,no_proccess}
+[ns_server:warn,2023-08-29T18:14:51.379Z,ns_1@cb.local:<0.311.0>:ns_ssl_services_setup:notify_service:1055]Failed to notify service capi_ssl_service: {'EXIT',{error,{badrpc,nodedown}}}
+[ns_server:info,2023-08-29T18:14:51.379Z,ns_1@cb.local:ns_ssl_services_setup<0.288.0>:ns_ssl_services_setup:notify_services:1033]Succesfully notified services [event,cb_dist_tls]
+[ns_server:info,2023-08-29T18:14:51.421Z,ns_1@cb.local:ns_ssl_services_setup<0.288.0>:ns_ssl_services_setup:notify_services:1044]Failed to notify some services. Will retry in 5 sec, [{{error,no_proccess},
+                                                       memcached},
+                                                      {{'EXIT',
+                                                        {error,
+                                                         {badrpc,nodedown}}},
+                                                       capi_ssl_service}]
+[ns_server:info,2023-08-29T18:14:51.442Z,ns_1@cb.local:<0.303.0>:menelaus_web:maybe_start_http_server:126]Started web service with options:
+[{ip,"0.0.0.0"},
+ [{keyfile,"/opt/couchbase/var/lib/couchbase/config/certs/pkey.pem"},
+  {certfile,"/opt/couchbase/var/lib/couchbase/config/certs/chain.pem"},
+  {versions,['tlsv1.2','tlsv1.3']},
+  {cacerts,[<<48,130,3,33,48,130,2,9,160,3,2,1,2,2,8,23,127,237,74,197,71,
+              209,222,48,13,6,9,42,134,72,134,247,13,1,1,11,5,0,48,36,49,34,
+              48,32,6,3,85,4,3,19,25,67,111,117,99,104,98,97,115,101,32,83,
+              101,114,118,101,114,32,98,53,49,101,98,55,55,53,48,30,23,13,49,
+              51,48,49,48,49,48,48,48,48,48,48,90,23,13,52,57,49,50,51,49,50,
+              51,53,57,53,57,90,48,36,49,34,48,32,6,3,85,4,3,19,25,67,111,
+              117,99,104,98,97,115,101,32,83,101,114,118,101,114,32,98,53,49,
+              101,98,55,55,53,48,130,1,34,48,13,6,9,42,134,72,134,247,13,1,1,
+              1,5,0,3,130,1,15,0,48,130,1,10,2,130,1,1,0,171,245,114,67,31,
+              113,230,74,157,21,105,187,181,66,109,126,3,79,253,183,112,229,
+              96,147,253,4,56,223,228,41,151,58,91,22,166,245,8,0,253,184,69,
+              15,107,66,203,183,130,127,21,189,134,39,144,173,166,21,241,116,
+              73,26,57,196,149,255,17,151,94,217,232,235,246,152,148,124,148,
+              238,99,95,14,97,11,97,50,109,199,41,243,178,61,63,196,37,11,34,
+              64,94,203,164,121,126,29,218,32,170,209,182,145,144,210,67,27,
+              112,105,249,43,240,88,132,110,213,63,93,230,209,213,36,244,67,
+              5,182,16,60,40,27,133,98,45,141,140,54,210,60,163,98,20,198,
+              143,64,206,167,216,47,187,53,213,245,20,13,90,162,152,161,128,
+              205,97,200,183,80,17,184,159,250,143,53,229,77,228,207,47,207,
+              233,125,181,129,67,88,161,115,141,141,176,83,245,171,119,171,
+              168,78,88,17,145,67,200,195,226,165,185,139,123,128,231,188,
+              246,253,93,116,79,128,184,36,131,206,129,42,95,204,0,189,89,
+              229,28,119,198,108,164,103,107,193,101,250,184,39,30,49,229,22,
+              128,165,243,238,63,7,97,142,28,175,2,3,1,0,1,163,87,48,85,48,
+              14,6,3,85,29,15,1,1,255,4,4,3,2,2,164,48,19,6,3,85,29,37,4,12,
+              48,10,6,8,43,6,1,5,5,7,3,1,48,15,6,3,85,29,19,1,1,255,4,5,48,3,
+              1,1,255,48,29,6,3,85,29,14,4,22,4,20,111,202,71,227,87,55,113,
+              238,204,17,176,12,42,199,48,82,198,149,87,29,48,13,6,9,42,134,
+              72,134,247,13,1,1,11,5,0,3,130,1,1,0,77,126,5,124,137,134,208,
+              43,108,161,213,215,119,99,235,6,38,112,123,143,145,223,170,102,
+              212,32,99,174,111,228,197,165,138,35,194,67,231,140,201,158,
+              180,233,67,137,220,234,127,137,10,12,71,230,148,32,85,94,5,158,
+              41,246,28,23,99,61,77,38,102,253,51,106,53,240,184,58,248,206,
+              255,99,78,172,53,133,13,184,70,247,32,177,195,142,129,167,30,
+              28,245,191,201,126,12,115,148,162,113,124,215,197,87,56,108,23,
+              90,185,167,185,69,77,138,81,137,39,243,232,42,27,31,85,142,254,
+              193,214,138,228,136,36,97,63,22,14,227,255,194,165,48,203,183,
+              102,233,51,56,207,184,8,105,193,37,32,191,77,91,232,70,52,204,
+              178,32,176,126,159,182,44,197,95,164,165,72,238,186,244,219,87,
+              32,198,74,113,13,203,71,67,133,164,211,194,73,216,130,88,179,
+              108,48,164,6,208,181,29,246,70,185,158,228,4,83,210,119,191,
+              241,140,122,193,197,37,208,3,149,94,181,103,64,75,129,16,161,
+              184,239,135,71,114,118,65,73,38,195,14,100,237,74,134,142,24,
+              135,232,32,241,73,74,221,125>>]},
+  {dh,<<48,130,1,8,2,130,1,1,0,152,202,99,248,92,201,35,238,246,5,77,93,120,
+        10,118,129,36,52,111,193,167,220,49,229,106,105,152,133,121,157,73,
+        158,232,153,197,197,21,171,140,30,207,52,165,45,8,221,162,21,199,183,
+        66,211,247,51,224,102,214,190,130,96,253,218,193,35,43,139,145,89,200,
+        250,145,92,50,80,134,135,188,205,254,148,122,136,237,220,186,147,187,
+        104,159,36,147,217,117,74,35,163,145,249,175,242,18,221,124,54,140,16,
+        246,169,84,252,45,47,99,136,30,60,189,203,61,86,225,117,255,4,91,46,
+        110,167,173,106,51,65,10,248,94,225,223,73,40,232,140,26,11,67,170,
+        118,190,67,31,127,233,39,68,88,132,171,224,62,187,207,160,189,209,101,
+        74,8,205,174,146,173,80,105,144,246,25,153,86,36,24,178,163,64,202,
+        221,95,184,110,244,32,226,217,34,55,188,230,55,16,216,247,173,246,139,
+        76,187,66,211,159,17,46,20,18,48,80,27,250,96,189,29,214,234,241,34,
+        69,254,147,103,220,133,40,164,84,8,44,241,61,164,151,9,135,41,60,75,4,
+        202,133,173,72,6,69,167,89,112,174,40,229,171,2,1,2>>},
+  {ciphers,[{any,aes_256_gcm,aead,sha384},
+            {any,aes_128_gcm,aead,sha256},
+            {any,chacha20_poly1305,aead,sha256},
+            {any,aes_128_ccm,aead,sha256},
+            {any,aes_128_ccm_8,aead,sha256},
+            {ecdhe_ecdsa,aes_256_gcm,aead,sha384},
+            {ecdhe_rsa,aes_256_gcm,aead,sha384},
+            {ecdhe_ecdsa,aes_256_ccm,aead},
+            {ecdhe_ecdsa,aes_256_ccm_8,aead},
+            {ecdhe_ecdsa,chacha20_poly1305,aead,sha256},
+            {ecdhe_rsa,chacha20_poly1305,aead,sha256},
+            {ecdhe_ecdsa,aes_128_gcm,aead,sha256},
+            {ecdhe_rsa,aes_128_gcm,aead,sha256},
+            {ecdhe_ecdsa,aes_128_ccm,aead},
+            {ecdhe_ecdsa,aes_128_ccm_8,aead},
+            {ecdh_ecdsa,aes_256_gcm,aead,sha384},
+            {ecdh_rsa,aes_256_gcm,aead,sha384},
+            {ecdh_ecdsa,aes_128_gcm,aead,sha256},
+            {ecdh_rsa,aes_128_gcm,aead,sha256},
+            {dhe_rsa,aes_256_gcm,aead,sha384},
+            {dhe_dss,aes_256_gcm,aead,sha384},
+            {dhe_rsa,aes_128_gcm,aead,sha256},
+            {dhe_dss,aes_128_gcm,aead,sha256},
+            {dhe_rsa,chacha20_poly1305,aead,sha256},
+            {rsa_psk,aes_256_gcm,aead,sha384},
+            {rsa_psk,aes_128_gcm,aead,sha256},
+            {rsa,aes_256_gcm,aead,sha384},
+            {rsa,aes_128_gcm,aead,sha256},
+            {rsa,aes_256_cbc,sha},
+            {rsa,aes_128_cbc,sha},
+            {rsa,'3des_ede_cbc',sha}]},
+  {honor_cipher_order,true},
+  {secure_renegotiate,true},
+  {client_renegotiation,false},
+  {password,"********"}],
+ {ssl,true},
+ {port,18091}]
+[ns_server:info,2023-08-29T18:14:51.454Z,ns_1@cb.local:<0.303.0>:menelaus_pluggable_ui:read_and_validate_plugin_spec:129]Loaded pluggable UI specification for backup from "/opt/couchbase/etc/couchbase/pluggable-ui-backup.json"
+[ns_server:info,2023-08-29T18:14:51.454Z,ns_1@cb.local:<0.303.0>:menelaus_pluggable_ui:read_and_validate_plugin_spec:129]Loaded pluggable UI specification for cbas from "/opt/couchbase/etc/couchbase/pluggable-ui-cbas.json"
+[ns_server:info,2023-08-29T18:14:51.455Z,ns_1@cb.local:<0.303.0>:menelaus_pluggable_ui:read_and_validate_plugin_spec:129]Loaded pluggable UI specification for eventing from "/opt/couchbase/etc/couchbase/pluggable-ui-eventing.json"
+[ns_server:info,2023-08-29T18:14:51.455Z,ns_1@cb.local:<0.303.0>:menelaus_pluggable_ui:read_and_validate_plugin_spec:129]Loaded pluggable UI specification for fts from "/opt/couchbase/etc/couchbase/pluggable-ui-fts.json"
+[ns_server:info,2023-08-29T18:14:51.455Z,ns_1@cb.local:<0.303.0>:menelaus_pluggable_ui:read_and_validate_plugin_spec:129]Loaded pluggable UI specification for n1ql from "/opt/couchbase/etc/couchbase/pluggable-ui-query.json"
+[ns_server:info,2023-08-29T18:14:51.460Z,ns_1@cb.local:<0.303.0>:menelaus_web:maybe_start_http_server:126]Started web service with options:
+[{ip,"::"},
+ [{keyfile,"/opt/couchbase/var/lib/couchbase/config/certs/pkey.pem"},
+  {certfile,"/opt/couchbase/var/lib/couchbase/config/certs/chain.pem"},
+  {versions,['tlsv1.2','tlsv1.3']},
+  {cacerts,[<<48,130,3,33,48,130,2,9,160,3,2,1,2,2,8,23,127,237,74,197,71,
+              209,222,48,13,6,9,42,134,72,134,247,13,1,1,11,5,0,48,36,49,34,
+              48,32,6,3,85,4,3,19,25,67,111,117,99,104,98,97,115,101,32,83,
+              101,114,118,101,114,32,98,53,49,101,98,55,55,53,48,30,23,13,49,
+              51,48,49,48,49,48,48,48,48,48,48,90,23,13,52,57,49,50,51,49,50,
+              51,53,57,53,57,90,48,36,49,34,48,32,6,3,85,4,3,19,25,67,111,
+              117,99,104,98,97,115,101,32,83,101,114,118,101,114,32,98,53,49,
+              101,98,55,55,53,48,130,1,34,48,13,6,9,42,134,72,134,247,13,1,1,
+              1,5,0,3,130,1,15,0,48,130,1,10,2,130,1,1,0,171,245,114,67,31,
+              113,230,74,157,21,105,187,181,66,109,126,3,79,253,183,112,229,
+              96,147,253,4,56,223,228,41,151,58,91,22,166,245,8,0,253,184,69,
+              15,107,66,203,183,130,127,21,189,134,39,144,173,166,21,241,116,
+              73,26,57,196,149,255,17,151,94,217,232,235,246,152,148,124,148,
+              238,99,95,14,97,11,97,50,109,199,41,243,178,61,63,196,37,11,34,
+              64,94,203,164,121,126,29,218,32,170,209,182,145,144,210,67,27,
+              112,105,249,43,240,88,132,110,213,63,93,230,209,213,36,244,67,
+              5,182,16,60,40,27,133,98,45,141,140,54,210,60,163,98,20,198,
+              143,64,206,167,216,47,187,53,213,245,20,13,90,162,152,161,128,
+              205,97,200,183,80,17,184,159,250,143,53,229,77,228,207,47,207,
+              233,125,181,129,67,88,161,115,141,141,176,83,245,171,119,171,
+              168,78,88,17,145,67,200,195,226,165,185,139,123,128,231,188,
+              246,253,93,116,79,128,184,36,131,206,129,42,95,204,0,189,89,
+              229,28,119,198,108,164,103,107,193,101,250,184,39,30,49,229,22,
+              128,165,243,238,63,7,97,142,28,175,2,3,1,0,1,163,87,48,85,48,
+              14,6,3,85,29,15,1,1,255,4,4,3,2,2,164,48,19,6,3,85,29,37,4,12,
+              48,10,6,8,43,6,1,5,5,7,3,1,48,15,6,3,85,29,19,1,1,255,4,5,48,3,
+              1,1,255,48,29,6,3,85,29,14,4,22,4,20,111,202,71,227,87,55,113,
+              238,204,17,176,12,42,199,48,82,198,149,87,29,48,13,6,9,42,134,
+              72,134,247,13,1,1,11,5,0,3,130,1,1,0,77,126,5,124,137,134,208,
+              43,108,161,213,215,119,99,235,6,38,112,123,143,145,223,170,102,
+              212,32,99,174,111,228,197,165,138,35,194,67,231,140,201,158,
+              180,233,67,137,220,234,127,137,10,12,71,230,148,32,85,94,5,158,
+              41,246,28,23,99,61,77,38,102,253,51,106,53,240,184,58,248,206,
+              255,99,78,172,53,133,13,184,70,247,32,177,195,142,129,167,30,
+              28,245,191,201,126,12,115,148,162,113,124,215,197,87,56,108,23,
+              90,185,167,185,69,77,138,81,137,39,243,232,42,27,31,85,142,254,
+              193,214,138,228,136,36,97,63,22,14,227,255,194,165,48,203,183,
+              102,233,51,56,207,184,8,105,193,37,32,191,77,91,232,70,52,204,
+              178,32,176,126,159,182,44,197,95,164,165,72,238,186,244,219,87,
+              32,198,74,113,13,203,71,67,133,164,211,194,73,216,130,88,179,
+              108,48,164,6,208,181,29,246,70,185,158,228,4,83,210,119,191,
+              241,140,122,193,197,37,208,3,149,94,181,103,64,75,129,16,161,
+              184,239,135,71,114,118,65,73,38,195,14,100,237,74,134,142,24,
+              135,232,32,241,73,74,221,125>>]},
+  {dh,<<48,130,1,8,2,130,1,1,0,152,202,99,248,92,201,35,238,246,5,77,93,120,
+        10,118,129,36,52,111,193,167,220,49,229,106,105,152,133,121,157,73,
+        158,232,153,197,197,21,171,140,30,207,52,165,45,8,221,162,21,199,183,
+        66,211,247,51,224,102,214,190,130,96,253,218,193,35,43,139,145,89,200,
+        250,145,92,50,80,134,135,188,205,254,148,122,136,237,220,186,147,187,
+        104,159,36,147,217,117,74,35,163,145,249,175,242,18,221,124,54,140,16,
+        246,169,84,252,45,47,99,136,30,60,189,203,61,86,225,117,255,4,91,46,
+        110,167,173,106,51,65,10,248,94,225,223,73,40,232,140,26,11,67,170,
+        118,190,67,31,127,233,39,68,88,132,171,224,62,187,207,160,189,209,101,
+        74,8,205,174,146,173,80,105,144,246,25,153,86,36,24,178,163,64,202,
+        221,95,184,110,244,32,226,217,34,55,188,230,55,16,216,247,173,246,139,
+        76,187,66,211,159,17,46,20,18,48,80,27,250,96,189,29,214,234,241,34,
+        69,254,147,103,220,133,40,164,84,8,44,241,61,164,151,9,135,41,60,75,4,
+        202,133,173,72,6,69,167,89,112,174,40,229,171,2,1,2>>},
+  {ciphers,[{any,aes_256_gcm,aead,sha384},
+            {any,aes_128_gcm,aead,sha256},
+            {any,chacha20_poly1305,aead,sha256},
+            {any,aes_128_ccm,aead,sha256},
+            {any,aes_128_ccm_8,aead,sha256},
+            {ecdhe_ecdsa,aes_256_gcm,aead,sha384},
+            {ecdhe_rsa,aes_256_gcm,aead,sha384},
+            {ecdhe_ecdsa,aes_256_ccm,aead},
+            {ecdhe_ecdsa,aes_256_ccm_8,aead},
+            {ecdhe_ecdsa,chacha20_poly1305,aead,sha256},
+            {ecdhe_rsa,chacha20_poly1305,aead,sha256},
+            {ecdhe_ecdsa,aes_128_gcm,aead,sha256},
+            {ecdhe_rsa,aes_128_gcm,aead,sha256},
+            {ecdhe_ecdsa,aes_128_ccm,aead},
+            {ecdhe_ecdsa,aes_128_ccm_8,aead},
+            {ecdh_ecdsa,aes_256_gcm,aead,sha384},
+            {ecdh_rsa,aes_256_gcm,aead,sha384},
+            {ecdh_ecdsa,aes_128_gcm,aead,sha256},
+            {ecdh_rsa,aes_128_gcm,aead,sha256},
+            {dhe_rsa,aes_256_gcm,aead,sha384},
+            {dhe_dss,aes_256_gcm,aead,sha384},
+            {dhe_rsa,aes_128_gcm,aead,sha256},
+            {dhe_dss,aes_128_gcm,aead,sha256},
+            {dhe_rsa,chacha20_poly1305,aead,sha256},
+            {rsa_psk,aes_256_gcm,aead,sha384},
+            {rsa_psk,aes_128_gcm,aead,sha256},
+            {rsa,aes_256_gcm,aead,sha384},
+            {rsa,aes_128_gcm,aead,sha256},
+            {rsa,aes_256_cbc,sha},
+            {rsa,aes_128_cbc,sha},
+            {rsa,'3des_ede_cbc',sha}]},
+  {honor_cipher_order,true},
+  {secure_renegotiate,true},
+  {client_renegotiation,false},
+  {password,"********"}],
+ {ssl,true},
+ {port,18091}]
+[ns_server:info,2023-08-29T18:14:52.701Z,ns_1@cb.local:ns_couchdb_port<0.375.0>:ns_port_server:log:226]ns_couchdb<0.375.0>: =ERROR REPORT==== 29-Aug-2023::18:14:52.490239 ===
+ns_couchdb<0.375.0>: ** Connection attempt to/from node 'ns_1@cb.local' rejected. Cookie is not set. **
+ns_couchdb<0.375.0>: 
+
+[ns_server:info,2023-08-29T18:14:52.906Z,ns_1@cb.local:ns_couchdb_port<0.375.0>:ns_port_server:log:226]ns_couchdb<0.375.0>: =ERROR REPORT==== 29-Aug-2023::18:14:52.704791 ===
+ns_couchdb<0.375.0>: ** Connection attempt to/from node 'ns_1@cb.local' rejected. Cookie is not set. **
+ns_couchdb<0.375.0>: 
+
+[ns_server:info,2023-08-29T18:14:54.830Z,ns_1@cb.local:ns_couchdb_port<0.375.0>:ns_port_server:log:226]ns_couchdb<0.375.0>: Apache CouchDB v7.1.3-6-g24833e2 (LogLevel=info) is starting.
+
+[ns_server:info,2023-08-29T18:14:55.122Z,ns_1@cb.local:ns_couchdb_port<0.375.0>:ns_port_server:log:226]ns_couchdb<0.375.0>: Apache CouchDB has started. Time to relax.
+
+[ns_server:info,2023-08-29T18:14:55.196Z,ns_1@cb.local:ns_server_sup<0.407.0>:dir_size:start_link:33]Starting quick version of dir_size with program name: godu
+[ns_server:warn,2023-08-29T18:14:55.223Z,ns_1@cb.local:ns_log<0.414.0>:gossip_replicator:read_logs:244]Couldn't load logs from "/opt/couchbase/var/lib/couchbase/ns_log" (perhaps it's first
+                         startup): {error,enoent}
+[ns_server:warn,2023-08-29T18:14:55.229Z,ns_1@cb.local:event_log_server<0.416.0>:gossip_replicator:read_logs:244]Couldn't load logs from "/opt/couchbase/var/lib/couchbase/event_log" (perhaps it's first
+                         startup): {error,enoent}
+[ns_server:info,2023-08-29T18:14:55.378Z,ns_1@cb.local:ns_couchdb_port<0.375.0>:ns_port_server:log:226]ns_couchdb<0.375.0>: 245: Booted. Waiting for shutdown request
+ns_couchdb<0.375.0>: working as port
+
+[ns_server:info,2023-08-29T18:14:55.425Z,ns_1@cb.local:<0.426.0>:goport:handle_process_exit:566]Port exited with status 0.
+[ns_server:warn,2023-08-29T18:14:56.085Z,ns_1@cb.local:memcached_refresh<0.283.0>:ns_memcached:connect:1246]Unable to connect: {error,{badmatch,[{inet,{error,econnrefused}}]}}.
+[ns_server:warn,2023-08-29T18:14:56.097Z,ns_1@cb.local:memcached_refresh<0.283.0>:ns_memcached:connect:1246]Unable to connect: {error,{badmatch,[{inet,{error,econnrefused}}]}}.
+[user:info,2023-08-29T18:14:56.107Z,ns_1@cb.local:ns_cookie_manager<0.221.0>:ns_cookie_manager:do_cookie_init:78]Initial otp cookie generated: {sanitized,
+                                  <<"b1l/2DcbTAH/J5q7aHKAl/NNbXYJIozmg1GT/frwzww=">>}
+[ns_server:info,2023-08-29T18:14:56.387Z,ns_1@cb.local:<0.538.0>:menelaus_pluggable_ui:read_and_validate_plugin_spec:129]Loaded pluggable UI specification for backup from "/opt/couchbase/etc/couchbase/pluggable-ui-backup.json"
+[ns_server:info,2023-08-29T18:14:56.388Z,ns_1@cb.local:<0.538.0>:menelaus_pluggable_ui:read_and_validate_plugin_spec:129]Loaded pluggable UI specification for cbas from "/opt/couchbase/etc/couchbase/pluggable-ui-cbas.json"
+[ns_server:info,2023-08-29T18:14:56.389Z,ns_1@cb.local:<0.538.0>:menelaus_pluggable_ui:read_and_validate_plugin_spec:129]Loaded pluggable UI specification for eventing from "/opt/couchbase/etc/couchbase/pluggable-ui-eventing.json"
+[ns_server:info,2023-08-29T18:14:56.389Z,ns_1@cb.local:<0.538.0>:menelaus_pluggable_ui:read_and_validate_plugin_spec:129]Loaded pluggable UI specification for fts from "/opt/couchbase/etc/couchbase/pluggable-ui-fts.json"
+[ns_server:info,2023-08-29T18:14:56.390Z,ns_1@cb.local:<0.538.0>:menelaus_pluggable_ui:read_and_validate_plugin_spec:129]Loaded pluggable UI specification for n1ql from "/opt/couchbase/etc/couchbase/pluggable-ui-query.json"
+[ns_server:info,2023-08-29T18:14:56.391Z,ns_1@cb.local:<0.538.0>:menelaus_web:maybe_start_http_server:126]Started web service with options:
+[{ip,"0.0.0.0"},{port,8091}]
+[ns_server:info,2023-08-29T18:14:56.392Z,ns_1@cb.local:<0.538.0>:menelaus_pluggable_ui:read_and_validate_plugin_spec:129]Loaded pluggable UI specification for backup from "/opt/couchbase/etc/couchbase/pluggable-ui-backup.json"
+[ns_server:info,2023-08-29T18:14:56.393Z,ns_1@cb.local:<0.538.0>:menelaus_pluggable_ui:read_and_validate_plugin_spec:129]Loaded pluggable UI specification for cbas from "/opt/couchbase/etc/couchbase/pluggable-ui-cbas.json"
+[ns_server:info,2023-08-29T18:14:56.393Z,ns_1@cb.local:<0.538.0>:menelaus_pluggable_ui:read_and_validate_plugin_spec:129]Loaded pluggable UI specification for eventing from "/opt/couchbase/etc/couchbase/pluggable-ui-eventing.json"
+[ns_server:info,2023-08-29T18:14:56.394Z,ns_1@cb.local:<0.538.0>:menelaus_pluggable_ui:read_and_validate_plugin_spec:129]Loaded pluggable UI specification for fts from "/opt/couchbase/etc/couchbase/pluggable-ui-fts.json"
+[ns_server:info,2023-08-29T18:14:56.394Z,ns_1@cb.local:<0.538.0>:menelaus_pluggable_ui:read_and_validate_plugin_spec:129]Loaded pluggable UI specification for n1ql from "/opt/couchbase/etc/couchbase/pluggable-ui-query.json"
+[ns_server:info,2023-08-29T18:14:56.396Z,ns_1@cb.local:<0.538.0>:menelaus_web:maybe_start_http_server:126]Started web service with options:
+[{ip,"::"},{port,8091}]
+[user:info,2023-08-29T18:14:56.398Z,ns_1@cb.local:menelaus_sup<0.526.0>:menelaus_web_sup:start_link:38]Couchbase Server has started on web port 8091 on node 'ns_1@cb.local'. Version: "7.2.0-5325-enterprise".
+[ns_server:warn,2023-08-29T18:14:56.426Z,ns_1@cb.local:<0.592.0>:ns_ssl_services_setup:notify_service:1055]Failed to notify service memcached: {error,no_proccess}
+[ns_server:info,2023-08-29T18:14:56.468Z,ns_1@cb.local:<0.593.0>:ns_ssl_services_setup:notify_service:1053]Successfully notified service capi_ssl_service
+[ns_server:info,2023-08-29T18:14:56.469Z,ns_1@cb.local:ns_ssl_services_setup<0.288.0>:ns_ssl_services_setup:notify_services:1033]Succesfully notified services [capi_ssl_service]
+[ns_server:warn,2023-08-29T18:14:56.518Z,ns_1@cb.local:<0.602.0>:ns_memcached:connect:1249]Unable to connect: {error,{badmatch,[{inet,{error,econnrefused}}]}}, retrying.
+[ns_server:info,2023-08-29T18:14:56.556Z,ns_1@cb.local:ns_ssl_services_setup<0.288.0>:ns_ssl_services_setup:notify_services:1044]Failed to notify some services. Will retry in 5 sec, [{{error,no_proccess},
+                                                       memcached}]
+[ns_server:info,2023-08-29T18:14:56.579Z,ns_1@cb.local:<0.608.0>:ns_memcached_log_rotator:init:36]Starting log rotator on "/opt/couchbase/var/lib/couchbase/logs"/"memcached.log"* with an initial period of 39003ms
+[user:info,2023-08-29T18:14:56.813Z,ns_1@cb.local:mb_master<0.691.0>:mb_master:init:85]I'm the only node, so I'm the master.
+[ns_server:info,2023-08-29T18:14:56.876Z,ns_1@cb.local:mb_master_sup<0.693.0>:misc:start_singleton:901]start_singleton(gen_server, start_link, [{via,leader_registry,ns_tick},
+                                         ns_tick,[],[]]): started as <0.702.0> on 'ns_1@cb.local'
+
+[ns_server:info,2023-08-29T18:14:56.905Z,ns_1@cb.local:mb_master_sup<0.693.0>:misc:start_singleton:901]start_singleton(gen_server2, start_link, [{via,leader_registry,
+                                           chronicle_master},
+                                          chronicle_master,[],[]]): started as <0.706.0> on 'ns_1@cb.local'
+
+[ns_server:warn,2023-08-29T18:14:56.928Z,ns_1@cb.local:<0.712.0>:ns_memcached:connect:1249]Unable to connect: {error,{badmatch,[{inet,{error,econnrefused}}]}}, retrying.
+[ns_server:info,2023-08-29T18:14:56.949Z,ns_1@cb.local:ns_config<0.260.0>:ns_config:do_upgrade_config:728]Upgrading config by changes:
+[{set,cluster_compat_version,[6,5]}]
+
+[ns_server:info,2023-08-29T18:14:56.951Z,ns_1@cb.local:ns_config<0.260.0>:ns_online_config_upgrader:do_upgrade_config:67]Performing online config upgrade to [6,6]
+[ns_server:info,2023-08-29T18:14:56.951Z,ns_1@cb.local:ns_config<0.260.0>:ns_config:do_upgrade_config:728]Upgrading config by changes:
+[{set,cluster_compat_version,[6,6]},{set,buckets,[{configs,[]}]}]
+
+[ns_server:info,2023-08-29T18:14:56.962Z,ns_1@cb.local:<0.701.0>:leader_lease_acquire_worker:handle_fresh_lease_acquired:296]Acquired lease from node 'ns_1@cb.local' (lease uuid: <<"c068c6b6b1dd5df104ba1bbe14a568e8">>)
+[ns_server:info,2023-08-29T18:14:56.987Z,ns_1@cb.local:ns_config<0.260.0>:chronicle_compat:upgrade:366]Keys are migrated to chronicle. Rev = {<<"918babd26e22549c990a18e4926f0ef9">>,
+                                       3}. Sets = [{set,counters,[]},
+                                                   {set,auto_reprovision_cfg,
+                                                    [{enabled,true},
+                                                     {max_nodes,1},
+                                                     {count,0}]},
+                                                   {set,bucket_names,[]},
+                                                   {set,nodes_wanted,
+                                                    ['ns_1@cb.local']},
+                                                   {set,server_groups,
+                                                    [[{uuid,<<"0">>},
+                                                      {name,<<"Group 1">>},
+                                                      {nodes,
+                                                       ['ns_1@cb.local']}]]},
+                                                   {set,
+                                                    {node,'ns_1@cb.local',
+                                                     membership},
+                                                    active}]
+[ns_server:info,2023-08-29T18:14:56.988Z,ns_1@cb.local:ns_config<0.260.0>:ns_online_config_upgrader:do_upgrade_config:67]Performing online config upgrade to [7,0]
+[ns_server:info,2023-08-29T18:14:56.988Z,ns_1@cb.local:ns_config<0.260.0>:ns_config:do_upgrade_config:728]Upgrading config by changes:
+[{set,cluster_compat_version,[7,0]},
+ {set,{metakv,<<"/indexing/settings/config">>},
+      <<"{\"indexer.settings.rebalance.redistribute_indexes\":false,\"indexer.settings.compaction.days_of_week\":\"Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday\",\"indexer.settings.compaction.interval\":\"00:00,00:00\",\"indexer.settings.persisted_snapshot.interval\":5000,\"indexer.settings.log_level\":\"info\",\"indexer.settings.compaction.compaction_mode\":\"circular\",\"indexer.settings.compaction.min_frag\":30,\"indexer.settings.enable_page_bloom_filter\":false,\"indexer.settings.inmemory_snapshot.interval\":200,\"indexer.settings.max_cpu_percent\":0,\"indexer.settings.storage_mode\":\"\",\"indexer.settings.recovery.max_rollbacks\":2,\"indexer.settings.memory_quota\":536870912,\"indexer.settings.num_replica\":0,\"indexer.settings.compaction.abort_exceed_interval\":false}">>},
+ {set,{metakv,<<"/query/settings/config">>},
+      <<"{\"timeout\":0,\"numatrs\":1024,\"n1ql-feat-ctrl\":76,\"max-parallelism\":1,\"query.settings.curl_whitelist\":{\"all_access\":false,\"allowed_urls\":[],\"disallowed_urls\":[]},\"query.settings.tmp_space_dir\":\"/opt/couchbase/var/lib/couchbase/tmp\",\"completed-limit\":4000,\"pipeline-batch\":16,\"prepared-limit\":16384,\"pipeline-cap\":512,\"memory-quota\":0,\"cleanupwindow\":\"60s\",\"use-cbo\":true,\"scan-cap\":512,\"query.settings.tmp_space_size\":5120,\"completed-threshold\":1000,\"loglevel\":\"info\",\"cleanuplostattempts\":true,\"cleanupclientattempts\":true,\"txtimeout\":\"0ms\"}">>},
+ {set,after_upgrade_cleanup,
+      [{counters,'_deleted'},
+       {{node,'ns_1@cb.local',membership},'_deleted'},
+       {server_groups,'_deleted'},
+       {nodes_wanted,[]},
+       {buckets,[{configs,[]}]},
+       {auto_reprovision_cfg,'_deleted'},
+       {auto_reprovision_cfg,'_deleted'},
+       {buckets,[{configs,[]}]},
+       {{node,'ns_1@cb.local',membership},'_deleted'},
+       {server_groups,'_deleted'},
+       {nodes_wanted,[]}]}]
+
+[ns_server:info,2023-08-29T18:14:57.031Z,ns_1@cb.local:kv<0.251.0>:chronicle_upgrade:upgrade_loop:80]Upgading chronicle from [7,0]. Final version = [7,2]
+[ns_server:info,2023-08-29T18:14:57.031Z,ns_1@cb.local:kv<0.251.0>:ns_ssl_services_setup:chronicle_upgrade_to_71:1236]Upgrading CA certs to 7.1: setting ca_certificates to the following props:
+ [[{id,0},
+   {subject,<<"CN=Couchbase Server b51eb775">>},
+   {not_before,63524217600},
+   {not_after,64691827199},
+   {type,generated},
+   {pem,<<"-----BEGIN CERTIFICATE-----\nMIIDITCCAgmgAwIBAgIIF3/tSsVH0d4wDQYJKoZIhvcNAQELBQAwJDEiMCAGA1UE\nAxMZQ291Y2hiYXNlIFNlcnZlciBiNTFlYjc3NTAeFw0xMzAxMDEwMDAwMDBaFw00\nOTEyMzEyMzU5NTlaMCQxIjAgBgNVBAMTGUNvdWNoYmFzZSBTZXJ2ZXIgYjUxZWI3\nNzUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCr9XJDH3HmSp0Vabu1\nQm1+A0/9t3DlYJP9BDjf5CmXOlsWpvUIAP24RQ9rQsu3gn8VvYYnkK2mFfF0SRo5\nxJX/EZde2ejr9piUfJTuY18OYQthMm3HKfOyPT/EJQsiQF7LpHl+HdogqtG2kZDS\nQxtwafkr8FiEbtU/XebR1ST0QwW2EDwoG4ViLY2MNtI8o2IUxo9AzqfYL7s11fUU\nDVqimKGAzWHIt1ARuJ/6jzXlTeTPL8/pfbWBQ1ihc42NsFP1q3erqE5YEZFDyMPi\npbmLe4DnvPb9XXRPgLgkg86BKl/MAL1Z5Rx3xmykZ2vBZfq4Jx4x5RaApfPuPwdh\njhyvAgMBAAGjVzBVMA4GA1UdDwEB/wQEAwICpDATBgNVHSUEDDAKBggrBgEFBQcD\nATAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBRvykfjVzdx7swRsAwqxzBSxpVX\nHTANBgkqhkiG9w0BAQsFAAOCAQEATX4FfImG0CtsodXXd2PrBiZwe4+R36pm1CBj\nrm/kxaWKI8JD54zJnrTpQ4nc6n+JCgxH5pQgVV4Fnin2HBdjPU0mZv0zajXwuDr4\nzv9jTqw1hQ24RvcgscOOgaceHPW/yX4Mc5SicXzXxVc4bBdauae5RU2KUYkn8+gq\nGx9Vjv7B1orkiCRhPxYO4//CpTDLt2bpMzjPuAhpwSUgv01b6EY0zLIgsH6ftizF\nX6SlSO669NtXIMZKcQ3LR0OFpNPCSdiCWLNsMKQG0LUd9ka5nuQEU9J3v/GMesHF\nJdADlV61Z0BLgRChuO+HR3J2QUkmww5k7UqGjhiH6CDxSUrdfQ==\n-----END CERTIFICATE-----\n\n">>},
+   {origin,upgrade}]]
+[ns_server:info,2023-08-29T18:14:57.033Z,ns_1@cb.local:kv<0.251.0>:compaction_daemon:chronicle_upgrade_to_71:189]Upgrading autocompaction to 7.1: 
+[{database_fragmentation_threshold,{30,undefined}},
+ {view_fragmentation_threshold,{30,undefined}},
+ {magma_fragmentation_percentage,50}]
+[ns_server:info,2023-08-29T18:14:57.033Z,ns_1@cb.local:kv<0.251.0>:chronicle_upgrade:upgrade_loop:80]Upgading chronicle from [7,1]. Final version = [7,2]
+[ns_server:info,2023-08-29T18:14:57.082Z,ns_1@cb.local:ns_config<0.260.0>:ns_online_config_upgrader:do_upgrade_config:67]Performing online config upgrade to [7,1]
+[ns_server:info,2023-08-29T18:14:57.082Z,ns_1@cb.local:ns_config<0.260.0>:ns_config:do_upgrade_config:728]Upgrading config by changes:
+[{set,cluster_compat_version,[7,1]},
+ {set,{metakv,<<"/indexing/settings/config">>},
+      <<"{\"indexer.settings.compaction.days_of_week\":\"Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday\",\"indexer.settings.rebalance.redistribute_indexes\":false,\"indexer.settings.compaction.interval\":\"00:00,00:00\",\"indexer.settings.compaction.compaction_mode\":\"circular\",\"indexer.settings.log_level\":\"info\",\"indexer.settings.persisted_snapshot.interval\":5000,\"indexer.settings.compaction.min_frag\":30,\"indexer.settings.inmemory_snapshot.interval\":200,\"indexer.settings.enable_page_bloom_filter\":false,\"indexer.settings.max_cpu_percent\":0,\"indexer.settings.storage_mode\":\"\",\"indexer.settings.recovery.max_rollbacks\":2,\"indexer.settings.num_replica\":0,\"indexer.settings.memory_quota\":536870912,\"indexer.settings.compaction.abort_exceed_interval\":false}">>}]
+
+[ns_server:info,2023-08-29T18:14:57.083Z,ns_1@cb.local:ns_config<0.260.0>:ns_online_config_upgrader:do_upgrade_config:67]Performing online config upgrade to [7,2]
+[ns_server:info,2023-08-29T18:14:57.089Z,ns_1@cb.local:ns_ssl_services_setup<0.288.0>:ns_ssl_services_setup:handle_info:656]cert_and_pkey changed
+[ns_server:info,2023-08-29T18:14:57.138Z,ns_1@cb.local:ns_config<0.260.0>:ns_config:do_upgrade_config:728]Upgrading config by changes:
+[{set,cluster_compat_version,[7,2]},
+ {set,audit_decriptors,
+      [{8243,
+        [{name,<<"mutate document">>},
+         {description,<<"Document was mutated via the REST API">>},
+         {enabled,true},
+         {module,ns_server}]},
+       {8255,
+        [{name,<<"read document">>},
+         {description,<<"Document was read via the REST API">>},
+         {enabled,false},
+         {module,ns_server}]},
+       {8257,
+        [{name,<<"alert email sent">>},
+         {description,<<"An alert email was successfully sent">>},
+         {enabled,true},
+         {module,ns_server}]},
+       {8265,
+        [{name,<<"RBAC information retrieved">>},
+         {description,<<"RBAC information was retrieved">>},
+         {enabled,true},
+         {module,ns_server}]},
+       {20480,
+        [{name,<<"opened DCP connection">>},
+         {description,<<"opened DCP connection">>},
+         {enabled,true},
+         {module,memcached}]},
+       {20482,
+        [{name,<<"external memcached bucket flush">>},
+         {description,<<"External user flushed the content of a memcached bucket">>},
+         {enabled,true},
+         {module,memcached}]},
+       {20483,
+        [{name,<<"invalid packet">>},
+         {description,<<"Rejected an invalid packet">>},
+         {enabled,true},
+         {module,memcached}]},
+       {20485,
+        [{name,<<"authentication succeeded">>},
+         {description,<<"Authentication to the cluster succeeded">>},
+         {enabled,false},
+         {module,memcached}]},
+       {20488,
+        [{name,<<"document read">>},
+         {description,<<"Document was read">>},
+         {enabled,false},
+         {module,memcached}]},
+       {20489,
+        [{name,<<"document locked">>},
+         {description,<<"Document was locked">>},
+         {enabled,false},
+         {module,memcached}]},
+       {20490,
+        [{name,<<"document modify">>},
+         {description,<<"Document was modified">>},
+         {enabled,false},
+         {module,memcached}]},
+       {20491,
+        [{name,<<"document delete">>},
+         {description,<<"Document was deleted">>},
+         {enabled,false},
+         {module,memcached}]},
+       {20492,
+        [{name,<<"select bucket">>},
+         {description,<<"The specified bucket was selected">>},
+         {enabled,true},
+         {module,memcached}]},
+       {20493,
+        [{name,<<"session terminated">>},
+         {description,<<"Session to the cluster has terminated">>},
+         {enabled,false},
+         {module,memcached}]},
+       {20494,
+        [{name,<<"tenant rate limited">>},
+         {description,<<"The given tenant was rate limited">>},
+         {enabled,true},
+         {module,memcached}]},
+       {28672,
+        [{name,<<"SELECT statement">>},
+         {description,<<"A N1QL SELECT statement was executed">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28673,
+        [{name,<<"EXPLAIN statement">>},
+         {description,<<"A N1QL EXPLAIN statement was executed">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28674,
+        [{name,<<"PREPARE statement">>},
+         {description,<<"A N1QL PREPARE statement was executed">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28675,
+        [{name,<<"INFER statement">>},
+         {description,<<"A N1QL INFER statement was executed">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28676,
+        [{name,<<"INSERT statement">>},
+         {description,<<"A N1QL INSERT statement was executed">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28677,
+        [{name,<<"UPSERT statement">>},
+         {description,<<"A N1QL UPSERT statement was executed">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28678,
+        [{name,<<"DELETE statement">>},
+         {description,<<"A N1QL DELETE statement was executed">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28679,
+        [{name,<<"UPDATE statement">>},
+         {description,<<"A N1QL UPDATE statement was executed">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28680,
+        [{name,<<"MERGE statement">>},
+         {description,<<"A N1QL MERGE statement was executed">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28681,
+        [{name,<<"CREATE INDEX statement">>},
+         {description,<<"A N1QL CREATE INDEX statement was executed">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28682,
+        [{name,<<"DROP INDEX statement">>},
+         {description,<<"A N1QL DROP INDEX statement was executed">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28683,
+        [{name,<<"ALTER INDEX statement">>},
+         {description,<<"A N1QL ALTER INDEX statement was executed">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28684,
+        [{name,<<"BUILD INDEX statement">>},
+         {description,<<"A N1QL BUILD INDEX statement was executed">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28685,
+        [{name,<<"GRANT ROLE statement">>},
+         {description,<<"A N1QL GRANT ROLE statement was executed">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28686,
+        [{name,<<"REVOKE ROLE statement">>},
+         {description,<<"A N1QL REVOKE ROLE statement was executed">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28687,
+        [{name,<<"UNRECOGNIZED statement">>},
+         {description,<<"An unrecognized statement was received by the N1QL query engine">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28688,
+        [{name,<<"CREATE PRIMARY INDEX statement">>},
+         {description,<<"A N1QL CREATE PRIMARY INDEX statement was executed">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28689,
+        [{name,<<"/admin/stats API request">>},
+         {description,<<"An HTTP request was made to the API at /admin/stats.">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28690,
+        [{name,<<"/admin/vitals API request">>},
+         {description,<<"An HTTP request was made to the API at /admin/vitals.">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28691,
+        [{name,<<"/admin/prepareds API request">>},
+         {description,<<"An HTTP request was made to the API at /admin/prepareds.">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28692,
+        [{name,<<"/admin/active_requests API request">>},
+         {description,<<"An HTTP request was made to the API at /admin/active_requests.">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28693,
+        [{name,<<"/admin/indexes/prepareds API request">>},
+         {description,<<"An HTTP request was made to the API at /admin/indexes/prepareds.">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28694,
+        [{name,<<"/admin/indexes/active_requests API request">>},
+         {description,<<"An HTTP request was made to the API at /admin/indexes/active_requests.">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28695,
+        [{name,<<"/admin/indexes/completed_requests API request">>},
+         {description,<<"An HTTP request was made to the API at /admin/indexes/completed_requests.">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28697,
+        [{name,<<"/admin/ping API request">>},
+         {description,<<"An HTTP request was made to the API at /admin/ping.">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28698,
+        [{name,<<"/admin/config API request">>},
+         {description,<<"An HTTP request was made to the API at /admin/config.">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28699,
+        [{name,<<"/admin/ssl_cert API request">>},
+         {description,<<"An HTTP request was made to the API at /admin/ssl_cert.">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28700,
+        [{name,<<"/admin/settings API request">>},
+         {description,<<"An HTTP request was made to the API at /admin/settings.">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28701,
+        [{name,<<"/admin/clusters API request">>},
+         {description,<<"An HTTP request was made to the API at /admin/clusters.">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28702,
+        [{name,<<"/admin/completed_requests API request">>},
+         {description,<<"An HTTP request was made to the API at /admin/completed_requests.">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28704,
+        [{name,<<"/admin/functions API request">>},
+         {description,<<"An HTTP request was made to the API at /admin/functions.">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28705,
+        [{name,<<"/admin/indexes/functions API request">>},
+         {description,<<"An HTTP request was made to the API at /admin/indexes/functions.">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28706,
+        [{name,<<"CREATE FUNCTION statement">>},
+         {description,<<"A N1QL CREATE FUNCTION statement was executed">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28707,
+        [{name,<<"DROP FUNCTION statement">>},
+         {description,<<"A N1QL DROP FUNCTION statement was executed">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28708,
+        [{name,<<"EXECUTE FUNCTION statement">>},
+         {description,<<"A N1QL EXECUTE FUNCTION statement was executed">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28709,
+        [{name,<<"/admin/tasks API request">>},
+         {description,<<"An HTTP request was made to the API at /admin/tasks.">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28710,
+        [{name,<<"/admin/indexes/tasks API request">>},
+         {description,<<"An HTTP request was made to the API at /admin/indexes/tasks.">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28711,
+        [{name,<<"/admin/dictionary_cache API request">>},
+         {description,<<"An HTTP request was made to the API at /admin/dictionary_cache.">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28712,
+        [{name,<<"/admin/indexes/dictionary_cache API request">>},
+         {description,<<"An HTTP request was made to the API at /admin/indexes/dictionary_cache.">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28713,
+        [{name,<<"CREATE SCOPE statement">>},
+         {description,<<"A N1QL CREATE SCOPE statement was executed">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28714,
+        [{name,<<"DROP SCOPE statement">>},
+         {description,<<"A N1QL DROP SCOPE statement was executed">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28715,
+        [{name,<<"CREATE COLLECTION statement">>},
+         {description,<<"A N1QL CREATE COLLECTION statement was executed">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28716,
+        [{name,<<"DROP COLLECTION statement">>},
+         {description,<<"A N1QL DROP COLLECTION statement was executed">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28717,
+        [{name,<<"FLUSH COLLECTION statement">>},
+         {description,<<"A N1QL FLUSH COLLECTION statement was executed">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28718,
+        [{name,<<"UPDATE STATISTICS statement">>},
+         {description,<<"A N1QL UPDATE STATISTICS statement was executed">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28719,
+        [{name,<<"ADVISE statement">>},
+         {description,<<"A N1QL ADVISE statement was executed">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28720,
+        [{name,<<"START TRANSACTION statement">>},
+         {description,<<"A N1QL START TRANSACTION statement was executed">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28721,
+        [{name,<<"COMMIT TRANSACTION statement">>},
+         {description,<<"A N1QL COMMIT TRANSACTION statement was executed">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28722,
+        [{name,<<"ROLLBACK TRANSACTION statement">>},
+         {description,<<"A N1QL ROLLBACK TRANSACTION statement was executed">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28723,
+        [{name,<<"ROLLBACK TRANSACTION TO SAVEPOINT statement">>},
+         {description,<<"A N1QL ROLLBACK TRANSACTION TO SAVEPOINT statement was executed">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28724,
+        [{name,<<"SET TRANSACTION ISOLATION statement">>},
+         {description,<<"A N1QL SET TRANSACTION ISOLATION statement was executed">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28725,
+        [{name,<<"SAVEPOINT statement">>},
+         {description,<<"A N1QL SAVEPOINT statement was executed">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28726,
+        [{name,<<"/admin/transactions API request">>},
+         {description,<<"An HTTP request was made to the API at /admin/transactions.">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28727,
+        [{name,<<"/admin/indexes/transactions API request">>},
+         {description,<<"An HTTP request was made to the API at /admin/indexes/transactions.">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28728,
+        [{name,<<"N1QL backup / restore API request">>},
+         {description,<<"An HTTP request was made to archive or restore N1QL metadata ">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {28729,
+        [{name,<<"/admin/shutdown API request">>},
+         {description,<<"An HTTP request was made to initate graceful shutdown">>},
+         {enabled,false},
+         {module,n1ql}]},
+       {32768,
+        [{name,<<"Create Function">>},
+         {description,<<"Request to create or update eventing function definition">>},
+         {enabled,true},
+         {module,eventing}]},
+       {32769,
+        [{name,<<"Delete Function">>},
+         {description,<<"Request to delete eventing function definition">>},
+         {enabled,true},
+         {module,eventing}]},
+       {32770,
+        [{name,<<"Fetch Functions">>},
+         {description,<<"Request to fetch eventing function definition">>},
+         {enabled,false},
+         {module,eventing}]},
+       {32771,
+        [{name,<<"List Deployed">>},
+         {description,<<"Request to fetch eventing deployed functions list">>},
+         {enabled,false},
+         {module,eventing}]},
+       {32772,
+        [{name,<<"Fetch Drafts">>},
+         {description,<<"Request to fetch eventing function draft definitions">>},
+         {enabled,false},
+         {module,eventing}]},
+       {32773,
+        [{name,<<"Delete Drafts">>},
+         {description,<<"Request to delete eventing function draft definitions">>},
+         {enabled,true},
+         {module,eventing}]},
+       {32774,
+        [{name,<<"Save Draft">>},
+         {description,<<"Request to save a draft definition">>},
+         {enabled,true},
+         {module,eventing}]},
+       {32775,
+        [{name,<<"Start Debug">>},
+         {description,<<"Request to start eventing function debugger">>},
+         {enabled,true},
+         {module,eventing}]},
+       {32776,
+        [{name,<<"Stop Debug">>},
+         {description,<<"Request to stop eventing function debugger">>},
+         {enabled,true},
+         {module,eventing}]},
+       {32777,
+        [{name,<<"Start Tracing">>},
+         {description,<<"Request to start tracing eventing function execution">>},
+         {enabled,true},
+         {module,eventing}]},
+       {32778,
+        [{name,<<"Stop Tracing">>},
+         {description,<<"Request to stop tracing eventing function execution">>},
+         {enabled,true},
+         {module,eventing}]},
+       {32779,
+        [{name,<<"Set Settings">>},
+         {description,<<"Request to save settings for an eventing function">>},
+         {enabled,true},
+         {module,eventing}]},
+       {32780,
+        [{name,<<"Fetch Config">>},
+         {description,<<"Request to fetch eventing config">>},
+         {enabled,false},
+         {module,eventing}]},
+       {32781,
+        [{name,<<"Save Config">>},
+         {description,<<"Request to save eventing config">>},
+         {enabled,true},
+         {module,eventing}]},
+       {32783,
+        [{name,<<"Get Settings">>},
+         {description,<<"Request to fetch eventing function settings">>},
+         {enabled,false},
+         {module,eventing}]},
+       {32784,
+        [{name,<<"Import Functions">>},
+         {description,<<"Request to import one or more eventing functions">>},
+         {enabled,true},
+         {module,eventing}]},
+       {32785,
+        [{name,<<"Export Functions">>},
+         {description,<<"Request to export all eventing functions">>},
+         {enabled,false},
+         {module,eventing}]},
+       {32786,
+        [{name,<<"List Running">>},
+         {description,<<"Request to fetch eventing running function list">>},
+         {enabled,false},
+         {module,eventing}]},
+       {32789,
+        [{name,<<"Deploy Function">>},
+         {description,<<"Request to deploy eventing function">>},
+         {enabled,true},
+         {module,eventing}]},
+       {32790,
+        [{name,<<"Undeploy Function">>},
+         {description,<<"Request to undeploy eventing function">>},
+         {enabled,true},
+         {module,eventing}]},
+       {32791,
+        [{name,<<"Pause Function">>},
+         {description,<<"Request to pause eventing function">>},
+         {enabled,true},
+         {module,eventing}]},
+       {32792,
+        [{name,<<"Resume Function">>},
+         {description,<<"Request to resume eventing function">>},
+         {enabled,true},
+         {module,eventing}]},
+       {32793,
+        [{name,<<"Backup Functions">>},
+         {description,<<"Request to backup one or more eventing functions">>},
+         {enabled,false},
+         {module,eventing}]},
+       {32794,
+        [{name,<<"Restore Functions">>},
+         {description,<<"Request to restore one or more eventing functions from a backup">>},
+         {enabled,true},
+         {module,eventing}]},
+       {32795,
+        [{name,<<"List Function">>},
+         {description,<<"Request to fetch eventing functions">>},
+         {enabled,false},
+         {module,eventing}]},
+       {32796,
+        [{name,<<"Function Status">>},
+         {description,<<"Request to fetch eventing function status">>},
+         {enabled,false},
+         {module,eventing}]},
+       {32797,
+        [{name,<<"Clear Stats">>},
+         {description,<<"Request to reset eventing function stats">>},
+         {enabled,true},
+         {module,eventing}]},
+       {32798,
+        [{name,<<"Fetch Stats">>},
+         {description,<<"Request to fetch eventing function stats">>},
+         {enabled,false},
+         {module,eventing}]},
+       {32799,
+        [{name,<<"Eventing Cluster Stats">>},
+         {description,<<"Request to fetch eventing cluster stats">>},
+         {enabled,false},
+         {module,eventing}]},
+       {32801,
+        [{name,<<"Eventing System Event">>},
+         {description,<<"Request to execute eventing node related functions">>},
+         {enabled,false},
+         {module,eventing}]},
+       {32802,
+        [{name,<<"Get User Info">>},
+         {description,<<"Request to get user eventing permissions">>},
+         {enabled,false},
+         {module,eventing}]},
+       {36865,
+        [{name,<<"Service configuration change">>},
+         {description,<<"A successful service configuration change was made.">>},
+         {enabled,true},
+         {module,analytics}]},
+       {36866,
+        [{name,<<"Node configuration change">>},
+         {description,<<"A successful node configuration change was made.">>},
+         {enabled,true},
+         {module,analytics}]},
+       {36867,
+        [{name,<<"SELECT statement">>},
+         {description,<<"A N1QL SELECT statement was executed">>},
+         {enabled,false},
+         {module,analytics}]},
+       {36868,
+        [{name,<<"CREATE DATAVERSE statement">>},
+         {description,<<"A N1QL CREATE DATAVERSE statement was executed">>},
+         {enabled,false},
+         {module,analytics}]},
+       {36869,
+        [{name,<<"DROP DATAVERSE statement">>},
+         {description,<<"A N1QL DROP DATAVERSE statement was executed">>},
+         {enabled,false},
+         {module,analytics}]},
+       {36870,
+        [{name,<<"CREATE DATASET statement">>},
+         {description,<<"A N1QL CREATE DATASET statement was executed">>},
+         {enabled,false},
+         {module,analytics}]},
+       {36871,
+        [{name,<<"DROP DATASET statement">>},
+         {description,<<"A N1QL DROP DATASET statement was executed">>},
+         {enabled,false},
+         {module,analytics}]},
+       {36872,
+        [{name,<<"CREATE INDEX statement">>},
+         {description,<<"A N1QL CREATE INDEX statement was executed">>},
+         {enabled,false},
+         {module,analytics}]},
+       {36873,
+        [{name,<<"DROP INDEX statement">>},
+         {description,<<"A N1QL DROP INDEX statement was executed">>},
+         {enabled,false},
+         {module,analytics}]},
+       {36877,
+        [{name,<<"CONNECT LINK statement">>},
+         {description,<<"A N1QL CONNECT LINK statement was executed">>},
+         {enabled,false},
+         {module,analytics}]},
+       {36878,
+        [{name,<<"DISCONNECT LINK statement">>},
+         {description,<<"A N1QL DISCONNECT LINK statement was executed">>},
+         {enabled,false},
+         {module,analytics}]},
+       {36879,
+        [{name,<<"UNRECOGNIZED statement">>},
+         {description,<<"An UNRECOGNIZED N1QL statement was encountered">>},
+         {enabled,false},
+         {module,analytics}]},
+       {36880,
+        [{name,<<"ALTER COLLECTION statement">>},
+         {description,<<"A N1QL ALTER COLLECTION statement was executed">>},
+         {enabled,false},
+         {module,analytics}]},
+       {40960,
+        [{name,<<"Create Design Doc">>},
+         {description,<<"Design Doc is Created">>},
+         {enabled,true},
+         {module,view_engine}]},
+       {40961,
+        [{name,<<"Delete Design Doc">>},
+         {description,<<"Design Doc is Deleted">>},
+         {enabled,true},
+         {module,view_engine}]},
+       {40962,
+        [{name,<<"Query DDoc Meta Data">>},
+         {description,<<"Design Doc Meta Data Query Request">>},
+         {enabled,true},
+         {module,view_engine}]},
+       {40963,
+        [{name,<<"View Query">>},
+         {description,<<"View Query Request">>},
+         {enabled,false},
+         {module,view_engine}]},
+       {40964,
+        [{name,<<"Update Design Doc">>},
+         {description,<<"Design Doc is Updated">>},
+         {enabled,true},
+         {module,view_engine}]},
+       {40966,
+        [{name,<<"Access denied">>},
+         {description,<<"Access denied to the REST API due to invalid permissions or credentials">>},
+         {enabled,true},
+         {module,view_engine}]},
+       {45056,
+        [{name,<<"Modify configuration">>},
+         {description,<<"Backup service configuration was modified">>},
+         {enabled,true},
+         {module,backup}]},
+       {45057,
+        [{name,<<"Fetch configuration">>},
+         {description,<<"Backup service configuration was retrieved">>},
+         {enabled,false},
+         {module,backup}]},
+       {45058,
+        [{name,<<"Add plan">>},
+         {description,<<"A new backup plan was added">>},
+         {enabled,true},
+         {module,backup}]},
+       {45059,
+        [{name,<<"Modify plan">>},
+         {description,<<"Existing backup plan was modified">>},
+         {enabled,true},
+         {module,backup}]},
+       {45060,
+        [{name,<<"Delete plan">>},
+         {description,<<"A backup plan was removed">>},
+         {enabled,true},
+         {module,backup}]},
+       {45061,
+        [{name,<<"Fetch plan">>},
+         {description,<<"One or more backup plans where fetched">>},
+         {enabled,false},
+         {module,backup}]},
+       {45062,
+        [{name,<<"Add repository">>},
+         {description,<<"A new active backup repository was added">>},
+         {enabled,true},
+         {module,backup}]},
+       {45063,
+        [{name,<<"Archive repository">>},
+         {description,<<"An active repository was archived">>},
+         {enabled,true},
+         {module,backup}]},
+       {45064,
+        [{name,<<"Pause repository">>},
+         {description,<<"An active repository was paused">>},
+         {enabled,true},
+         {module,backup}]},
+       {45065,
+        [{name,<<"Resume repository">>},
+         {description,<<"An active repository was resumed">>},
+         {enabled,true},
+         {module,backup}]},
+       {45066,
+        [{name,<<"Fetch repository">>},
+         {description,<<"A repository was fetched">>},
+         {enabled,false},
+         {module,backup}]},
+       {45067,
+        [{name,<<"Restore repository">>},
+         {description,<<"The repository data was restored">>},
+         {enabled,true},
+         {module,backup}]},
+       {45068,
+        [{name,<<"Backup repository">>},
+         {description,<<"A manual backup was triggered on an active repository">>},
+         {enabled,true},
+         {module,backup}]},
+       {45069,
+        [{name,<<"Merge repository">>},
+         {description,<<"A manual merge was triggered on an active repository">>},
+         {enabled,true},
+         {module,backup}]},
+       {45070,
+        [{name,<<"Info repository">>},
+         {description,<<"Information about the structure and contents of the backup repository was fetched.">>},
+         {enabled,false},
+         {module,backup}]},
+       {45071,
+        [{name,<<"Examine repository">>},
+         {description,<<"A document was retrieved from the repository backups">>},
+         {enabled,true},
+         {module,backup}]},
+       {45072,
+        [{name,<<"Delete repository">>},
+         {description,<<"A repository was deleted">>},
+         {enabled,true},
+         {module,backup}]},
+       {45073,
+        [{name,<<"Delete backup">>},
+         {description,<<"An active repository backup was deleted">>},
+         {enabled,true},
+         {module,backup}]},
+       {45074,
+        [{name,<<"Access denied">>},
+         {description,<<"A user has been denied access to the REST API due to invalid permissions or credentials">>},
+         {enabled,true},
+         {module,backup}]}]},
+ {delete,rbac_upgrade},
+ {set,auto_failover_cfg,
+      [{enabled,true},
+       {timeout,120},
+       {count,0},
+       {failover_on_data_disk_issues,[{enabled,false},{timePeriod,120}]},
+       {failover_server_group,false},
+       {max_count,1},
+       {failed_over_server_groups,[]},
+       {can_abort_rebalance,true},
+       {failover_preserve_durability_majority,false}]}]
+
+[user:warn,2023-08-29T18:14:57.182Z,ns_1@cb.local:compat_mode_manager<0.715.0>:compat_mode_manager:handle_consider_switching_compat_mode:43]Changed cluster compat mode from undefined to [7,2]
+[ns_server:warn,2023-08-29T18:14:57.186Z,ns_1@cb.local:memcached_refresh<0.283.0>:ns_memcached:connect:1246]Unable to connect: {error,{badmatch,[{inet,{error,econnrefused}}]}}.
+[ns_server:warn,2023-08-29T18:14:57.192Z,ns_1@cb.local:memcached_refresh<0.283.0>:ns_memcached:connect:1246]Unable to connect: {error,{badmatch,[{inet,{error,econnrefused}}]}}.
+[ns_server:warn,2023-08-29T18:14:57.194Z,ns_1@cb.local:<0.740.0>:ns_memcached:connect:1246]Unable to connect: {error,{badmatch,[{inet6,{error,eaddrnotavail}},
+                                     {inet,{error,econnrefused}}]}}.
+[ns_server:warn,2023-08-29T18:14:57.252Z,ns_1@cb.local:memcached_refresh<0.283.0>:ns_memcached:connect:1246]Unable to connect: {error,{badmatch,[{inet,{error,econnrefused}}]}}.
+[ns_server:info,2023-08-29T18:14:57.258Z,ns_1@cb.local:ns_orchestrator_child_sup<0.754.0>:misc:start_singleton:901]start_singleton(gen_server, start_link, [{via,leader_registry,
+                                          auto_reprovision},
+                                         auto_reprovision,[],[]]): started as <0.756.0> on 'ns_1@cb.local'
+
+[ns_server:info,2023-08-29T18:14:57.276Z,ns_1@cb.local:ns_orchestrator_child_sup<0.754.0>:misc:start_singleton:901]start_singleton(gen_server, start_link, [{via,leader_registry,auto_rebalance},
+                                         auto_rebalance,[],[]]): started as <0.757.0> on 'ns_1@cb.local'
+
+[ns_server:info,2023-08-29T18:14:57.277Z,ns_1@cb.local:ns_orchestrator_child_sup<0.754.0>:misc:start_singleton:901]start_singleton(gen_statem, start_link, [{via,leader_registry,ns_orchestrator},
+                                         ns_orchestrator,[],[]]): started as <0.758.0> on 'ns_1@cb.local'
+
+[user:info,2023-08-29T18:14:57.278Z,ns_1@cb.local:<0.760.0>:auto_failover:handle_call:229]Enabled auto-failover with timeout 120 and max count 1
+[ns_server:warn,2023-08-29T18:14:57.298Z,ns_1@cb.local:memcached_refresh<0.283.0>:ns_memcached:connect:1246]Unable to connect: {error,{badmatch,[{inet,{error,econnrefused}}]}}.
+[ns_server:info,2023-08-29T18:14:57.303Z,ns_1@cb.local:ns_orchestrator_sup<0.713.0>:misc:start_singleton:901]start_singleton(gen_server, start_link, [{via,leader_registry,auto_failover},
+                                         auto_failover,[],[]]): started as <0.760.0> on 'ns_1@cb.local'
+
+[ns_server:warn,2023-08-29T18:14:57.304Z,ns_1@cb.local:memcached_refresh<0.283.0>:ns_memcached:connect:1246]Unable to connect: {error,{badmatch,[{inet,{error,econnrefused}}]}}.
+[ns_server:info,2023-08-29T18:14:57.314Z,ns_1@cb.local:mb_master_sup<0.693.0>:misc:start_singleton:901]start_singleton(gen_server, start_link, [{via,leader_registry,
+                                          tombstone_purger},
+                                         tombstone_purger,[],[]]): started as <0.768.0> on 'ns_1@cb.local'
+
+[ns_server:info,2023-08-29T18:14:57.334Z,ns_1@cb.local:mb_master_sup<0.693.0>:misc:start_singleton:901]start_singleton(gen_server, start_link, [{via,leader_registry,
+                                          license_reporting},
+                                         license_reporting,[],[]]): started as <0.771.0> on 'ns_1@cb.local'
+
+[ns_server:warn,2023-08-29T18:14:57.386Z,ns_1@cb.local:memcached_refresh<0.283.0>:ns_memcached:connect:1246]Unable to connect: {error,{badmatch,[{inet,{error,econnrefused}}]}}.
+[ns_server:warn,2023-08-29T18:14:57.424Z,ns_1@cb.local:memcached_refresh<0.283.0>:ns_memcached:connect:1246]Unable to connect: {error,{badmatch,[{inet,{error,econnrefused}}]}}.
+[user:info,2023-08-29T18:14:57.766Z,ns_1@cb.local:memcached_config_mgr<0.801.0>:memcached_config_mgr:hot_reload_config:328]Hot-reloaded memcached.json for config change of the following keys: [<<"collections_enabled">>]
+[ns_server:info,2023-08-29T18:14:57.768Z,ns_1@cb.local:memcached_config_mgr<0.801.0>:memcached_config_mgr:push_tls_config:230]Pushing TLS config to memcached:
+{[{<<"private key">>,
+   <<"/opt/couchbase/var/lib/couchbase/config/certs/pkey.pem">>},
+  {<<"certificate chain">>,
+   <<"/opt/couchbase/var/lib/couchbase/config/certs/chain.pem">>},
+  {<<"CA file">>,<<"/opt/couchbase/var/lib/couchbase/config/certs/ca.pem">>},
+  {<<"minimum version">>,<<"TLS 1.2">>},
+  {<<"cipher list">>,
+   {[{<<"TLS 1.2">>,<<"HIGH">>},
+     {<<"TLS 1.3">>,
+      <<"TLS_AES_256_GCM_SHA384:TLS_AES_128_GCM_SHA256:TLS_CHACHA20_POLY1305_SHA256">>}]}},
+  {<<"cipher order">>,true},
+  {<<"client cert auth">>,<<"disabled">>}]}
+[ns_server:info,2023-08-29T18:14:57.806Z,ns_1@cb.local:memcached_config_mgr<0.801.0>:memcached_config_mgr:push_tls_config:234]Successfully pushed TLS config to memcached
+[ns_server:info,2023-08-29T18:15:01.558Z,ns_1@cb.local:<0.964.0>:ns_ssl_services_setup:notify_service:1053]Successfully notified service memcached
+[ns_server:info,2023-08-29T18:15:01.559Z,ns_1@cb.local:ns_ssl_services_setup<0.288.0>:ns_ssl_services_setup:notify_services:1033]Succesfully notified services [memcached]
+[ns_server:info,2023-08-29T18:15:01.560Z,ns_1@cb.local:memcached_config_mgr<0.801.0>:memcached_config_mgr:push_tls_config:230]Pushing TLS config to memcached:
+{[{<<"private key">>,
+   <<"/opt/couchbase/var/lib/couchbase/config/certs/pkey.pem">>},
+  {<<"certificate chain">>,
+   <<"/opt/couchbase/var/lib/couchbase/config/certs/chain.pem">>},
+  {<<"CA file">>,<<"/opt/couchbase/var/lib/couchbase/config/certs/ca.pem">>},
+  {<<"minimum version">>,<<"TLS 1.2">>},
+  {<<"cipher list">>,
+   {[{<<"TLS 1.2">>,<<"HIGH">>},
+     {<<"TLS 1.3">>,
+      <<"TLS_AES_256_GCM_SHA384:TLS_AES_128_GCM_SHA256:TLS_CHACHA20_POLY1305_SHA256">>}]}},
+  {<<"cipher order">>,true},
+  {<<"client cert auth">>,<<"disabled">>}]}
+[ns_server:info,2023-08-29T18:15:01.600Z,ns_1@cb.local:memcached_config_mgr<0.801.0>:memcached_config_mgr:push_tls_config:234]Successfully pushed TLS config to memcached
+[cluster:info,2023-08-29T18:21:14.767Z,ns_1@cb.local:ns_cluster<0.253.0>:ns_cluster:handle_call:446]Changing address to "127.0.0.1" due to client request
+[cluster:info,2023-08-29T18:21:14.767Z,ns_1@cb.local:ns_cluster<0.253.0>:ns_cluster:do_change_address:729]Change of address to "127.0.0.1" is requested.
+[user:warn,2023-08-29T18:21:14.777Z,nonode@nohost:ns_node_disco<0.450.0>:ns_node_disco:handle_info:183]Node nonode@nohost saw that node 'ns_1@cb.local' went down. Details: [{nodedown_reason,
+                                                                       net_kernel_terminated}]
+[chronicle:info,2023-08-29T18:21:14.777Z,nonode@nohost:chronicle_proposer<0.282.0>:chronicle_proposer:handle_nodedown:1135]Peer 'ns_1@cb.local' went down: [{nodedown_reason,net_kernel_terminated}]
+[ns_server:info,2023-08-29T18:21:14.789Z,nonode@nohost:<0.13768.0>:dist_manager:do_adjust_address:353]Adjusted IP to "127.0.0.1"
+[ns_server:info,2023-08-29T18:21:14.790Z,nonode@nohost:<0.13768.0>:dist_manager:bringup:245]Attempting to bring up net_kernel with name 'ns_1@127.0.0.1'
+[chronicle:info,2023-08-29T18:21:14.834Z,ns_1@127.0.0.1:chronicle_proposer<0.282.0>:chronicle_proposer:handle_nodeup:1093]Peer 'ns_1@127.0.0.1' came up
+[user:info,2023-08-29T18:21:14.834Z,ns_1@127.0.0.1:ns_node_disco<0.450.0>:ns_node_disco:handle_info:177]Node 'ns_1@127.0.0.1' saw that node 'ns_1@127.0.0.1' came up. Tags: []
+[chronicle:info,2023-08-29T18:21:14.835Z,ns_1@127.0.0.1:chronicle_proposer<0.282.0>:chronicle_proposer:handle_nodeup:1127]Peer 'ns_1@127.0.0.1' is not in peers: ['ns_1@cb.local']
+[chronicle:info,2023-08-29T18:21:14.835Z,ns_1@127.0.0.1:chronicle_proposer<0.282.0>:chronicle_proposer:handle_stop:1269]Proposer for term {2,'ns_1@cb.local'} in history <<"918babd26e22549c990a18e4926f0ef9">> is terminating.
+[chronicle:info,2023-08-29T18:21:14.836Z,ns_1@127.0.0.1:chronicle_server<0.243.0>:chronicle_proposer:stop:136]Proposer <0.282.0> stopped: {shutdown,stop}
+[ns_server:info,2023-08-29T18:21:14.852Z,ns_1@127.0.0.1:<0.13768.0>:dist_manager:save_node:159]saving node name '"ns_1@127.0.0.1"' to "/opt/couchbase/var/lib/couchbase/couchbase-server.node"
+[ns_server:info,2023-08-29T18:21:14.985Z,ns_1@127.0.0.1:<0.13768.0>:dist_manager:do_adjust_address:357]Re-setting cookie {{sanitized,<<"b1l/2DcbTAH/J5q7aHKAl/NNbXYJIozmg1GT/frwzww=">>},
+                   'ns_1@127.0.0.1'}
+[ns_server:info,2023-08-29T18:21:15.056Z,ns_1@127.0.0.1:<0.13768.0>:dist_manager:save_address_config:146]Deleting irrelevant ip file "/opt/couchbase/var/lib/couchbase/ip_start": {error,
+                                                                          enoent}
+[ns_server:info,2023-08-29T18:21:15.057Z,ns_1@127.0.0.1:<0.13768.0>:dist_manager:save_address_config:147]saving ip config to "/opt/couchbase/var/lib/couchbase/ip"
+[ns_server:info,2023-08-29T18:21:15.123Z,ns_1@127.0.0.1:<0.13768.0>:dist_manager:save_address_config:150]Persisted the address successfully
+[chronicle:info,2023-08-29T18:21:15.131Z,ns_1@127.0.0.1:chronicle_leader<0.239.0>:chronicle_leader:handle_reprovisioned:498]System reprovisioned.
+[chronicle:info,2023-08-29T18:21:15.131Z,ns_1@127.0.0.1:<0.13832.0>:chronicle_leader:do_election_worker:892]Starting election.
+History ID: <<"918babd26e22549c990a18e4926f0ef9">>
+Log position: {{3,'ns_1@127.0.0.1'},12}
+Peers: ['ns_1@127.0.0.1']
+Required quorum: {majority,{set,1,16,16,8,80,48,
+                                {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                 []},
+                                {{[],
+                                  ['ns_1@127.0.0.1'],
+                                  [],[],[],[],[],[],[],[],[],[],[],[],[],
+                                  []}}}}
+[chronicle:info,2023-08-29T18:21:15.132Z,ns_1@127.0.0.1:<0.13832.0>:chronicle_leader:do_election_worker:901]I'm the only peer, so I'm the leader.
+[chronicle:info,2023-08-29T18:21:15.132Z,ns_1@127.0.0.1:chronicle_leader<0.239.0>:chronicle_leader:handle_election_result:691]Going to become a leader in term {4,'ns_1@127.0.0.1'} (history id <<"918babd26e22549c990a18e4926f0ef9">>)
+[chronicle:info,2023-08-29T18:21:15.149Z,ns_1@127.0.0.1:chronicle_leader<0.239.0>:chronicle_leader:handle_note_term_status:596]Term {4,'ns_1@127.0.0.1'} established.
+[ns_server:warn,2023-08-29T18:21:15.271Z,ns_1@127.0.0.1:ns_tick_agent<0.773.0>:ns_tick_agent:handle_tick:113]Ignoring tick from a non-master node 'ns_1@127.0.0.1'. Master: 'ns_1@cb.local'
+[ns_server:warn,2023-08-29T18:21:15.272Z,ns_1@127.0.0.1:leader_quorum_nodes_manager<0.696.0>:leader_quorum_nodes_manager:handle_quorum_nodes_updated:155]Somebody else updated the quorum nodes when we are the master node.
+Our quorum nodes: ['ns_1@cb.local']
+Their quorum nodes: ['ns_1@127.0.0.1']
+[ns_server:info,2023-08-29T18:21:15.273Z,ns_1@127.0.0.1:ns_ssl_services_setup<0.288.0>:ns_ssl_services_setup:handle_info:656]cert_and_pkey changed
+[ns_server:info,2023-08-29T18:21:15.382Z,ns_1@127.0.0.1:mb_master<0.691.0>:mb_master:terminate:298]Synchronously shutting down child mb_master_sup
+[ns_server:info,2023-08-29T18:21:15.383Z,ns_1@127.0.0.1:leader_registry<0.689.0>:leader_registry:handle_down:286]Process <0.771.0> registered as 'license_reporting' terminated.
+[ns_server:info,2023-08-29T18:21:15.383Z,ns_1@127.0.0.1:leader_registry<0.689.0>:leader_registry:handle_down:286]Process <0.768.0> registered as 'tombstone_purger' terminated.
+[ns_server:info,2023-08-29T18:21:15.384Z,ns_1@127.0.0.1:leader_registry<0.689.0>:leader_registry:handle_down:286]Process <0.760.0> registered as 'auto_failover' terminated.
+[ns_server:info,2023-08-29T18:21:15.384Z,ns_1@127.0.0.1:leader_registry<0.689.0>:leader_registry:handle_down:286]Process <0.758.0> registered as 'ns_orchestrator' terminated.
+[ns_server:info,2023-08-29T18:21:15.384Z,ns_1@127.0.0.1:leader_registry<0.689.0>:leader_registry:handle_down:286]Process <0.757.0> registered as 'auto_rebalance' terminated.
+[ns_server:info,2023-08-29T18:21:15.384Z,ns_1@127.0.0.1:leader_registry<0.689.0>:leader_registry:handle_down:286]Process <0.756.0> registered as 'auto_reprovision' terminated.
+[ns_server:warn,2023-08-29T18:21:15.385Z,ns_1@127.0.0.1:<0.13827.0>:async:maybe_log_down_message:478]Monitored process <0.701.0> terminated abnormally (reason = killed)
+[ns_server:info,2023-08-29T18:21:15.385Z,ns_1@127.0.0.1:leader_registry<0.689.0>:leader_registry:handle_down:286]Process <0.706.0> registered as 'chronicle_master' terminated.
+[ns_server:info,2023-08-29T18:21:15.385Z,ns_1@127.0.0.1:leader_registry<0.689.0>:leader_registry:handle_down:286]Process <0.702.0> registered as 'ns_tick' terminated.
+[ns_server:warn,2023-08-29T18:21:15.386Z,ns_1@127.0.0.1:leader_lease_agent<0.682.0>:leader_lease_agent:handle_terminate:302]Terminating with reason shutdown when we own an active lease:
+{lease,
+    {lease_holder,<<"c068c6b6b1dd5df104ba1bbe14a568e8">>,'ns_1@cb.local'},
+    -576460362482667794,-576460347482667794,
+    {timer,#Ref<0.4274179209.2407792642.227867>,
+        {lease_expired,
+            {lease_holder,<<"c068c6b6b1dd5df104ba1bbe14a568e8">>,
+                'ns_1@cb.local'}}},
+    active}
+Persisting updated lease.
+[ns_server:warn,2023-08-29T18:21:15.527Z,ns_1@127.0.0.1:leader_lease_agent<0.13869.0>:leader_lease_agent:maybe_recover_persisted_lease:390]Found persisted lease [{node,'ns_1@cb.local'},
+                       {uuid,<<"c068c6b6b1dd5df104ba1bbe14a568e8">>},
+                       {time_left,12705},
+                       {status,active}]
+[user:info,2023-08-29T18:21:15.532Z,ns_1@127.0.0.1:mb_master<0.13873.0>:mb_master:init:85]I'm the only node, so I'm the master.
+[ns_server:warn,2023-08-29T18:21:15.534Z,ns_1@127.0.0.1:<0.13878.0>:leader_lease_acquire_worker:handle_lease_already_acquired:226]Failed to acquire lease from 'ns_1@127.0.0.1' because its already taken by {'ns_1@cb.local',
+                                                                            <<"c068c6b6b1dd5df104ba1bbe14a568e8">>} (valid for 12698ms)
+[ns_server:info,2023-08-29T18:21:15.535Z,ns_1@127.0.0.1:mb_master_sup<0.13875.0>:misc:start_singleton:901]start_singleton(gen_server, start_link, [{via,leader_registry,ns_tick},
+                                         ns_tick,[],[]]): started as <0.13885.0> on 'ns_1@127.0.0.1'
+
+[ns_server:info,2023-08-29T18:21:15.536Z,ns_1@127.0.0.1:mb_master_sup<0.13875.0>:misc:start_singleton:901]start_singleton(gen_server2, start_link, [{via,leader_registry,
+                                           chronicle_master},
+                                          chronicle_master,[],[]]): started as <0.13886.0> on 'ns_1@127.0.0.1'
+
+[ns_server:info,2023-08-29T18:21:15.539Z,ns_1@127.0.0.1:ns_orchestrator_child_sup<0.13892.0>:misc:start_singleton:901]start_singleton(gen_server, start_link, [{via,leader_registry,
+                                          auto_reprovision},
+                                         auto_reprovision,[],[]]): started as <0.13894.0> on 'ns_1@127.0.0.1'
+
+[ns_server:info,2023-08-29T18:21:15.541Z,ns_1@127.0.0.1:ns_orchestrator_child_sup<0.13892.0>:misc:start_singleton:901]start_singleton(gen_server, start_link, [{via,leader_registry,auto_rebalance},
+                                         auto_rebalance,[],[]]): started as <0.13895.0> on 'ns_1@127.0.0.1'
+
+[ns_server:info,2023-08-29T18:21:15.543Z,ns_1@127.0.0.1:ns_orchestrator_child_sup<0.13892.0>:misc:start_singleton:901]start_singleton(gen_statem, start_link, [{via,leader_registry,ns_orchestrator},
+                                         ns_orchestrator,[],[]]): started as <0.13896.0> on 'ns_1@127.0.0.1'
+
+[user:info,2023-08-29T18:21:15.545Z,ns_1@127.0.0.1:<0.13898.0>:auto_failover:handle_call:229]Enabled auto-failover with timeout 120 and max count 1
+[ns_server:info,2023-08-29T18:21:15.546Z,ns_1@127.0.0.1:ns_orchestrator_sup<0.13889.0>:misc:start_singleton:901]start_singleton(gen_server, start_link, [{via,leader_registry,auto_failover},
+                                         auto_failover,[],[]]): started as <0.13898.0> on 'ns_1@127.0.0.1'
+
+[ns_server:info,2023-08-29T18:21:15.548Z,ns_1@127.0.0.1:mb_master_sup<0.13875.0>:misc:start_singleton:901]start_singleton(gen_server, start_link, [{via,leader_registry,
+                                          tombstone_purger},
+                                         tombstone_purger,[],[]]): started as <0.13900.0> on 'ns_1@127.0.0.1'
+
+[ns_server:info,2023-08-29T18:21:15.550Z,ns_1@127.0.0.1:mb_master_sup<0.13875.0>:misc:start_singleton:901]start_singleton(gen_server, start_link, [{via,leader_registry,
+                                          license_reporting},
+                                         license_reporting,[],[]]): started as <0.13902.0> on 'ns_1@127.0.0.1'
+
+[cluster:info,2023-08-29T18:21:15.560Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:do_change_address:734]Renamed node. New name is 'ns_1@127.0.0.1'.
+[ns_server:info,2023-08-29T18:21:15.562Z,ns_1@127.0.0.1:ns_node_disco_events<0.448.0>:ns_node_disco_log:handle_event:40]ns_node_disco_log: nodes changed: ['ns_1@127.0.0.1']
+[ns_server:info,2023-08-29T18:21:15.637Z,ns_1@127.0.0.1:memcached_config_mgr<0.13906.0>:memcached_config_mgr:push_tls_config:230]Pushing TLS config to memcached:
+{[{<<"private key">>,
+   <<"/opt/couchbase/var/lib/couchbase/config/certs/pkey.pem">>},
+  {<<"certificate chain">>,
+   <<"/opt/couchbase/var/lib/couchbase/config/certs/chain.pem">>},
+  {<<"CA file">>,<<"/opt/couchbase/var/lib/couchbase/config/certs/ca.pem">>},
+  {<<"minimum version">>,<<"TLS 1.2">>},
+  {<<"cipher list">>,
+   {[{<<"TLS 1.2">>,<<"HIGH">>},
+     {<<"TLS 1.3">>,
+      <<"TLS_AES_256_GCM_SHA384:TLS_AES_128_GCM_SHA256:TLS_CHACHA20_POLY1305_SHA256">>}]}},
+  {<<"cipher order">>,true},
+  {<<"client cert auth">>,<<"disabled">>}]}
+[ns_server:info,2023-08-29T18:21:15.669Z,ns_1@127.0.0.1:memcached_config_mgr<0.13906.0>:memcached_config_mgr:push_tls_config:234]Successfully pushed TLS config to memcached
+[cluster:info,2023-08-29T18:21:20.149Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:handle_call:446]Changing address to "127.0.0.1" due to client request
+[ns_server:info,2023-08-29T18:21:20.149Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Changing address to \"127.0.0.1\" due to client request">>]) because it's been seen 1 times in the past 5.382034 secs (last seen 5.382034 secs ago
+[cluster:info,2023-08-29T18:21:20.149Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:do_change_address:729]Change of address to "127.0.0.1" is requested.
+[ns_server:info,2023-08-29T18:21:20.150Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Change of address to \"127.0.0.1\" is requested.">>]) because it's been seen 1 times in the past 5.381846 secs (last seen 5.381846 secs ago
+[ns_server:warn,2023-08-29T18:21:28.235Z,ns_1@127.0.0.1:<0.13878.0>:leader_lease_acquire_worker:handle_lease_already_acquired:226]Failed to acquire lease from 'ns_1@127.0.0.1' because its already taken by {'ns_1@cb.local',
+                                                                            <<"c068c6b6b1dd5df104ba1bbe14a568e8">>} (valid for 0ms)
+[ns_server:info,2023-08-29T18:21:28.316Z,ns_1@127.0.0.1:<0.13878.0>:leader_lease_acquire_worker:handle_fresh_lease_acquired:296]Acquired lease from node 'ns_1@127.0.0.1' (lease uuid: <<"b910d8771c82727c5cabe9d03885ecb2">>)
+[cluster:info,2023-08-29T18:21:28.552Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:handle_call:446]Changing address to "127.0.0.1" due to client request
+[cluster:info,2023-08-29T18:21:28.553Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:do_change_address:729]Change of address to "127.0.0.1" is requested.
+[ns_server:info,2023-08-29T18:21:28.553Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Changing address to \"127.0.0.1\" due to client request">>]) because it's been seen 2 times in the past 13.785247 secs (last seen 8.403213 secs ago
+[ns_server:info,2023-08-29T18:21:28.553Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Change of address to \"127.0.0.1\" is requested.">>]) because it's been seen 2 times in the past 13.785298 secs (last seen 8.403452 secs ago
+[cluster:info,2023-08-29T18:21:29.813Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:handle_call:446]Changing address to "127.0.0.1" due to client request
+[ns_server:info,2023-08-29T18:21:29.814Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Changing address to \"127.0.0.1\" due to client request">>]) because it's been seen 3 times in the past 15.046104 secs (last seen 1.260857 secs ago
+[cluster:info,2023-08-29T18:21:29.814Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:do_change_address:729]Change of address to "127.0.0.1" is requested.
+[ns_server:info,2023-08-29T18:21:29.814Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Change of address to \"127.0.0.1\" is requested.">>]) because it's been seen 3 times in the past 15.046517 secs (last seen 1.261219 secs ago
+[cluster:info,2023-08-29T18:21:30.627Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:handle_call:446]Changing address to "127.0.0.1" due to client request
+[ns_server:info,2023-08-29T18:21:30.628Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Changing address to \"127.0.0.1\" due to client request">>]) because it's been seen 4 times in the past 15.860234 secs (last seen 0.81413 secs ago
+[cluster:info,2023-08-29T18:21:30.628Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:do_change_address:729]Change of address to "127.0.0.1" is requested.
+[ns_server:info,2023-08-29T18:21:30.629Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Change of address to \"127.0.0.1\" is requested.">>]) because it's been seen 4 times in the past 15.860559 secs (last seen 0.814042 secs ago
+[cluster:info,2023-08-29T18:21:31.235Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:handle_call:446]Changing address to "127.0.0.1" due to client request
+[ns_server:info,2023-08-29T18:21:31.235Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Changing address to \"127.0.0.1\" due to client request">>]) because it's been seen 5 times in the past 16.467973 secs (last seen 0.607739 secs ago
+[cluster:info,2023-08-29T18:21:31.235Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:do_change_address:729]Change of address to "127.0.0.1" is requested.
+[ns_server:info,2023-08-29T18:21:31.236Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Change of address to \"127.0.0.1\" is requested.">>]) because it's been seen 5 times in the past 16.467941 secs (last seen 0.607382 secs ago
+[cluster:info,2023-08-29T18:21:55.034Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:handle_call:446]Changing address to "127.0.0.1" due to client request
+[cluster:info,2023-08-29T18:21:55.035Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:do_change_address:729]Change of address to "127.0.0.1" is requested.
+[ns_server:info,2023-08-29T18:21:55.035Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Changing address to \"127.0.0.1\" due to client request">>]) because it's been seen 6 times in the past 40.267469 secs (last seen 23.799496 secs ago
+[ns_server:info,2023-08-29T18:21:55.035Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Change of address to \"127.0.0.1\" is requested.">>]) because it's been seen 6 times in the past 40.267159 secs (last seen 23.799218 secs ago
+[cluster:info,2023-08-29T18:22:40.094Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:handle_call:446]Changing address to "127.0.0.1" due to client request
+[cluster:info,2023-08-29T18:22:40.095Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:do_change_address:729]Change of address to "127.0.0.1" is requested.
+[cluster:info,2023-08-29T18:23:34.942Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:handle_call:446]Changing address to "127.0.0.1" due to client request
+[cluster:info,2023-08-29T18:23:34.943Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:do_change_address:729]Change of address to "127.0.0.1" is requested.
+[cluster:info,2023-08-29T18:24:13.933Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:handle_call:446]Changing address to "127.0.0.1" due to client request
+[cluster:info,2023-08-29T18:24:13.934Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:do_change_address:729]Change of address to "127.0.0.1" is requested.
+[cluster:info,2023-08-29T18:24:18.564Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:handle_call:446]Changing address to "127.0.0.1" due to client request
+[cluster:info,2023-08-29T18:24:18.566Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:do_change_address:729]Change of address to "127.0.0.1" is requested.
+[ns_server:info,2023-08-29T18:24:18.565Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Changing address to \"127.0.0.1\" due to client request">>]) because it's been seen 1 times in the past 4.631688 secs (last seen 4.631688 secs ago
+[ns_server:info,2023-08-29T18:24:18.566Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Change of address to \"127.0.0.1\" is requested.">>]) because it's been seen 1 times in the past 4.632032 secs (last seen 4.632032 secs ago
+[cluster:info,2023-08-29T18:24:19.326Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:handle_call:446]Changing address to "127.0.0.1" due to client request
+[cluster:info,2023-08-29T18:24:19.327Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:do_change_address:729]Change of address to "127.0.0.1" is requested.
+[ns_server:info,2023-08-29T18:24:19.327Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Changing address to \"127.0.0.1\" due to client request">>]) because it's been seen 2 times in the past 5.393477 secs (last seen 0.761789 secs ago
+[ns_server:info,2023-08-29T18:24:19.327Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Change of address to \"127.0.0.1\" is requested.">>]) because it's been seen 2 times in the past 5.393195 secs (last seen 0.761163 secs ago
+[cluster:info,2023-08-29T18:24:20.006Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:handle_call:446]Changing address to "127.0.0.1" due to client request
+[ns_server:info,2023-08-29T18:24:20.007Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Changing address to \"127.0.0.1\" due to client request">>]) because it's been seen 3 times in the past 6.07369 secs (last seen 0.680213 secs ago
+[cluster:info,2023-08-29T18:24:20.007Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:do_change_address:729]Change of address to "127.0.0.1" is requested.
+[ns_server:info,2023-08-29T18:24:20.007Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Change of address to \"127.0.0.1\" is requested.">>]) because it's been seen 3 times in the past 6.073575 secs (last seen 0.68038 secs ago
+[cluster:info,2023-08-29T18:24:20.389Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:handle_call:446]Changing address to "127.0.0.1" due to client request
+[cluster:info,2023-08-29T18:24:20.390Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:do_change_address:729]Change of address to "127.0.0.1" is requested.
+[ns_server:info,2023-08-29T18:24:20.390Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Changing address to \"127.0.0.1\" due to client request">>]) because it's been seen 4 times in the past 6.45669 secs (last seen 0.383 secs ago
+[ns_server:info,2023-08-29T18:24:20.391Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Change of address to \"127.0.0.1\" is requested.">>]) because it's been seen 4 times in the past 6.456891 secs (last seen 0.383316 secs ago
+[cluster:info,2023-08-29T18:24:20.867Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:handle_call:446]Changing address to "127.0.0.1" due to client request
+[ns_server:info,2023-08-29T18:24:20.867Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Changing address to \"127.0.0.1\" due to client request">>]) because it's been seen 5 times in the past 6.934053 secs (last seen 0.477363 secs ago
+[cluster:info,2023-08-29T18:24:20.867Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:do_change_address:729]Change of address to "127.0.0.1" is requested.
+[ns_server:info,2023-08-29T18:24:20.868Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Change of address to \"127.0.0.1\" is requested.">>]) because it's been seen 5 times in the past 6.933804 secs (last seen 0.476913 secs ago
+[cluster:info,2023-08-29T18:24:21.335Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:handle_call:446]Changing address to "127.0.0.1" due to client request
+[ns_server:info,2023-08-29T18:24:21.336Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Changing address to \"127.0.0.1\" due to client request">>]) because it's been seen 6 times in the past 7.402341 secs (last seen 0.468288 secs ago
+[cluster:info,2023-08-29T18:24:21.336Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:do_change_address:729]Change of address to "127.0.0.1" is requested.
+[ns_server:info,2023-08-29T18:24:21.336Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Change of address to \"127.0.0.1\" is requested.">>]) because it's been seen 6 times in the past 7.402363 secs (last seen 0.468559 secs ago
+[cluster:info,2023-08-29T18:24:21.841Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:handle_call:446]Changing address to "127.0.0.1" due to client request
+[cluster:info,2023-08-29T18:24:21.842Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:do_change_address:729]Change of address to "127.0.0.1" is requested.
+[ns_server:info,2023-08-29T18:24:21.841Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Changing address to \"127.0.0.1\" due to client request">>]) because it's been seen 7 times in the past 7.908129 secs (last seen 0.505788 secs ago
+[ns_server:info,2023-08-29T18:24:21.842Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Change of address to \"127.0.0.1\" is requested.">>]) because it's been seen 7 times in the past 7.908053 secs (last seen 0.50569 secs ago
+[cluster:info,2023-08-29T18:24:25.180Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:handle_call:446]Changing address to "127.0.0.1" due to client request
+[ns_server:info,2023-08-29T18:24:25.181Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Changing address to \"127.0.0.1\" due to client request">>]) because it's been seen 8 times in the past 11.24748 secs (last seen 3.339351 secs ago
+[cluster:info,2023-08-29T18:24:25.181Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:do_change_address:729]Change of address to "127.0.0.1" is requested.
+[ns_server:info,2023-08-29T18:24:25.181Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Change of address to \"127.0.0.1\" is requested.">>]) because it's been seen 8 times in the past 11.24753 secs (last seen 3.339477 secs ago
+[cluster:info,2023-08-29T18:24:26.327Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:handle_call:446]Changing address to "127.0.0.1" due to client request
+[cluster:info,2023-08-29T18:24:26.327Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:do_change_address:729]Change of address to "127.0.0.1" is requested.
+[ns_server:info,2023-08-29T18:24:26.327Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Changing address to \"127.0.0.1\" due to client request">>]) because it's been seen 9 times in the past 12.394306 secs (last seen 1.146826 secs ago
+[ns_server:info,2023-08-29T18:24:26.328Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Change of address to \"127.0.0.1\" is requested.">>]) because it's been seen 9 times in the past 12.393887 secs (last seen 1.146357 secs ago
+[cluster:info,2023-08-29T18:24:47.357Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:handle_call:446]Changing address to "127.0.0.1" due to client request
+[ns_server:info,2023-08-29T18:24:47.358Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Changing address to \"127.0.0.1\" due to client request">>]) because it's been seen 10 times in the past 33.424502 secs (last seen 21.030196 secs ago
+[cluster:info,2023-08-29T18:24:47.358Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:do_change_address:729]Change of address to "127.0.0.1" is requested.
+[ns_server:info,2023-08-29T18:24:47.358Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Change of address to \"127.0.0.1\" is requested.">>]) because it's been seen 10 times in the past 33.424179 secs (last seen 21.030292 secs ago
+[cluster:info,2023-08-29T18:25:25.378Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:handle_call:446]Changing address to "127.0.0.1" due to client request
+[cluster:info,2023-08-29T18:25:25.379Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:do_change_address:729]Change of address to "127.0.0.1" is requested.
+[cluster:info,2023-08-29T18:27:39.530Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:handle_call:446]Changing address to "127.0.0.1" due to client request
+[cluster:info,2023-08-29T18:27:39.531Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:do_change_address:729]Change of address to "127.0.0.1" is requested.
+[cluster:info,2023-08-29T18:27:41.111Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:handle_call:446]Changing address to "127.0.0.1" due to client request
+[cluster:info,2023-08-29T18:27:41.112Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:do_change_address:729]Change of address to "127.0.0.1" is requested.
+[ns_server:info,2023-08-29T18:27:41.112Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Changing address to \"127.0.0.1\" due to client request">>]) because it's been seen 1 times in the past 1.581616 secs (last seen 1.581616 secs ago
+[ns_server:info,2023-08-29T18:27:41.113Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Change of address to \"127.0.0.1\" is requested.">>]) because it's been seen 1 times in the past 1.581602 secs (last seen 1.581602 secs ago
+[cluster:info,2023-08-29T18:28:23.655Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:handle_call:446]Changing address to "127.0.0.1" due to client request
+[cluster:info,2023-08-29T18:28:23.655Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:do_change_address:729]Change of address to "127.0.0.1" is requested.
+[cluster:info,2023-08-29T18:29:03.676Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:handle_call:446]Changing address to "127.0.0.1" due to client request
+[cluster:info,2023-08-29T18:29:03.677Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:do_change_address:729]Change of address to "127.0.0.1" is requested.
+[user:info,2023-08-29T18:29:04.108Z,ns_1@127.0.0.1:<0.30334.0>:ns_cluster:add_node_to_group:89]Failed to add node 127.0.0.1:18091 to cluster. Adding nodes to not provisioned nodes is not allowed.
+[cluster:info,2023-08-29T18:30:21.724Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:handle_call:446]Changing address to "127.0.0.1" due to client request
+[cluster:info,2023-08-29T18:30:21.725Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:do_change_address:729]Change of address to "127.0.0.1" is requested.
+[user:info,2023-08-29T18:30:21.820Z,ns_1@127.0.0.1:<0.70.1>:ns_cluster:add_node_to_group:89]Failed to add node 127.0.0.1:18091 to cluster. Adding nodes to not provisioned nodes is not allowed.
+[cluster:info,2023-08-29T18:30:22.740Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:handle_call:446]Changing address to "127.0.0.1" due to client request
+[cluster:info,2023-08-29T18:30:22.740Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:do_change_address:729]Change of address to "127.0.0.1" is requested.
+[ns_server:info,2023-08-29T18:30:22.740Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Changing address to \"127.0.0.1\" due to client request">>]) because it's been seen 1 times in the past 1.015594 secs (last seen 1.015594 secs ago
+[ns_server:info,2023-08-29T18:30:22.741Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Change of address to \"127.0.0.1\" is requested.">>]) because it's been seen 1 times in the past 1.015558 secs (last seen 1.015558 secs ago
+[user:info,2023-08-29T18:30:22.841Z,ns_1@127.0.0.1:<0.325.1>:ns_cluster:add_node_to_group:89]Failed to add node 127.0.0.1:18091 to cluster. Adding nodes to not provisioned nodes is not allowed.
+[ns_server:info,2023-08-29T18:30:22.841Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:5([<<"Failed to add node 127.0.0.1:18091 to cluster. Adding nodes to not provisioned nodes is not allowed.">>]) because it's been seen 1 times in the past 1.021104 secs (last seen 1.021104 secs ago
+[cluster:info,2023-08-29T18:30:23.522Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:handle_call:446]Changing address to "127.0.0.1" due to client request
+[cluster:info,2023-08-29T18:30:23.523Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:do_change_address:729]Change of address to "127.0.0.1" is requested.
+[ns_server:info,2023-08-29T18:30:23.523Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Changing address to \"127.0.0.1\" due to client request">>]) because it's been seen 2 times in the past 1.798035 secs (last seen 0.782441 secs ago
+[ns_server:info,2023-08-29T18:30:23.523Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Change of address to \"127.0.0.1\" is requested.">>]) because it's been seen 2 times in the past 1.797846 secs (last seen 0.782288 secs ago
+[user:info,2023-08-29T18:30:23.611Z,ns_1@127.0.0.1:<0.328.1>:ns_cluster:add_node_to_group:89]Failed to add node 127.0.0.1:18091 to cluster. Adding nodes to not provisioned nodes is not allowed.
+[ns_server:info,2023-08-29T18:30:23.611Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:5([<<"Failed to add node 127.0.0.1:18091 to cluster. Adding nodes to not provisioned nodes is not allowed.">>]) because it's been seen 2 times in the past 1.790828 secs (last seen 0.769724 secs ago
+[cluster:info,2023-08-29T18:30:23.971Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:handle_call:446]Changing address to "127.0.0.1" due to client request
+[ns_server:info,2023-08-29T18:30:23.971Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Changing address to \"127.0.0.1\" due to client request">>]) because it's been seen 3 times in the past 2.246461 secs (last seen 0.448426 secs ago
+[cluster:info,2023-08-29T18:30:23.971Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:do_change_address:729]Change of address to "127.0.0.1" is requested.
+[ns_server:info,2023-08-29T18:30:23.972Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Change of address to \"127.0.0.1\" is requested.">>]) because it's been seen 3 times in the past 2.246464 secs (last seen 0.448618 secs ago
+[user:info,2023-08-29T18:30:24.060Z,ns_1@127.0.0.1:<0.330.1>:ns_cluster:add_node_to_group:89]Failed to add node 127.0.0.1:18091 to cluster. Adding nodes to not provisioned nodes is not allowed.
+[ns_server:info,2023-08-29T18:30:24.060Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:5([<<"Failed to add node 127.0.0.1:18091 to cluster. Adding nodes to not provisioned nodes is not allowed.">>]) because it's been seen 3 times in the past 2.240084 secs (last seen 0.449256 secs ago
+[cluster:info,2023-08-29T18:30:24.391Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:handle_call:446]Changing address to "127.0.0.1" due to client request
+[ns_server:info,2023-08-29T18:30:24.391Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Changing address to \"127.0.0.1\" due to client request">>]) because it's been seen 4 times in the past 2.66671 secs (last seen 0.420249 secs ago
+[cluster:info,2023-08-29T18:30:24.392Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:do_change_address:729]Change of address to "127.0.0.1" is requested.
+[ns_server:info,2023-08-29T18:30:24.392Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Change of address to \"127.0.0.1\" is requested.">>]) because it's been seen 4 times in the past 2.666723 secs (last seen 0.420259 secs ago
+[user:info,2023-08-29T18:30:24.481Z,ns_1@127.0.0.1:<0.332.1>:ns_cluster:add_node_to_group:89]Failed to add node 127.0.0.1:18091 to cluster. Adding nodes to not provisioned nodes is not allowed.
+[ns_server:info,2023-08-29T18:30:24.481Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:5([<<"Failed to add node 127.0.0.1:18091 to cluster. Adding nodes to not provisioned nodes is not allowed.">>]) because it's been seen 4 times in the past 2.660739 secs (last seen 0.420655 secs ago
+[cluster:info,2023-08-29T18:30:48.978Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:handle_call:446]Changing address to "127.0.0.1" due to client request
+[cluster:info,2023-08-29T18:30:48.978Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:do_change_address:729]Change of address to "127.0.0.1" is requested.
+[ns_server:info,2023-08-29T18:30:48.978Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Changing address to \"127.0.0.1\" due to client request">>]) because it's been seen 5 times in the past 27.253522 secs (last seen 24.586812 secs ago
+[ns_server:info,2023-08-29T18:30:48.979Z,ns_1@127.0.0.1:ns_log<0.414.0>:ns_log:is_duplicate_log:156]suppressing duplicate log ns_cluster:0([<<"Change of address to \"127.0.0.1\" is requested.">>]) because it's been seen 5 times in the past 27.25358 secs (last seen 24.586857 secs ago
+[cluster:info,2023-08-29T18:30:55.926Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:handle_call:446]Changing address to "127.0.0.1" due to client request
+[cluster:info,2023-08-29T18:30:55.927Z,ns_1@127.0.0.1:ns_cluster<0.253.0>:ns_cluster:do_change_address:729]Change of address to "127.0.0.1" is requested.
+[user:info,2023-08-29T18:30:56.029Z,ns_1@127.0.0.1:<0.1415.1>:ns_cluster:add_node_to_group:89]Failed to add node 127.0.0.1:18091 to cluster. Adding nodes to not provisioned nodes is not allowed.

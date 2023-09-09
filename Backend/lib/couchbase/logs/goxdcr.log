@@ -1,0 +1,542 @@
+2023-08-29T18:14:57.228Z INFO GOXDCR.ReplMgr: GOMAXPROCS=4
+2023-08-29T18:14:57.234Z INFO GOXDCR.SecuritySvc: Security service started. Waiting for security context to be initialized
+2023-08-29T18:14:57.234Z INFO GOXDCR.SecuritySvc: Received security change notification. code 7
+2023-08-29T18:14:57.616Z INFO GOXDCR.SecuritySvc: Cluster Encryption is changed to enabled=false, strict=false
+2023-08-29T18:14:57.630Z INFO GOXDCR.SecuritySvc: Certificates are updated.
+2023-08-29T18:14:57.631Z INFO GOXDCR.SecuritySvc: Security context is initialized.
+2023-08-29T18:14:57.631Z INFO GOXDCR.SecuritySvc: Received security change notification. code 7
+2023-08-29T18:14:57.631Z INFO GOXDCR.SecuritySvc: Cluster Encryption is changed to enabled=false, strict=false
+2023-08-29T18:14:57.643Z INFO GOXDCR.SecuritySvc: Certificates are updated.
+2023-08-29T18:14:57.725Z INFO GOXDCR.IntSettSvc: Internal settings not found in metakv
+2023-08-29T18:14:57.736Z INFO GOXDCR.ReplMgr: XDCR internal settings: map[AuditReadTimeout:1 AuditWriteTimeout:1 BackfillPersistInterval:1000 BucketTopologyGCPruneTimeHour:24 BucketTopologyGCScanTimeMin:1 BypassSanInCertificateCheck:0 CapiBatchTimeout:180 CapiDataChanSizeMultiplier:1 CapiMaxRetryBatchUpdateDocs:6 CapiReadTimeout:60 CapiRetryInterval:500 CapiWriteTimeout:10 ChangesLeftThresholdForOngoingReplication:200000 CkptCacheCtrlChLen:10 CkptCacheReqChLen:1000 CpuCollectionInterval:2000 DefaultHttpTimeout:180 ExtraQuotaForUnderutilizedCPU:10 FilteringInternalKeyKey:[$%XDCRInternalKey*%$] FilteringInternalXattrKey:[$%XDCRInternalMeta*%$] HELOTimeout:120 HealthCheckIntervalSec:120 IntervalForThrottlerCalibration:4 JsNumWorkers:0 JsWorkerMemQuotaBytes:1572864 KeepAlivePeriod:30 ManifestRefreshSrcInterval:2 ManifestRefreshTgtInterval:60 MaxCheckpointRecordsToKeep:5 MaxCheckpointRecordsToRead:5 MaxCountBacklogForSetDcpPriority:5 MaxCountCpuNotMaxed:3 MaxCountDCPStreamsInactive:10 MaxCountNoBacklogForResetDcpPriority:300 MaxCountThroughputDrop:3 MaxLengthSnapshotHistory:200 MaxNumOfMetakvRetries:4 MaxNumberOfAsyncListeners:4 MaxRetryCapiService:5 MaxRetryForLiveUpdatePipeline:5 MaxRetryTargetStats:6 MaxTopologyChangeCountBeforeRestart:30 MaxTopologyStableCountBeforeRestart:30 MaxWorkersForCheckpointing:5 MemStatsLogInterval:120 NumberOfSlotsForBandwidthThrottling:10 NumberOfSlotsForThroughputThrottling:10 P2PCommTimeoutSec:15 P2PMaxReceiveChLen:10000 P2POpaqueCleanupIntervalSec:5 P2PReplicaReplicatorReloadSize:10 P2PVBRelatedGCIntervalHour:24 PercentageOfBytesToSendAsMin:30 PipelineTimeoutP2PProtocolSec:60 RefreshRemoteClusterRefInterval:15 RemoteClusterAlternateAddrChangeKey:5 ReplSpecCheckInterval:15 ReplStatusExportBrokenMapTimeoutSec:5 ReplStatusLoadBrokenMapTimeoutSec:5 ReplicationSpecGCCnt:4 ResourceManagementInterval:1000 ResourceManagementRatioBase:100 ResourceManagementRatioUpperBound:90 ResourceManagementStatsInterval:10000 ResourceMgrKVDetectionRetryInterval:60 RetryIntervalMetakv:500 RetryIntervalTargetStats:1000 ShortHttpTimeout:20 StatsLogInterval:30 StopwatchDiagExternalThresholdMs:5000 StopwatchDiagInternalThresholdMs:2000 ThresholdForThroughSeqnoComputation:100 ThresholdPercentageForEventChanSizeLogging:90 ThresholdRatioForProcessCpu:95 ThresholdRatioForTotalCpu:95 ThroughSeqnoBgScannerFreqSec:5 ThroughSeqnoBgScannerLogFreqSec:60 ThroughputSampleAlpha:15 ThroughputSampleSize:1028 ThroughputThrottlerClearTokensInterval:3000 ThroughputThrottlerLogInterval:10000 TimeoutCheckpointBeforeStop:180 TimeoutDcpCloseUprFeed:3 TimeoutDcpCloseUprStreams:3 TimeoutHttpsPortLookup:2 TimeoutPartsStart:30 TimeoutPartsStop:10 TimeoutRuntimeContextStart:30 TimeoutRuntimeContextStop:10 TopologyChangeCheckInterval:10 TopologySvcCooldownPeriodSec:60 TopologySvcErrCooldownPeriodSec:120 UprFeedBufferSize:1048576 UprFeedDataChanLength:20000 WaitTimeBetweenMetadataChangeListeners:500 WaitTimeForLiveUpdatePipeline:2000 XmemBackoffTimeNewConn:1000 XmemBackoffWaitTime:10 XmemDefaultRespTimeout:1000 XmemMaxBackoffFactor:10 XmemMaxBatchSize:50 XmemMaxDataChanSize:10485760 XmemMaxIdleCount:60 XmemMaxIdleCountLowerBound:10 XmemMaxIdleCountUpperBound:120 XmemMaxReadDownTime:60 XmemMaxRetry:5 XmemMaxRetryInterval:300 XmemMaxRetryIntervalMutationLocked:30 XmemMaxRetryMutationLocked:20 XmemMaxRetryNewConn:10 XmemReadTimeout:120 XmemSelfMonitorInterval:6 XmemWriteTimeout:120]
+2023-08-29T18:14:57.736Z INFO GOXDCR.AuditSvc: Created audit service.
+2023-08-29T18:14:57.736Z INFO GOXDCR.UILogSvc: Created ui log service.
+2023-08-29T18:14:57.739Z INFO GOXDCR.ReplSpecSvc: Cache has been initialized for ReplicationSpecService
+2023-08-29T18:14:57.742Z INFO GOXDCR.CollectionsManifestSvc: CollectionsManifestSvc starting...
+2023-08-29T18:14:57.742Z INFO GOXDCR.CollectionsManifestSvc: CollectionsManifestSvc started
+2023-08-29T18:14:57.742Z INFO GOXDCR.BackfillReplSvc: Cache has been initialized for BackfillReplicationService
+2023-08-29T18:14:57.744Z INFO GOXDCR.ReplMgr: pollEOF: About to start stdin polling
+2023-08-29T18:14:57.751Z INFO GOXDCR.ResolverSvc: Javascript evaluator started with 0 workers at quota 1572864.
+2023-08-29T18:14:57.751Z INFO GOXDCR.ResolverSvc: ResolverSvc for custom CR is started.
+2023-08-29T18:14:57.751Z INFO GOXDCR.PipelineMgr: Pipeline Manager is constructed
+2023-08-29T18:14:57.751Z INFO GOXDCR.ResourceMgr: Resource Manager is initialized
+2023-08-29T18:14:57.751Z INFO GOXDCR.ResourceMgr: ResourceMgr starting ....
+2023-08-29T18:14:57.757Z INFO GOXDCR.ResourceMgr: cgroup supported = true
+2023-08-29T18:14:57.757Z INFO GOXDCR.TpThrottler:  starting...
+2023-08-29T18:14:57.757Z INFO GOXDCR.TpThrottler:  update routine starting
+2023-08-29T18:14:57.757Z INFO GOXDCR.ResourceMgr: ResourceMgr started
+2023-08-29T18:14:57.757Z INFO GOXDCR.BackfillMgr: BackfillMgr Starting...
+2023-08-29T18:14:57.757Z INFO GOXDCR.TpThrottler:  logStats started
+2023-08-29T18:14:57.757Z INFO GOXDCR.TpThrottler:  clearReassignedTokens starting... clearing every 3s
+2023-08-29T18:14:57.757Z INFO GOXDCR.ResourceMgr: manageResources starting ....
+
+2023-08-29T18:14:57.757Z INFO GOXDCR.BackfillMgr: BackfillMgr Started
+2023-08-29T18:14:57.757Z INFO GOXDCR.ResourceMgr: collectCpuUsage starting ....
+
+2023-08-29T18:14:57.757Z INFO GOXDCR.ReplMgr: Replication manager is initialized
+2023-08-29T18:14:57.757Z INFO GOXDCR.GenericSupervisor: Starting supervisor ReplicationManagerSupervisor.
+2023-08-29T18:14:57.757Z INFO GOXDCR.GenericSupervisor: Started supervisor ReplicationManagerSupervisor.
+2023-08-29T18:14:57.757Z INFO GOXDCR.ReplMgr: initReplications succeeded
+2023-08-29T18:14:57.757Z INFO GOXDCR.ReplMgr: upgradeRemoteClusterRefs started.
+2023-08-29T18:14:57.757Z INFO GOXDCR.ResourceMgr: logStats starting ....
+
+2023-08-29T18:14:57.757Z INFO GOXDCR.ReplMgr: upgradeRemoteClusterRefs exited
+2023-08-29T18:14:57.757Z INFO GOXDCR.ReplMgr: logMemStats started.
+2023-08-29T18:14:57.758Z INFO GOXDCR.GlobalSettingChangeListener: Started MetakvChangeListener GlobalSettingChangeListener
+2023-08-29T18:14:57.758Z INFO GOXDCR.ReplMgr: checkReplicationStatus started.
+2023-08-29T18:14:57.759Z ERRO GOXDCR.TopoSvc: Original REST request (http://127.0.0.1:8091/pools/nodes) received "unknown pool" response. The URL may be incorrect or requested resource no longer exists
+2023-08-29T18:14:58.258Z INFO GOXDCR.InternalSettingChangeListener: Started MetakvChangeListener InternalSettingsChangeListener
+2023-08-29T18:14:58.759Z INFO GOXDCR.RemoteClusterChangeListener: Started MetakvChangeListener RemoteClusterChangeListener
+2023-08-29T18:14:59.260Z INFO GOXDCR.ReplicationSpecChangeListener: Started MetakvChangeListener ReplicationSpecChangeListener
+2023-08-29T18:14:59.759Z WARN GOXDCR.ResourceMgr: Error retrieving overall cpu. err=CGroup prev timestamp not set
+2023-08-29T18:14:59.761Z INFO GOXDCR.AdminPort: Constructed adminport
+2023-08-29T18:14:59.761Z INFO GOXDCR.ReplMgr: Admin port has been launched
+2023-08-29T18:14:59.761Z INFO GOXDCR.GenericSupervisor: Adding child AdminportSupervisor to supervisor ReplicationManagerSupervisor
+2023-08-29T18:14:59.761Z INFO GOXDCR.ReplMgr: ReplicationManager is running
+2023-08-29T18:14:59.761Z INFO GOXDCR.HttpServer: [xdcr:127.0.0.1:9998] new http server xdcr 127.0.0.1:9998 /
+2023-08-29T18:14:59.761Z INFO GOXDCR.AdminPort: http server started 127.0.0.1:9998 !
+2023-08-29T18:14:59.761Z INFO GOXDCR.P2PManager: P2PManagerImpl started with lifeCycleId tQUY8cuqn6wbvoH-foATwZ0lXBW7XN1BOBNsIcD7gXA=
+2023-08-29T18:14:59.762Z INFO GOXDCR.HttpServer: [xdcr:127.0.0.1:9998] starting ... 
+2023-08-29T18:15:07.759Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 1 idleCpu: -100
+2023-08-29T18:15:07.759Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=9 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:15:07.759Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:15:09.765Z ERRO GOXDCR.TopoSvc: Original REST request (http://127.0.0.1:8091/pools/nodes) received "unknown pool" response. The URL may be incorrect or requested resource no longer exists
+2023-08-29T18:15:09.765Z WARN GOXDCR.P2PManager: tQUY8cuqn6wbvoH-foATwZ0lXBW7XN1BOBNsIcD7gXA= not sending peer discovery requests since no other nodes have been detected
+2023-08-29T18:15:12.758Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:15:17.759Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -101
+2023-08-29T18:15:17.759Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=19 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:15:17.759Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:15:27.757Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:15:27.757Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -93
+2023-08-29T18:15:27.757Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=30 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:15:27.757Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:15:37.758Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -91
+2023-08-29T18:15:37.758Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=40 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:15:37.758Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:15:42.758Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:15:47.758Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -108
+2023-08-29T18:15:47.758Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=50 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:15:47.758Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:15:57.757Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:15:57.757Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 1 idleCpu: -89
+2023-08-29T18:15:57.757Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=60 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:15:57.757Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:15:57.762Z ERRO GOXDCR.TopoSvc: Original REST request (http://127.0.0.1:8091/pools/nodes) received "unknown pool" response. The URL may be incorrect or requested resource no longer exists
+2023-08-29T18:16:07.757Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -989
+2023-08-29T18:16:07.757Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=69 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:16:07.757Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:16:12.758Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:16:17.758Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -106
+2023-08-29T18:16:17.758Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=80 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:16:17.758Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:16:27.757Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:16:27.757Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 1 idleCpu: -121
+2023-08-29T18:16:27.757Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=90 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:16:27.757Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:16:37.756Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 1 idleCpu: -99
+2023-08-29T18:16:37.756Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=100 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:16:37.756Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:16:42.757Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:16:47.756Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 1 idleCpu: -97
+2023-08-29T18:16:47.756Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=110 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:16:47.756Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:16:57.757Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:16:57.757Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -86
+2023-08-29T18:16:57.757Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=120 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:16:57.758Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:16:57.758Z INFO GOXDCR.ReplMgr: Mem stats = {"Alloc":4910216,"TotalAlloc":7086080,"Sys":20296968,"Lookups":0,"Mallocs":34709,"Frees":18686,"HeapAlloc":4910216,"HeapSys":7438336,"HeapIdle":1073152,"HeapInuse":6365184,"HeapReleased":598016,"HeapObjects":16023,"StackInuse":950272,"StackSys":950272,"MSpanInuse":77616,"MSpanSys":97632,"MCacheInuse":4800,"MCacheSys":15600,"BuckHashSys":1451022,"GCSys":9152848,"OtherSys":1191258,"NextGC":8779696,"LastGC":1693332899764108783,"PauseTotalNs":3345491,"PauseNs":[1655096,1616874,73521,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"PauseEnd":[1693332897196613785,1693332897225403670,1693332899764108783,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"NumGC":3,"NumForcedGC":0,"GCCPUFraction":0.0038523503734649695,"EnableGC":true,"DebugGC":false,"BySize":[{"Size":0,"Mallocs":0,"Frees":0},{"Size":8,"Mallocs":543,"Frees":243},{"Size":16,"Mallocs":8712,"Frees":4339},{"Size":24,"Mallocs":2925,"Frees":1352},{"Size":32,"Mallocs":2625,"Frees":1874},{"Size":48,"Mallocs":4869,"Frees":1550},{"Size":64,"Mallocs":2803,"Frees":1941},{"Size":80,"Mallocs":917,"Frees":150},{"Size":96,"Mallocs":2285,"Frees":993},{"Size":112,"Mallocs":1777,"Frees":1244},{"Size":128,"Mallocs":793,"Frees":692},{"Size":144,"Mallocs":595,"Frees":309},{"Size":160,"Mallocs":279,"Frees":96},{"Size":176,"Mallocs":92,"Frees":44},{"Size":192,"Mallocs":88,"Frees":23},{"Size":208,"Mallocs":227,"Frees":55},{"Size":224,"Mallocs":136,"Frees":51},{"Size":240,"Mallocs":12,"Frees":5},{"Size":256,"Mallocs":683,"Frees":514},{"Size":288,"Mallocs":319,"Frees":229},{"Size":320,"Mallocs":86,"Frees":60},{"Size":352,"Mallocs":373,"Frees":46},{"Size":384,"Mallocs":64,"Frees":5},{"Size":416,"Mallocs":147,"Frees":7},{"Size":448,"Mallocs":3,"Frees":0},{"Size":480,"Mallocs":2,"Frees":0},{"Size":512,"Mallocs":81,"Frees":47},{"Size":576,"Mallocs":29,"Frees":16},{"Size":640,"Mallocs":241,"Frees":38},{"Size":704,"Mallocs":45,"Frees":15},{"Size":768,"Mallocs":8,"Frees":6},{"Size":896,"Mallocs":28,"Frees":15},{"Size":1024,"Mallocs":33,"Frees":15},{"Size":1152,"Mallocs":25,"Frees":16},{"Size":1280,"Mallocs":594,"Frees":576},{"Size":1408,"Mallocs":9,"Frees":7},{"Size":1536,"Mallocs":5,"Frees":3},{"Size":1792,"Mallocs":14,"Frees":1},{"Size":2048,"Mallocs":10,"Frees":4},{"Size":2304,"Mallocs":15,"Frees":8},{"Size":2688,"Mallocs":26,"Frees":14},{"Size":3072,"Mallocs":3,"Frees":3},{"Size":3200,"Mallocs":1,"Frees":0},{"Size":3456,"Mallocs":3,"Frees":1},{"Size":4096,"Mallocs":41,"Frees":8},{"Size":4864,"Mallocs":3,"Frees":3},{"Size":5376,"Mallocs":8,"Frees":6},{"Size":6144,"Mallocs":6,"Frees":1},{"Size":6528,"Mallocs":0,"Frees":0},{"Size":6784,"Mallocs":1,"Frees":1},{"Size":6912,"Mallocs":0,"Frees":0},{"Size":8192,"Mallocs":10,"Frees":2},{"Size":9472,"Mallocs":12,"Frees":3},{"Size":9728,"Mallocs":0,"Frees":0},{"Size":10240,"Mallocs":0,"Frees":0},{"Size":10880,"Mallocs":5,"Frees":2},{"Size":12288,"Mallocs":0,"Frees":0},{"Size":13568,"Mallocs":1,"Frees":0},{"Size":14336,"Mallocs":24,"Frees":0},{"Size":16384,"Mallocs":4,"Frees":1},{"Size":18432,"Mallocs":4,"Frees":1}]}
+2023-08-29T18:16:57.764Z ERRO GOXDCR.TopoSvc: Original REST request (http://127.0.0.1:8091/pools/nodes) received "unknown pool" response. The URL may be incorrect or requested resource no longer exists
+2023-08-29T18:17:07.757Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 1 idleCpu: -101
+2023-08-29T18:17:07.757Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=130 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:17:07.757Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:17:12.756Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:17:17.757Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -87
+2023-08-29T18:17:17.757Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=140 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:17:17.757Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:17:27.756Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:17:27.756Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -92
+2023-08-29T18:17:27.756Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=150 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:17:27.756Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:17:37.757Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -136
+2023-08-29T18:17:37.757Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=160 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:17:37.757Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:17:42.756Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:17:47.757Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -103
+2023-08-29T18:17:47.757Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=170 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:17:47.757Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:17:57.756Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:17:57.756Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 1 idleCpu: -99
+2023-08-29T18:17:57.756Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=180 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:17:57.756Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:17:57.766Z ERRO GOXDCR.TopoSvc: Original REST request (http://127.0.0.1:8091/pools/nodes) received "unknown pool" response. The URL may be incorrect or requested resource no longer exists
+2023-08-29T18:18:07.756Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -98
+2023-08-29T18:18:07.756Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=190 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:18:07.756Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:18:12.756Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:18:17.756Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -109
+2023-08-29T18:18:17.756Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=200 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:18:17.756Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:18:27.756Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -87
+2023-08-29T18:18:27.756Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=209 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:18:27.756Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:18:27.756Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:18:37.756Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -54
+2023-08-29T18:18:37.757Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=220 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:18:37.757Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:18:42.756Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:18:47.757Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -91
+2023-08-29T18:18:47.757Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=229 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:18:47.757Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:18:57.755Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:18:57.755Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 1 idleCpu: -100
+2023-08-29T18:18:57.755Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=240 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:18:57.755Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:18:57.764Z INFO GOXDCR.ReplMgr: Mem stats = {"Alloc":4837424,"TotalAlloc":7739216,"Sys":20296968,"Lookups":0,"Mallocs":43959,"Frees":28211,"HeapAlloc":4837424,"HeapSys":7471104,"HeapIdle":1179648,"HeapInuse":6291456,"HeapReleased":385024,"HeapObjects":15748,"StackInuse":917504,"StackSys":917504,"MSpanInuse":77616,"MSpanSys":97632,"MCacheInuse":4800,"MCacheSys":15600,"BuckHashSys":1451286,"GCSys":9239152,"OtherSys":1104690,"NextGC":8966248,"LastGC":1693333019859116465,"PauseTotalNs":3449761,"PauseNs":[1655096,1616874,73521,104270,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"PauseEnd":[1693332897196613785,1693332897225403670,1693332899764108783,1693333019859116465,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"NumGC":4,"NumForcedGC":0,"GCCPUFraction":0.00009123820659756924,"EnableGC":true,"DebugGC":false,"BySize":[{"Size":0,"Mallocs":0,"Frees":0},{"Size":8,"Mallocs":612,"Frees":330},{"Size":16,"Mallocs":11271,"Frees":6945},{"Size":24,"Mallocs":3764,"Frees":2224},{"Size":32,"Mallocs":2945,"Frees":2216},{"Size":48,"Mallocs":7319,"Frees":4066},{"Size":64,"Mallocs":3283,"Frees":2453},{"Size":80,"Mallocs":1285,"Frees":519},{"Size":96,"Mallocs":2867,"Frees":1565},{"Size":112,"Mallocs":2008,"Frees":1476},{"Size":128,"Mallocs":816,"Frees":715},{"Size":144,"Mallocs":765,"Frees":499},{"Size":160,"Mallocs":295,"Frees":118},{"Size":176,"Mallocs":106,"Frees":65},{"Size":192,"Mallocs":102,"Frees":42},{"Size":208,"Mallocs":323,"Frees":158},{"Size":224,"Mallocs":220,"Frees":135},{"Size":240,"Mallocs":12,"Frees":7},{"Size":256,"Mallocs":821,"Frees":659},{"Size":288,"Mallocs":370,"Frees":282},{"Size":320,"Mallocs":86,"Frees":60},{"Size":352,"Mallocs":679,"Frees":369},{"Size":384,"Mallocs":124,"Frees":65},{"Size":416,"Mallocs":159,"Frees":8},{"Size":448,"Mallocs":3,"Frees":0},{"Size":480,"Mallocs":2,"Frees":0},{"Size":512,"Mallocs":102,"Frees":67},{"Size":576,"Mallocs":31,"Frees":18},{"Size":640,"Mallocs":241,"Frees":38},{"Size":704,"Mallocs":59,"Frees":34},{"Size":768,"Mallocs":8,"Frees":6},{"Size":896,"Mallocs":28,"Frees":16},{"Size":1024,"Mallocs":34,"Frees":17},{"Size":1152,"Mallocs":26,"Frees":17},{"Size":1280,"Mallocs":594,"Frees":576},{"Size":1408,"Mallocs":9,"Frees":7},{"Size":1536,"Mallocs":5,"Frees":3},{"Size":1792,"Mallocs":16,"Frees":2},{"Size":2048,"Mallocs":11,"Frees":5},{"Size":2304,"Mallocs":16,"Frees":9},{"Size":2688,"Mallocs":26,"Frees":14},{"Size":3072,"Mallocs":3,"Frees":3},{"Size":3200,"Mallocs":1,"Frees":0},{"Size":3456,"Mallocs":3,"Frees":2},{"Size":4096,"Mallocs":46,"Frees":11},{"Size":4864,"Mallocs":5,"Frees":3},{"Size":5376,"Mallocs":8,"Frees":6},{"Size":6144,"Mallocs":6,"Frees":1},{"Size":6528,"Mallocs":0,"Frees":0},{"Size":6784,"Mallocs":1,"Frees":1},{"Size":6912,"Mallocs":0,"Frees":0},{"Size":8192,"Mallocs":10,"Frees":2},{"Size":9472,"Mallocs":12,"Frees":3},{"Size":9728,"Mallocs":0,"Frees":0},{"Size":10240,"Mallocs":0,"Frees":0},{"Size":10880,"Mallocs":5,"Frees":2},{"Size":12288,"Mallocs":0,"Frees":0},{"Size":13568,"Mallocs":1,"Frees":0},{"Size":14336,"Mallocs":24,"Frees":0},{"Size":16384,"Mallocs":4,"Frees":1},{"Size":18432,"Mallocs":4,"Frees":1}]}
+2023-08-29T18:18:57.768Z ERRO GOXDCR.TopoSvc: Original REST request (http://127.0.0.1:8091/pools/nodes) received "unknown pool" response. The URL may be incorrect or requested resource no longer exists
+2023-08-29T18:19:07.754Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -71
+2023-08-29T18:19:07.755Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=250 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:19:07.755Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:19:12.754Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:19:17.754Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -107
+2023-08-29T18:19:17.755Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=260 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:19:17.755Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:19:27.752Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:19:27.752Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -106
+2023-08-29T18:19:27.752Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=269 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:19:27.752Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:19:37.752Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -112
+2023-08-29T18:19:37.753Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=280 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:19:37.754Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:19:42.752Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:19:47.752Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -107
+2023-08-29T18:19:47.752Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=290 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:19:47.752Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:19:57.750Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:19:57.750Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -120
+2023-08-29T18:19:57.750Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=300 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:19:57.750Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:19:57.766Z ERRO GOXDCR.TopoSvc: Original REST request (http://127.0.0.1:8091/pools/nodes) received "unknown pool" response. The URL may be incorrect or requested resource no longer exists
+2023-08-29T18:20:07.750Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -69
+2023-08-29T18:20:07.750Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=310 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:20:07.750Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:20:12.750Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:20:17.750Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 1 idleCpu: -107
+2023-08-29T18:20:17.750Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=320 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:20:17.751Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:20:27.749Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -96
+2023-08-29T18:20:27.749Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=330 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:20:27.749Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:20:27.749Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:20:37.749Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 1 idleCpu: -104
+2023-08-29T18:20:37.749Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=340 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:20:37.749Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:20:42.749Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:20:47.749Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -101
+2023-08-29T18:20:47.749Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=350 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:20:47.749Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:20:57.748Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -105
+2023-08-29T18:20:57.748Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=360 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:20:57.748Z INFO GOXDCR.ReplMgr: Mem stats = {"Alloc":4841184,"TotalAlloc":8352272,"Sys":20296968,"Lookups":0,"Mallocs":52728,"Frees":37033,"HeapAlloc":4841184,"HeapSys":7503872,"HeapIdle":1212416,"HeapInuse":6291456,"HeapReleased":450560,"HeapObjects":15695,"StackInuse":884736,"StackSys":884736,"MSpanInuse":86832,"MSpanSys":97632,"MCacheInuse":4800,"MCacheSys":15600,"BuckHashSys":1451718,"GCSys":9243248,"OtherSys":1100162,"NextGC":8994264,"LastGC":1693333139985379517,"PauseTotalNs":13819357,"PauseNs":[1655096,1616874,73521,104270,10369596,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"PauseEnd":[1693332897196613785,1693332897225403670,1693332899764108783,1693333019859116465,1693333139985379517,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"NumGC":5,"NumForcedGC":0,"GCCPUFraction":0.00010957964344793225,"EnableGC":true,"DebugGC":false,"BySize":[{"Size":0,"Mallocs":0,"Frees":0},{"Size":8,"Mallocs":657,"Frees":375},{"Size":16,"Mallocs":13629,"Frees":9307},{"Size":24,"Mallocs":4575,"Frees":3045},{"Size":32,"Mallocs":3258,"Frees":2531},{"Size":48,"Mallocs":9730,"Frees":6491},{"Size":64,"Mallocs":3737,"Frees":2917},{"Size":80,"Mallocs":1647,"Frees":889},{"Size":96,"Mallocs":3408,"Frees":2107},{"Size":112,"Mallocs":2236,"Frees":1705},{"Size":128,"Mallocs":840,"Frees":737},{"Size":144,"Mallocs":926,"Frees":662},{"Size":160,"Mallocs":311,"Frees":134},{"Size":176,"Mallocs":120,"Frees":79},{"Size":192,"Mallocs":116,"Frees":56},{"Size":208,"Mallocs":416,"Frees":252},{"Size":224,"Mallocs":303,"Frees":218},{"Size":240,"Mallocs":12,"Frees":7},{"Size":256,"Mallocs":956,"Frees":795},{"Size":288,"Mallocs":417,"Frees":330},{"Size":320,"Mallocs":86,"Frees":60},{"Size":352,"Mallocs":982,"Frees":672},{"Size":384,"Mallocs":184,"Frees":125},{"Size":416,"Mallocs":160,"Frees":8},{"Size":448,"Mallocs":3,"Frees":0},{"Size":480,"Mallocs":2,"Frees":0},{"Size":512,"Mallocs":123,"Frees":91},{"Size":576,"Mallocs":31,"Frees":18},{"Size":640,"Mallocs":241,"Frees":38},{"Size":704,"Mallocs":73,"Frees":48},{"Size":768,"Mallocs":8,"Frees":6},{"Size":896,"Mallocs":28,"Frees":16},{"Size":1024,"Mallocs":35,"Frees":18},{"Size":1152,"Mallocs":26,"Frees":17},{"Size":1280,"Mallocs":594,"Frees":576},{"Size":1408,"Mallocs":9,"Frees":7},{"Size":1536,"Mallocs":5,"Frees":3},{"Size":1792,"Mallocs":16,"Frees":2},{"Size":2048,"Mallocs":12,"Frees":6},{"Size":2304,"Mallocs":16,"Frees":9},{"Size":2688,"Mallocs":26,"Frees":14},{"Size":3072,"Mallocs":3,"Frees":3},{"Size":3200,"Mallocs":1,"Frees":0},{"Size":3456,"Mallocs":3,"Frees":2},{"Size":4096,"Mallocs":51,"Frees":14},{"Size":4864,"Mallocs":5,"Frees":3},{"Size":5376,"Mallocs":8,"Frees":6},{"Size":6144,"Mallocs":6,"Frees":1},{"Size":6528,"Mallocs":0,"Frees":0},{"Size":6784,"Mallocs":1,"Frees":1},{"Size":6912,"Mallocs":0,"Frees":0},{"Size":8192,"Mallocs":10,"Frees":2},{"Size":9472,"Mallocs":12,"Frees":3},{"Size":9728,"Mallocs":0,"Frees":0},{"Size":10240,"Mallocs":0,"Frees":0},{"Size":10880,"Mallocs":5,"Frees":2},{"Size":12288,"Mallocs":0,"Frees":0},{"Size":13568,"Mallocs":1,"Frees":0},{"Size":14336,"Mallocs":24,"Frees":0},{"Size":16384,"Mallocs":4,"Frees":1},{"Size":18432,"Mallocs":4,"Frees":1}]}
+2023-08-29T18:20:57.748Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:20:57.748Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:20:57.767Z ERRO GOXDCR.TopoSvc: Original REST request (http://127.0.0.1:8091/pools/nodes) received "unknown pool" response. The URL may be incorrect or requested resource no longer exists
+2023-08-29T18:21:07.748Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -103
+2023-08-29T18:21:07.748Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=370 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:21:07.748Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:21:12.748Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:21:17.747Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 1 idleCpu: -100
+2023-08-29T18:21:17.748Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=380 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:21:17.748Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:21:27.747Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:21:27.747Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -92
+2023-08-29T18:21:27.748Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=390 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:21:27.748Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:21:37.746Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 1 idleCpu: -100
+2023-08-29T18:21:37.747Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=399 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:21:37.747Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:21:42.747Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:21:47.747Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -91
+2023-08-29T18:21:47.747Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=410 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:21:47.747Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:21:57.746Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:21:57.746Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -90
+2023-08-29T18:21:57.746Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=420 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:21:57.746Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:21:57.768Z ERRO GOXDCR.TopoSvc: Original REST request (http://127.0.0.1:8091/pools/nodes) received "unknown pool" response. The URL may be incorrect or requested resource no longer exists
+2023-08-29T18:22:07.746Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 1 idleCpu: -85
+2023-08-29T18:22:07.746Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=430 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:22:07.746Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:22:12.746Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:22:17.746Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: 602
+2023-08-29T18:22:17.746Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=440 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:22:17.746Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:22:27.742Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -88
+2023-08-29T18:22:27.743Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=449 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:22:27.743Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:22:27.743Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:22:37.743Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -405
+2023-08-29T18:22:37.744Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=460 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:22:37.744Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:22:42.743Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:22:47.742Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -99
+2023-08-29T18:22:47.743Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=470 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:22:47.743Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:22:57.744Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:22:57.744Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 1 idleCpu: -67
+2023-08-29T18:22:57.745Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=480 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:22:57.745Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:22:57.744Z INFO GOXDCR.ReplMgr: Mem stats = {"Alloc":4858136,"TotalAlloc":8975616,"Sys":20296968,"Lookups":0,"Mallocs":61675,"Frees":45895,"HeapAlloc":4858136,"HeapSys":7471104,"HeapIdle":1171456,"HeapInuse":6299648,"HeapReleased":425984,"HeapObjects":15780,"StackInuse":917504,"StackSys":917504,"MSpanInuse":86832,"MSpanSys":97632,"MCacheInuse":4800,"MCacheSys":15600,"BuckHashSys":1452446,"GCSys":9243248,"OtherSys":1099434,"NextGC":9005352,"LastGC":1693333260052534272,"PauseTotalNs":14201829,"PauseNs":[1655096,1616874,73521,104270,10369596,382472,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"PauseEnd":[1693332897196613785,1693332897225403670,1693332899764108783,1693333019859116465,1693333139985379517,1693333260052534272,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"NumGC":6,"NumForcedGC":0,"GCCPUFraction":0.00007727157382904067,"EnableGC":true,"DebugGC":false,"BySize":[{"Size":0,"Mallocs":0,"Frees":0},{"Size":8,"Mallocs":702,"Frees":420},{"Size":16,"Mallocs":16015,"Frees":11688},{"Size":24,"Mallocs":5402,"Frees":3863},{"Size":32,"Mallocs":3592,"Frees":2849},{"Size":48,"Mallocs":12167,"Frees":8929},{"Size":64,"Mallocs":4206,"Frees":3385},{"Size":80,"Mallocs":2011,"Frees":1254},{"Size":96,"Mallocs":3975,"Frees":2644},{"Size":112,"Mallocs":2465,"Frees":1935},{"Size":128,"Mallocs":869,"Frees":758},{"Size":144,"Mallocs":1091,"Frees":826},{"Size":160,"Mallocs":327,"Frees":150},{"Size":176,"Mallocs":134,"Frees":93},{"Size":192,"Mallocs":130,"Frees":70},{"Size":208,"Mallocs":511,"Frees":346},{"Size":224,"Mallocs":386,"Frees":302},{"Size":240,"Mallocs":12,"Frees":7},{"Size":256,"Mallocs":1091,"Frees":931},{"Size":288,"Mallocs":466,"Frees":378},{"Size":320,"Mallocs":87,"Frees":60},{"Size":352,"Mallocs":1285,"Frees":978},{"Size":384,"Mallocs":248,"Frees":185},{"Size":416,"Mallocs":173,"Frees":8},{"Size":448,"Mallocs":3,"Frees":0},{"Size":480,"Mallocs":2,"Frees":1},{"Size":512,"Mallocs":144,"Frees":111},{"Size":576,"Mallocs":31,"Frees":18},{"Size":640,"Mallocs":241,"Frees":38},{"Size":704,"Mallocs":87,"Frees":62},{"Size":768,"Mallocs":8,"Frees":6},{"Size":896,"Mallocs":29,"Frees":16},{"Size":1024,"Mallocs":36,"Frees":18},{"Size":1152,"Mallocs":26,"Frees":17},{"Size":1280,"Mallocs":594,"Frees":576},{"Size":1408,"Mallocs":9,"Frees":7},{"Size":1536,"Mallocs":5,"Frees":3},{"Size":1792,"Mallocs":16,"Frees":2},{"Size":2048,"Mallocs":12,"Frees":6},{"Size":2304,"Mallocs":16,"Frees":9},{"Size":2688,"Mallocs":26,"Frees":14},{"Size":3072,"Mallocs":3,"Frees":3},{"Size":3200,"Mallocs":1,"Frees":0},{"Size":3456,"Mallocs":3,"Frees":2},{"Size":4096,"Mallocs":55,"Frees":17},{"Size":4864,"Mallocs":5,"Frees":3},{"Size":5376,"Mallocs":8,"Frees":6},{"Size":6144,"Mallocs":6,"Frees":1},{"Size":6528,"Mallocs":0,"Frees":0},{"Size":6784,"Mallocs":1,"Frees":1},{"Size":6912,"Mallocs":0,"Frees":0},{"Size":8192,"Mallocs":10,"Frees":2},{"Size":9472,"Mallocs":12,"Frees":3},{"Size":9728,"Mallocs":0,"Frees":0},{"Size":10240,"Mallocs":0,"Frees":0},{"Size":10880,"Mallocs":5,"Frees":2},{"Size":12288,"Mallocs":0,"Frees":0},{"Size":13568,"Mallocs":1,"Frees":0},{"Size":14336,"Mallocs":24,"Frees":0},{"Size":16384,"Mallocs":4,"Frees":1},{"Size":18432,"Mallocs":4,"Frees":1}]}
+2023-08-29T18:22:57.768Z ERRO GOXDCR.TopoSvc: Original REST request (http://127.0.0.1:8091/pools/nodes) received "unknown pool" response. The URL may be incorrect or requested resource no longer exists
+2023-08-29T18:23:07.743Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -106
+2023-08-29T18:23:07.743Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=490 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:23:07.743Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:23:12.744Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:23:17.744Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -84
+2023-08-29T18:23:17.744Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=500 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:23:17.744Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:23:27.742Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:23:27.742Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -110
+2023-08-29T18:23:27.742Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=510 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:23:27.743Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:23:37.743Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -106
+2023-08-29T18:23:37.743Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=520 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:23:37.743Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:23:42.743Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:23:47.742Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -1278
+2023-08-29T18:23:47.742Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=530 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:23:47.742Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:23:57.741Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 1 idleCpu: -101
+2023-08-29T18:23:57.741Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=540 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:23:57.741Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:23:57.741Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:23:57.769Z ERRO GOXDCR.TopoSvc: Original REST request (http://127.0.0.1:8091/pools/nodes) received "unknown pool" response. The URL may be incorrect or requested resource no longer exists
+2023-08-29T18:24:07.741Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -112
+2023-08-29T18:24:07.741Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=549 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:24:07.741Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:24:12.742Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:24:17.742Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -99
+2023-08-29T18:24:17.742Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=559 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:24:17.742Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:24:27.740Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -116
+2023-08-29T18:24:27.741Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=570 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:24:27.741Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:24:27.741Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:24:37.740Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -104
+2023-08-29T18:24:37.741Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=580 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:24:37.741Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:24:42.740Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:24:47.741Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -103
+2023-08-29T18:24:47.742Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=590 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:24:47.742Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:24:57.740Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:24:57.740Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 1 idleCpu: -93
+2023-08-29T18:24:57.740Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=600 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:24:57.740Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:24:57.740Z INFO GOXDCR.ReplMgr: Mem stats = {"Alloc":4865936,"TotalAlloc":9595072,"Sys":20296968,"Lookups":0,"Mallocs":70540,"Frees":54725,"HeapAlloc":4865936,"HeapSys":7438336,"HeapIdle":1155072,"HeapInuse":6283264,"HeapReleased":458752,"HeapObjects":15815,"StackInuse":950272,"StackSys":950272,"MSpanInuse":82800,"MSpanSys":97632,"MCacheInuse":4800,"MCacheSys":15600,"BuckHashSys":1452446,"GCSys":9243248,"OtherSys":1099434,"NextGC":9024744,"LastGC":1693333380146726425,"PauseTotalNs":14334939,"PauseNs":[1655096,1616874,73521,104270,10369596,382472,133110,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"PauseEnd":[1693332897196613785,1693332897225403670,1693332899764108783,1693333019859116465,1693333139985379517,1693333260052534272,1693333380146726425,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"NumGC":7,"NumForcedGC":0,"GCCPUFraction":0.00005983188346487207,"EnableGC":true,"DebugGC":false,"BySize":[{"Size":0,"Mallocs":0,"Frees":0},{"Size":8,"Mallocs":747,"Frees":465},{"Size":16,"Mallocs":18379,"Frees":14053},{"Size":24,"Mallocs":6221,"Frees":4687},{"Size":32,"Mallocs":3907,"Frees":3179},{"Size":48,"Mallocs":14594,"Frees":11350},{"Size":64,"Mallocs":4672,"Frees":3848},{"Size":80,"Mallocs":2380,"Frees":1617},{"Size":96,"Mallocs":4547,"Frees":3178},{"Size":112,"Mallocs":2694,"Frees":2163},{"Size":128,"Mallocs":892,"Frees":787},{"Size":144,"Mallocs":1254,"Frees":990},{"Size":160,"Mallocs":343,"Frees":166},{"Size":176,"Mallocs":148,"Frees":107},{"Size":192,"Mallocs":144,"Frees":84},{"Size":208,"Mallocs":606,"Frees":441},{"Size":224,"Mallocs":469,"Frees":384},{"Size":240,"Mallocs":12,"Frees":7},{"Size":256,"Mallocs":1227,"Frees":1065},{"Size":288,"Mallocs":514,"Frees":426},{"Size":320,"Mallocs":87,"Frees":61},{"Size":352,"Mallocs":1588,"Frees":1278},{"Size":384,"Mallocs":308,"Frees":249},{"Size":416,"Mallocs":182,"Frees":8},{"Size":448,"Mallocs":3,"Frees":0},{"Size":480,"Mallocs":2,"Frees":2},{"Size":512,"Mallocs":165,"Frees":131},{"Size":576,"Mallocs":31,"Frees":18},{"Size":640,"Mallocs":241,"Frees":38},{"Size":704,"Mallocs":101,"Frees":76},{"Size":768,"Mallocs":8,"Frees":6},{"Size":896,"Mallocs":29,"Frees":17},{"Size":1024,"Mallocs":36,"Frees":19},{"Size":1152,"Mallocs":26,"Frees":17},{"Size":1280,"Mallocs":594,"Frees":576},{"Size":1408,"Mallocs":9,"Frees":7},{"Size":1536,"Mallocs":5,"Frees":3},{"Size":1792,"Mallocs":16,"Frees":2},{"Size":2048,"Mallocs":13,"Frees":6},{"Size":2304,"Mallocs":16,"Frees":9},{"Size":2688,"Mallocs":26,"Frees":14},{"Size":3072,"Mallocs":3,"Frees":3},{"Size":3200,"Mallocs":1,"Frees":0},{"Size":3456,"Mallocs":3,"Frees":2},{"Size":4096,"Mallocs":57,"Frees":20},{"Size":4864,"Mallocs":7,"Frees":4},{"Size":5376,"Mallocs":8,"Frees":6},{"Size":6144,"Mallocs":6,"Frees":1},{"Size":6528,"Mallocs":0,"Frees":0},{"Size":6784,"Mallocs":1,"Frees":1},{"Size":6912,"Mallocs":0,"Frees":0},{"Size":8192,"Mallocs":10,"Frees":2},{"Size":9472,"Mallocs":12,"Frees":3},{"Size":9728,"Mallocs":0,"Frees":0},{"Size":10240,"Mallocs":0,"Frees":0},{"Size":10880,"Mallocs":5,"Frees":2},{"Size":12288,"Mallocs":0,"Frees":0},{"Size":13568,"Mallocs":1,"Frees":0},{"Size":14336,"Mallocs":24,"Frees":0},{"Size":16384,"Mallocs":4,"Frees":1},{"Size":18432,"Mallocs":4,"Frees":1}]}
+2023-08-29T18:24:57.772Z ERRO GOXDCR.TopoSvc: Original REST request (http://127.0.0.1:8091/pools/nodes) received "unknown pool" response. The URL may be incorrect or requested resource no longer exists
+2023-08-29T18:25:07.739Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -98
+2023-08-29T18:25:07.740Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=610 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:25:07.740Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:25:12.739Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:25:17.740Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -95
+2023-08-29T18:25:17.740Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=620 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:25:17.740Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:25:27.738Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:25:27.738Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -108
+2023-08-29T18:25:27.738Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=630 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:25:27.738Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:25:37.739Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -103
+2023-08-29T18:25:37.739Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=639 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:25:37.739Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:25:42.739Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:25:47.739Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -100
+2023-08-29T18:25:47.739Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=650 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:25:47.739Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:25:57.737Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:25:57.737Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 1 idleCpu: -94
+2023-08-29T18:25:57.737Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=660 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:25:57.737Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:25:57.773Z ERRO GOXDCR.TopoSvc: Original REST request (http://127.0.0.1:8091/pools/nodes) received "unknown pool" response. The URL may be incorrect or requested resource no longer exists
+2023-08-29T18:26:07.738Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -99
+2023-08-29T18:26:07.738Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=669 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:26:07.738Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:26:12.738Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:26:17.738Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -162
+2023-08-29T18:26:17.738Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=679 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:26:17.738Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:26:27.735Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -123
+2023-08-29T18:26:27.735Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=690 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:26:27.735Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:26:27.735Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:26:37.735Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -111
+2023-08-29T18:26:37.735Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=700 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:26:37.735Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:26:42.736Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:26:47.736Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -109
+2023-08-29T18:26:47.737Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=710 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:26:47.737Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:26:57.746Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:26:57.746Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 1 idleCpu: -79
+2023-08-29T18:26:57.746Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=720 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:26:57.746Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:26:57.746Z INFO GOXDCR.ReplMgr: Mem stats = {"Alloc":4870680,"TotalAlloc":10218104,"Sys":20296968,"Lookups":0,"Mallocs":79446,"Frees":63602,"HeapAlloc":4870680,"HeapSys":7438336,"HeapIdle":1146880,"HeapInuse":6291456,"HeapReleased":524288,"HeapObjects":15844,"StackInuse":950272,"StackSys":950272,"MSpanInuse":82800,"MSpanSys":97632,"MCacheInuse":4800,"MCacheSys":15600,"BuckHashSys":1452446,"GCSys":9243248,"OtherSys":1099434,"NextGC":9034504,"LastGC":1693333500245365302,"PauseTotalNs":15074058,"PauseNs":[1655096,1616874,73521,104270,10369596,382472,133110,739119,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"PauseEnd":[1693332897196613785,1693332897225403670,1693332899764108783,1693333019859116465,1693333139985379517,1693333260052534272,1693333380146726425,1693333500245365302,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"NumGC":8,"NumForcedGC":0,"GCCPUFraction":0.000051246341130515705,"EnableGC":true,"DebugGC":false,"BySize":[{"Size":0,"Mallocs":0,"Frees":0},{"Size":8,"Mallocs":792,"Frees":510},{"Size":16,"Mallocs":20761,"Frees":16435},{"Size":24,"Mallocs":7041,"Frees":5510},{"Size":32,"Mallocs":4224,"Frees":3496},{"Size":48,"Mallocs":17030,"Frees":13789},{"Size":64,"Mallocs":5138,"Frees":4318},{"Size":80,"Mallocs":2746,"Frees":1987},{"Size":96,"Mallocs":5118,"Frees":3720},{"Size":112,"Mallocs":2924,"Frees":2393},{"Size":128,"Mallocs":915,"Frees":810},{"Size":144,"Mallocs":1418,"Frees":1154},{"Size":160,"Mallocs":359,"Frees":182},{"Size":176,"Mallocs":162,"Frees":121},{"Size":192,"Mallocs":158,"Frees":98},{"Size":208,"Mallocs":701,"Frees":536},{"Size":224,"Mallocs":553,"Frees":468},{"Size":240,"Mallocs":12,"Frees":7},{"Size":256,"Mallocs":1364,"Frees":1202},{"Size":288,"Mallocs":562,"Frees":474},{"Size":320,"Mallocs":87,"Frees":61},{"Size":352,"Mallocs":1895,"Frees":1584},{"Size":384,"Mallocs":368,"Frees":309},{"Size":416,"Mallocs":197,"Frees":8},{"Size":448,"Mallocs":3,"Frees":0},{"Size":480,"Mallocs":2,"Frees":2},{"Size":512,"Mallocs":186,"Frees":152},{"Size":576,"Mallocs":31,"Frees":18},{"Size":640,"Mallocs":241,"Frees":38},{"Size":704,"Mallocs":115,"Frees":90},{"Size":768,"Mallocs":8,"Frees":6},{"Size":896,"Mallocs":29,"Frees":17},{"Size":1024,"Mallocs":36,"Frees":20},{"Size":1152,"Mallocs":26,"Frees":17},{"Size":1280,"Mallocs":594,"Frees":576},{"Size":1408,"Mallocs":9,"Frees":7},{"Size":1536,"Mallocs":5,"Frees":3},{"Size":1792,"Mallocs":16,"Frees":2},{"Size":2048,"Mallocs":13,"Frees":6},{"Size":2304,"Mallocs":16,"Frees":9},{"Size":2688,"Mallocs":26,"Frees":14},{"Size":3072,"Mallocs":3,"Frees":3},{"Size":3200,"Mallocs":1,"Frees":0},{"Size":3456,"Mallocs":3,"Frees":2},{"Size":4096,"Mallocs":59,"Frees":24},{"Size":4864,"Mallocs":8,"Frees":5},{"Size":5376,"Mallocs":9,"Frees":6},{"Size":6144,"Mallocs":6,"Frees":1},{"Size":6528,"Mallocs":0,"Frees":0},{"Size":6784,"Mallocs":1,"Frees":1},{"Size":6912,"Mallocs":0,"Frees":0},{"Size":8192,"Mallocs":10,"Frees":2},{"Size":9472,"Mallocs":12,"Frees":3},{"Size":9728,"Mallocs":0,"Frees":0},{"Size":10240,"Mallocs":0,"Frees":0},{"Size":10880,"Mallocs":5,"Frees":2},{"Size":12288,"Mallocs":0,"Frees":0},{"Size":13568,"Mallocs":1,"Frees":0},{"Size":14336,"Mallocs":24,"Frees":0},{"Size":16384,"Mallocs":4,"Frees":1},{"Size":18432,"Mallocs":4,"Frees":1}]}
+2023-08-29T18:26:57.784Z ERRO GOXDCR.TopoSvc: Original REST request (http://127.0.0.1:8091/pools/nodes) received "unknown pool" response. The URL may be incorrect or requested resource no longer exists
+2023-08-29T18:27:07.745Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -71
+2023-08-29T18:27:07.746Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=730 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:27:07.746Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:27:12.745Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:27:17.745Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 1 idleCpu: -101
+2023-08-29T18:27:17.745Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=740 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:27:17.745Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:27:27.735Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -113
+2023-08-29T18:27:27.735Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=750 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:27:27.735Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:27:27.735Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:27:37.735Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -92
+2023-08-29T18:27:37.735Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=759 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:27:37.735Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:27:42.735Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:27:47.735Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -99
+2023-08-29T18:27:47.735Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=770 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:27:47.735Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:27:57.733Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:27:57.733Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -106
+2023-08-29T18:27:57.734Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=780 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:27:57.734Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:27:57.775Z ERRO GOXDCR.TopoSvc: Original REST request (http://127.0.0.1:8091/pools/nodes) received "unknown pool" response. The URL may be incorrect or requested resource no longer exists
+2023-08-29T18:28:07.734Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -34
+2023-08-29T18:28:07.734Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=790 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:28:07.734Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:28:12.733Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:28:17.733Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -94
+2023-08-29T18:28:17.734Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=799 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:28:17.734Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:28:27.732Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 1 idleCpu: -98
+2023-08-29T18:28:27.732Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=810 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:28:27.732Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:28:27.732Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:28:37.733Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -52
+2023-08-29T18:28:37.733Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=819 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:28:37.733Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:28:42.732Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:28:47.732Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -93
+2023-08-29T18:28:47.732Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=829 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:28:47.732Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:28:57.732Z INFO GOXDCR.ReplMgr: Mem stats = {"Alloc":4883832,"TotalAlloc":10842272,"Sys":20296968,"Lookups":0,"Mallocs":88287,"Frees":72405,"HeapAlloc":4883832,"HeapSys":7438336,"HeapIdle":1130496,"HeapInuse":6307840,"HeapReleased":507904,"HeapObjects":15882,"StackInuse":950272,"StackSys":950272,"MSpanInuse":79632,"MSpanSys":97632,"MCacheInuse":4800,"MCacheSys":15600,"BuckHashSys":1452646,"GCSys":9247344,"OtherSys":1095138,"NextGC":9071784,"LastGC":1693333620348499880,"PauseTotalNs":15175185,"PauseNs":[1655096,1616874,73521,104270,10369596,382472,133110,739119,101127,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"PauseEnd":[1693332897196613785,1693332897225403670,1693332899764108783,1693333019859116465,1693333139985379517,1693333260052534272,1693333380146726425,1693333500245365302,1693333620348499880,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"NumGC":9,"NumForcedGC":0,"GCCPUFraction":0.000043976211988881555,"EnableGC":true,"DebugGC":false,"BySize":[{"Size":0,"Mallocs":0,"Frees":0},{"Size":8,"Mallocs":837,"Frees":555},{"Size":16,"Mallocs":23126,"Frees":18800},{"Size":24,"Mallocs":7857,"Frees":6324},{"Size":32,"Mallocs":4539,"Frees":3811},{"Size":48,"Mallocs":19454,"Frees":16214},{"Size":64,"Mallocs":5601,"Frees":4782},{"Size":80,"Mallocs":3111,"Frees":2349},{"Size":96,"Mallocs":5685,"Frees":4253},{"Size":112,"Mallocs":3153,"Frees":2622},{"Size":128,"Mallocs":936,"Frees":833},{"Size":144,"Mallocs":1581,"Frees":1317},{"Size":160,"Mallocs":375,"Frees":198},{"Size":176,"Mallocs":176,"Frees":135},{"Size":192,"Mallocs":172,"Frees":112},{"Size":208,"Mallocs":795,"Frees":631},{"Size":224,"Mallocs":636,"Frees":551},{"Size":240,"Mallocs":12,"Frees":7},{"Size":256,"Mallocs":1499,"Frees":1338},{"Size":288,"Mallocs":610,"Frees":522},{"Size":320,"Mallocs":87,"Frees":61},{"Size":352,"Mallocs":2200,"Frees":1889},{"Size":384,"Mallocs":428,"Frees":369},{"Size":416,"Mallocs":203,"Frees":8},{"Size":448,"Mallocs":3,"Frees":0},{"Size":480,"Mallocs":2,"Frees":2},{"Size":512,"Mallocs":206,"Frees":174},{"Size":576,"Mallocs":31,"Frees":18},{"Size":640,"Mallocs":241,"Frees":38},{"Size":704,"Mallocs":129,"Frees":104},{"Size":768,"Mallocs":8,"Frees":6},{"Size":896,"Mallocs":29,"Frees":17},{"Size":1024,"Mallocs":36,"Frees":20},{"Size":1152,"Mallocs":26,"Frees":17},{"Size":1280,"Mallocs":594,"Frees":576},{"Size":1408,"Mallocs":9,"Frees":7},{"Size":1536,"Mallocs":5,"Frees":3},{"Size":1792,"Mallocs":16,"Frees":2},{"Size":2048,"Mallocs":13,"Frees":6},{"Size":2304,"Mallocs":16,"Frees":9},{"Size":2688,"Mallocs":26,"Frees":14},{"Size":3072,"Mallocs":3,"Frees":3},{"Size":3200,"Mallocs":1,"Frees":0},{"Size":3456,"Mallocs":3,"Frees":2},{"Size":4096,"Mallocs":59,"Frees":25},{"Size":4864,"Mallocs":12,"Frees":8},{"Size":5376,"Mallocs":9,"Frees":6},{"Size":6144,"Mallocs":6,"Frees":1},{"Size":6528,"Mallocs":0,"Frees":0},{"Size":6784,"Mallocs":1,"Frees":1},{"Size":6912,"Mallocs":0,"Frees":0},{"Size":8192,"Mallocs":11,"Frees":2},{"Size":9472,"Mallocs":12,"Frees":3},{"Size":9728,"Mallocs":0,"Frees":0},{"Size":10240,"Mallocs":0,"Frees":0},{"Size":10880,"Mallocs":5,"Frees":2},{"Size":12288,"Mallocs":0,"Frees":0},{"Size":13568,"Mallocs":1,"Frees":0},{"Size":14336,"Mallocs":24,"Frees":0},{"Size":16384,"Mallocs":4,"Frees":1},{"Size":18432,"Mallocs":4,"Frees":1}]}
+2023-08-29T18:28:57.732Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:28:57.732Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -115
+2023-08-29T18:28:57.732Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=840 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:28:57.732Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:28:57.776Z ERRO GOXDCR.TopoSvc: Original REST request (http://127.0.0.1:8091/pools/nodes) received "unknown pool" response. The URL may be incorrect or requested resource no longer exists
+2023-08-29T18:29:07.731Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -100
+2023-08-29T18:29:07.732Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=849 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:29:07.732Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:29:12.732Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:29:17.731Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -108
+2023-08-29T18:29:17.731Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=860 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:29:17.731Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:29:27.730Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:29:27.730Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 1 idleCpu: -110
+2023-08-29T18:29:27.730Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=870 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:29:27.730Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:29:37.730Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 1 idleCpu: -125
+2023-08-29T18:29:37.731Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=880 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:29:37.731Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:29:42.730Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:29:47.730Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -101
+2023-08-29T18:29:47.731Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=890 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:29:47.731Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:29:57.730Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:29:57.730Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -100
+2023-08-29T18:29:57.730Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=900 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:29:57.730Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:29:57.776Z ERRO GOXDCR.TopoSvc: Original REST request (http://127.0.0.1:8091/pools/nodes) received "unknown pool" response. The URL may be incorrect or requested resource no longer exists
+2023-08-29T18:30:07.729Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -95
+2023-08-29T18:30:07.729Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=910 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:30:07.729Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:30:12.730Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:30:17.730Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -105
+2023-08-29T18:30:17.730Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=920 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:30:17.730Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:30:27.729Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:30:27.729Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -155
+2023-08-29T18:30:27.729Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=930 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:30:27.729Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:30:37.728Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: 19
+2023-08-29T18:30:37.728Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=940 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:30:37.728Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:30:42.729Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:30:47.729Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -90
+2023-08-29T18:30:47.729Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=949 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:30:47.729Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:30:57.728Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:30:57.729Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 1 idleCpu: -100
+2023-08-29T18:30:57.729Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=960 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:30:57.729Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:30:57.729Z INFO GOXDCR.ReplMgr: Mem stats = {"Alloc":4892808,"TotalAlloc":11460832,"Sys":20296968,"Lookups":0,"Mallocs":97210,"Frees":81273,"HeapAlloc":4892808,"HeapSys":7405568,"HeapIdle":1097728,"HeapInuse":6307840,"HeapReleased":475136,"HeapObjects":15937,"StackInuse":983040,"StackSys":983040,"MSpanInuse":79632,"MSpanSys":97632,"MCacheInuse":4800,"MCacheSys":15600,"BuckHashSys":1452646,"GCSys":9249392,"OtherSys":1093090,"NextGC":9081416,"LastGC":1693333740436746044,"PauseTotalNs":15290880,"PauseNs":[1655096,1616874,73521,104270,10369596,382472,133110,739119,101127,115695,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"PauseEnd":[1693332897196613785,1693332897225403670,1693332899764108783,1693333019859116465,1693333139985379517,1693333260052534272,1693333380146726425,1693333500245365302,1693333620348499880,1693333740436746044,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"NumGC":10,"NumForcedGC":0,"GCCPUFraction":0.00003928904467304813,"EnableGC":true,"DebugGC":false,"BySize":[{"Size":0,"Mallocs":0,"Frees":0},{"Size":8,"Mallocs":882,"Frees":600},{"Size":16,"Mallocs":25509,"Frees":21185},{"Size":24,"Mallocs":8680,"Frees":7145},{"Size":32,"Mallocs":4856,"Frees":4128},{"Size":48,"Mallocs":21904,"Frees":18653},{"Size":64,"Mallocs":6071,"Frees":5249},{"Size":80,"Mallocs":3481,"Frees":2718},{"Size":96,"Mallocs":6251,"Frees":4795},{"Size":112,"Mallocs":3384,"Frees":2852},{"Size":128,"Mallocs":959,"Frees":855},{"Size":144,"Mallocs":1745,"Frees":1481},{"Size":160,"Mallocs":391,"Frees":214},{"Size":176,"Mallocs":190,"Frees":149},{"Size":192,"Mallocs":186,"Frees":126},{"Size":208,"Mallocs":890,"Frees":725},{"Size":224,"Mallocs":720,"Frees":635},{"Size":240,"Mallocs":12,"Frees":7},{"Size":256,"Mallocs":1636,"Frees":1474},{"Size":288,"Mallocs":658,"Frees":570},{"Size":320,"Mallocs":87,"Frees":61},{"Size":352,"Mallocs":2506,"Frees":2196},{"Size":384,"Mallocs":488,"Frees":429},{"Size":416,"Mallocs":215,"Frees":8},{"Size":448,"Mallocs":3,"Frees":0},{"Size":480,"Mallocs":2,"Frees":2},{"Size":512,"Mallocs":227,"Frees":194},{"Size":576,"Mallocs":31,"Frees":18},{"Size":640,"Mallocs":241,"Frees":38},{"Size":704,"Mallocs":143,"Frees":118},{"Size":768,"Mallocs":8,"Frees":6},{"Size":896,"Mallocs":29,"Frees":17},{"Size":1024,"Mallocs":36,"Frees":20},{"Size":1152,"Mallocs":26,"Frees":17},{"Size":1280,"Mallocs":594,"Frees":576},{"Size":1408,"Mallocs":9,"Frees":7},{"Size":1536,"Mallocs":5,"Frees":3},{"Size":1792,"Mallocs":16,"Frees":2},{"Size":2048,"Mallocs":13,"Frees":6},{"Size":2304,"Mallocs":16,"Frees":9},{"Size":2688,"Mallocs":26,"Frees":14},{"Size":3072,"Mallocs":3,"Frees":3},{"Size":3200,"Mallocs":1,"Frees":0},{"Size":3456,"Mallocs":3,"Frees":2},{"Size":4096,"Mallocs":59,"Frees":25},{"Size":4864,"Mallocs":15,"Frees":11},{"Size":5376,"Mallocs":9,"Frees":6},{"Size":6144,"Mallocs":6,"Frees":1},{"Size":6528,"Mallocs":0,"Frees":0},{"Size":6784,"Mallocs":1,"Frees":1},{"Size":6912,"Mallocs":0,"Frees":0},{"Size":8192,"Mallocs":11,"Frees":2},{"Size":9472,"Mallocs":12,"Frees":3},{"Size":9728,"Mallocs":0,"Frees":0},{"Size":10240,"Mallocs":0,"Frees":0},{"Size":10880,"Mallocs":5,"Frees":2},{"Size":12288,"Mallocs":0,"Frees":0},{"Size":13568,"Mallocs":1,"Frees":0},{"Size":14336,"Mallocs":24,"Frees":0},{"Size":16384,"Mallocs":4,"Frees":1},{"Size":18432,"Mallocs":4,"Frees":1}]}
+2023-08-29T18:30:57.778Z ERRO GOXDCR.TopoSvc: Original REST request (http://127.0.0.1:8091/pools/nodes) received "unknown pool" response. The URL may be incorrect or requested resource no longer exists
+2023-08-29T18:31:07.728Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -101
+2023-08-29T18:31:07.728Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=970 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:31:07.729Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]
+2023-08-29T18:31:12.728Z INFO GOXDCR.PipelineMgr: Replication Status = map[]
+2023-08-29T18:31:17.728Z INFO GOXDCR.ResourceMgr: Resource Manager State = overallTP: 0 highTP: 0 highExist: false lowExist: false backlogExist: false maxTP: 0 highTPNeeded: 0 highTokens: 0 maxTokens: 0 lowTPLimit: 0 calibration: None dcpAction: Reset processCpu: 0 idleCpu: -60
+2023-08-29T18:31:17.728Z INFO GOXDCR.ResourceMgr: backlogCount=0, noBacklogCount=979 extraQuota=false cpuNotMaxedCount=0 throughputDropCount=0
+2023-08-29T18:31:17.728Z INFO GOXDCR.ResourceMgr: DcpPriorityMap=map[]
+ongoingReplMap=map[]

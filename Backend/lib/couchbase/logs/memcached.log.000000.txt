@@ -1,0 +1,87 @@
+2023-08-29T18:14:57.301023+00:00 INFO ---------- Opening logfile: 
+2023-08-29T18:14:57.312218+00:00 INFO Couchbase version 7.2.0-5325 starting.
+2023-08-29T18:14:57.312298+00:00 INFO Process identifier: 357
+2023-08-29T18:14:57.312347+00:00 INFO recalculate_max_connections: {"engine_fds":982549,"max_connections":65000,"max_fds":1048576,"system_connections":5000}
+2023-08-29T18:14:57.312538+00:00 INFO Breakpad enabled. Minidumps will be written to '/opt/couchbase/var/lib/couchbase/crash'
+2023-08-29T18:14:57.315518+00:00 INFO Fine clock overhead: 31ns
+2023-08-29T18:14:57.315558+00:00 INFO Coarse clock overhead: 32ns)
+2023-08-29T18:14:57.315559+00:00 INFO (Clock measurement period: 1ns)
+2023-08-29T18:14:57.316369+00:00 INFO Using SLA configuration: {"COMPACT_DB":{"slow":"1800 s"},"CREATE_BUCKET":{"slow":"5 s"},"DELETE_BUCKET":{"slow":"10 s"},"SELECT_BUCKET":{"slow":"10 ms"},"SEQNO_PERSISTENCE":{"slow":"30 s"},"comment":"Current MCBP SLA configuration","default":{"slow":"500 ms"},"version":1}
+2023-08-29T18:14:57.316384+00:00 INFO Enable standard input listener
+2023-08-29T18:14:57.316715+00:00 INFO NUMA: Not available - not setting mem policy.
+2023-08-29T18:14:57.334686+00:00 INFO Loading RBAC configuration from [/opt/couchbase/var/lib/couchbase/config/memcached.rbac]
+2023-08-29T18:14:57.350936+00:00 INFO Loading error maps from [/opt/couchbase/etc/couchbase/kv/error_maps]
+2023-08-29T18:14:57.354818+00:00 INFO Prometheus Exporter started, listening on family:inet port:11280
+2023-08-29T18:14:57.354894+00:00 INFO Starting external authentication manager
+2023-08-29T18:14:57.417172+00:00 INFO Audit descriptor 20480 changed from: disabled to: enabled
+2023-08-29T18:14:57.417244+00:00 INFO Audit descriptor 20481 changed from: disabled to: enabled
+2023-08-29T18:14:57.417245+00:00 INFO Audit descriptor 20482 changed from: disabled to: enabled
+2023-08-29T18:14:57.417246+00:00 INFO Audit descriptor 20483 changed from: disabled to: enabled
+2023-08-29T18:14:57.417248+00:00 INFO Audit descriptor 20484 changed from: disabled to: enabled
+2023-08-29T18:14:57.417249+00:00 INFO Audit descriptor 20486 changed from: disabled to: enabled
+2023-08-29T18:14:57.417250+00:00 INFO Audit descriptor 20487 changed from: disabled to: enabled
+2023-08-29T18:14:57.417253+00:00 INFO Audit descriptor 20492 changed from: disabled to: enabled
+2023-08-29T18:14:57.417254+00:00 INFO Audit descriptor 20494 changed from: disabled to: enabled
+2023-08-29T18:14:57.417260+00:00 INFO Changing logging level to 0
+2023-08-29T18:14:57.417291+00:00 INFO recalculate_max_connections: {"engine_fds":982549,"max_connections":65000,"max_fds":1048576,"system_connections":5000}
+2023-08-29T18:14:57.417296+00:00 INFO Initialize bucket manager
+2023-08-29T18:14:57.429697+00:00 INFO Starting network interface manager
+2023-08-29T18:14:57.435100+00:00 INFO Enable port(s)
+2023-08-29T18:14:57.435348+00:00 INFO 11 Listen on IPv4: 0.0.0.0:11210
+2023-08-29T18:14:57.435620+00:00 INFO 12 Listen on IPv4: 0.0.0.0:11209
+2023-08-29T18:14:57.435879+00:00 INFO 13 Listen on IPv4: 0.0.0.0:11207 (TLS)
+2023-08-29T18:14:57.436064+00:00 INFO 14 Listen on IPv4: 0.0.0.0:11206 (TLS)
+2023-08-29T18:14:57.437262+00:00 INFO 15 Listen on IPv6: [::]:11210
+2023-08-29T18:14:57.438340+00:00 INFO 16 Listen on IPv6: [::]:11209
+2023-08-29T18:14:57.438626+00:00 INFO 17 Listen on IPv6: [::]:11207 (TLS)
+2023-08-29T18:14:57.439068+00:00 INFO 18 Listen on IPv6: [::]:11206 (TLS)
+2023-08-29T18:14:57.439194+00:00 INFO Shutting down Prometheus exporter: {"family":"inet","host":"127.0.0.1","port":11280,"type":"prometheus","uuid":"88779444-1f5f-4230-27ad-848ebdfcf423"}
+2023-08-29T18:14:57.561951+00:00 INFO Prometheus Exporter started, listening on family:inet port:11280
+2023-08-29T18:14:57.566904+00:00 INFO Starting Phosphor tracing with config: "buffer-mode:ring;buffer-size:20971520;enabled-categories:*"
+2023-08-29T18:14:57.569544+00:00 INFO Start executor pool with backend:Folly readers:0 writers:0 auxIO:0 nonIO:0
+2023-08-29T18:14:57.586986+00:00 INFO Taskable No bucket registered with low priority
+2023-08-29T18:14:57.587934+00:00 INFO Starting Tenant stats collecting
+2023-08-29T18:14:57.588239+00:00 INFO Tenant resource control: false
+2023-08-29T18:14:57.588496+00:00 INFO Initialization complete. Accepting clients.
+2023-08-29T18:14:57.590586+00:00 INFO 62: Client {"ip":"127.0.0.1","port":57634} authenticated as <ud>@ns_server</ud>
+2023-08-29T18:14:57.605909+00:00 INFO 61: Client {"ip":"127.0.0.1","port":57624} authenticated as <ud>@ns_server</ud>
+2023-08-29T18:14:57.606270+00:00 INFO 59: Client {"ip":"127.0.0.1","port":57610} authenticated as <ud>@ns_server</ud>
+2023-08-29T18:14:57.606490+00:00 INFO 61: HELO [regular] [ {"ip":"127.0.0.1","port":57624} - {"ip":"127.0.0.1","port":11209} (System, <ud>@ns_server</ud>) ]
+2023-08-29T18:14:57.606678+00:00 INFO 59: HELO [regular] [ {"ip":"127.0.0.1","port":57610} - {"ip":"127.0.0.1","port":11209} (System, <ud>@ns_server</ud>) ]
+2023-08-29T18:14:57.607358+00:00 INFO 61: Loading RBAC configuration from [/opt/couchbase/var/lib/couchbase/config/memcached.rbac]
+2023-08-29T18:14:57.612162+00:00 INFO 60: Client {"ip":"127.0.0.1","port":57614} authenticated as <ud>@ns_server</ud>
+2023-08-29T18:14:57.613066+00:00 INFO 60: HELO [regular] [ {"ip":"127.0.0.1","port":57614} - {"ip":"127.0.0.1","port":11209} (System, <ud>@ns_server</ud>) ]
+2023-08-29T18:14:57.698475+00:00 INFO 61: RBAC configuration updated [ {"ip":"127.0.0.1","port":57624} - {"ip":"127.0.0.1","port":11209} (System, <ud>@ns_server</ud>) ]
+2023-08-29T18:14:57.729784+00:00 INFO 60: Client {"ip":"127.0.0.1","port":57642} authenticated as <ud>@ns_server</ud>
+2023-08-29T18:14:57.734518+00:00 INFO 60: HELO [regular] [ {"ip":"127.0.0.1","port":57642} - {"ip":"127.0.0.1","port":11209} (System, <ud>@ns_server</ud>) ]
+2023-08-29T18:14:57.735784+00:00 INFO Reloading config file /opt/couchbase/var/lib/couchbase/config/memcached.json
+2023-08-29T18:14:57.758173+00:00 INFO Enable collections_enabled
+2023-08-29T18:14:57.805438+00:00 INFO TLS configuration changed to: {"CA file":"/opt/couchbase/var/lib/couchbase/config/certs/ca.pem","certificate chain":"/opt/couchbase/var/lib/couchbase/config/certs/chain.pem","cipher list":{"TLS 1.2":"HIGH","TLS 1.3":"TLS_AES_256_GCM_SHA384:TLS_AES_128_GCM_SHA256:TLS_CHACHA20_POLY1305_SHA256"},"cipher order":true,"client cert auth":"disabled","minimum version":"TLS 1.2","password":"not set","private key":"/opt/couchbase/var/lib/couchbase/config/certs/pkey.pem"}
+2023-08-29T18:14:57.930808+00:00 INFO 60: Client {"ip":"127.0.0.1","port":57650} authenticated as <ud>@ns_server</ud>
+2023-08-29T18:14:57.931374+00:00 INFO 60: HELO [regular] [ {"ip":"127.0.0.1","port":57650} - {"ip":"127.0.0.1","port":11209} (System, <ud>@ns_server</ud>) ]
+2023-08-29T18:14:57.931825+00:00 INFO 60: [ {"ip":"127.0.0.1","port":57650} - {"ip":"127.0.0.1","port":11209} (System, <ud>@ns_server</ud>) ] Updated global cluster configuration. New revision: {"epoch":-1,"revno":7}
+2023-08-29T18:14:57.932131+00:00 INFO Pushing new global cluster config - revision:{"epoch":-1,"revno":7}
+2023-08-29T18:14:57.935183+00:00 INFO 60: [ {"ip":"127.0.0.1","port":57650} - {"ip":"127.0.0.1","port":11209} (System, <ud>@ns_server</ud>) ] Updated global cluster configuration. New revision: {"epoch":1,"revno":14}
+2023-08-29T18:14:57.935473+00:00 INFO Pushing new global cluster config - revision:{"epoch":1,"revno":14}
+2023-08-29T18:15:01.599412+00:00 INFO TLS configuration changed to: {"CA file":"/opt/couchbase/var/lib/couchbase/config/certs/ca.pem","certificate chain":"/opt/couchbase/var/lib/couchbase/config/certs/chain.pem","cipher list":{"TLS 1.2":"HIGH","TLS 1.3":"TLS_AES_256_GCM_SHA384:TLS_AES_128_GCM_SHA256:TLS_CHACHA20_POLY1305_SHA256"},"cipher order":true,"client cert auth":"disabled","minimum version":"TLS 1.2","password":"not set","private key":"/opt/couchbase/var/lib/couchbase/config/certs/pkey.pem"}
+2023-08-29T18:15:57.000696+00:00 INFO 59: Client {"ip":"127.0.0.1","port":37946} authenticated as <ud>@ns_server</ud>
+2023-08-29T18:15:57.001534+00:00 INFO 59: HELO [regular] [ {"ip":"127.0.0.1","port":37946} - {"ip":"127.0.0.1","port":11209} (System, <ud>@ns_server</ud>) ]
+2023-08-29T18:15:57.002250+00:00 INFO 59: [ {"ip":"127.0.0.1","port":37946} - {"ip":"127.0.0.1","port":11209} (System, <ud>@ns_server</ud>) ] Updated global cluster configuration. New revision: {"epoch":1,"revno":18}
+2023-08-29T18:15:57.002896+00:00 INFO Pushing new global cluster config - revision:{"epoch":1,"revno":18}
+2023-08-29T18:21:15.333003+00:00 INFO 59: Client {"ip":"127.0.0.1","port":56342} authenticated as <ud>@ns_server</ud>
+2023-08-29T18:21:15.337741+00:00 INFO 59: HELO [regular] [ {"ip":"127.0.0.1","port":56342} - {"ip":"127.0.0.1","port":11209} (System, <ud>@ns_server</ud>) ]
+2023-08-29T18:21:15.344601+00:00 INFO 59: [ {"ip":"127.0.0.1","port":56342} - {"ip":"127.0.0.1","port":11209} (System, <ud>@ns_server</ud>) ] Updated global cluster configuration. New revision: {"epoch":1,"revno":26}
+2023-08-29T18:21:15.352576+00:00 INFO Pushing new global cluster config - revision:{"epoch":1,"revno":26}
+2023-08-29T18:21:15.364877+00:00 INFO 59: [ {"ip":"127.0.0.1","port":56342} - {"ip":"127.0.0.1","port":11209} (System, <ud>@ns_server</ud>) ] Updated global cluster configuration. New revision: {"epoch":1,"revno":26}
+2023-08-29T18:21:15.365484+00:00 INFO Pushing new global cluster config - revision:{"epoch":1,"revno":26}
+2023-08-29T18:21:15.623621+00:00 INFO 59: [ {"ip":"127.0.0.1","port":56342} - {"ip":"127.0.0.1","port":11209} (System, <ud>@ns_server</ud>) ] Updated global cluster configuration. New revision: {"epoch":1,"revno":26}
+2023-08-29T18:21:15.624115+00:00 INFO Pushing new global cluster config - revision:{"epoch":1,"revno":26}
+2023-08-29T18:21:15.668732+00:00 INFO TLS configuration changed to: {"CA file":"/opt/couchbase/var/lib/couchbase/config/certs/ca.pem","certificate chain":"/opt/couchbase/var/lib/couchbase/config/certs/chain.pem","cipher list":{"TLS 1.2":"HIGH","TLS 1.3":"TLS_AES_256_GCM_SHA384:TLS_AES_128_GCM_SHA256:TLS_CHACHA20_POLY1305_SHA256"},"cipher order":true,"client cert auth":"disabled","minimum version":"TLS 1.2","password":"not set","private key":"/opt/couchbase/var/lib/couchbase/config/certs/pkey.pem"}
+2023-08-29T18:23:34.955780+00:00 INFO 59: Client {"ip":"127.0.0.1","port":60096} authenticated as <ud>@ns_server</ud>
+2023-08-29T18:23:34.962335+00:00 INFO 59: HELO [regular] [ {"ip":"127.0.0.1","port":60096} - {"ip":"127.0.0.1","port":11209} (System, <ud>@ns_server</ud>) ]
+2023-08-29T18:24:13.946657+00:00 INFO 59: Client {"ip":"127.0.0.1","port":53614} authenticated as <ud>@ns_server</ud>
+2023-08-29T18:24:13.952276+00:00 INFO 59: HELO [regular] [ {"ip":"127.0.0.1","port":53614} - {"ip":"127.0.0.1","port":11209} (System, <ud>@ns_server</ud>) ]
+2023-08-29T18:27:39.541000+00:00 INFO 59: Client {"ip":"127.0.0.1","port":58826} authenticated as <ud>@ns_server</ud>
+2023-08-29T18:27:39.542317+00:00 INFO 59: HELO [regular] [ {"ip":"127.0.0.1","port":58826} - {"ip":"127.0.0.1","port":11209} (System, <ud>@ns_server</ud>) ]
+2023-08-29T18:28:23.665714+00:00 INFO 59: Client {"ip":"127.0.0.1","port":54410} authenticated as <ud>@ns_server</ud>
+2023-08-29T18:28:23.666966+00:00 INFO 59: HELO [regular] [ {"ip":"127.0.0.1","port":54410} - {"ip":"127.0.0.1","port":11209} (System, <ud>@ns_server</ud>) ]
